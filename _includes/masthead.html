@@ -17,13 +17,19 @@
   </style>
   <div class="masthead_video">
     <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-      <source id="srcHomeLoop" src="/assets/images/home-loop.mp4" type="video/mp4">
     </video>
   </div>
   <script type="text/javascript">
-    alert(document.domain)
-    if(document.domain=='paulsbruce.io'||document.domain=='paulsbruce.github.io')
-      document.getElementById('srcHomeLoop').src = 'https://media.githubusercontent.com/media/paulsbruce/paulsbruce.io/master/assets/images/home-loop.mp4'
+    var bgvid = document.getElementById('bgvid')
+    var url = '/assets/images/home-loop.mp4'
+    var dd = document.domain.toLowerCase()
+    if(dd==='paulsbruce.io'||dd==='paulsbruce.github.io')
+      url = 'https://media.githubusercontent.com/media/paulsbruce/paulsbruce.io/master/assets/images/home-loop.mp4'
+    var src = document.createElement('source');
+    src.src = url;
+    src.type = 'video/mp4';
+    bgvid.appendChild(src);
+    alert(url)
   </script>
   {% endif %}
 
