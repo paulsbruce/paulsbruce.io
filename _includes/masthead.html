@@ -32,7 +32,8 @@
     var src = document.createElement('source');
     src.src = url;
     src.type = 'video/mp4';
-    if(!window.mobileAndTabletCheck()) bgvid.appendChild(src);
+    var isCellData = (navigator.connection && (navigator.connection.type === 'cellular' || navigator.connection.saveData))
+    if(!(window.mobileAndTabletCheck()||isCellData)) bgvid.appendChild(src);
   </script>
   {% endif %}
 
