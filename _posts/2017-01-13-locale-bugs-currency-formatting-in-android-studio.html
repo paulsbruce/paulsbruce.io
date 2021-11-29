@@ -1,0 +1,48 @@
+---
+layout: post
+title: Locale bugs & currency formatting in Android Studio
+date: 2017-01-13 10:00:18.000000000 -05:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Android
+- Espresso
+- pitfalls
+tags: []
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '545'
+  dsq_thread_id: ''
+  _wp_old_slug: locale-bugs-currency-formatting-and-other-android-pitfalls
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2017/01/locale-bugs-currency-formatting-in-android-studio/"
+---
+<p>I grew up in the United States and like most countries I've traveled to, I'm used to seeing money that look like this:   $56.33   €12,50   £281.71</p>
+<p><strong>A modern IDE tells you when you're ignorant</strong></p>
+<p>Today, Android Studio was kind enough to tell me that some sample code had a problem: "Implicitly using the default locale is a common source of bugs". Nice.</p>
+<p id="LCTqzbh"><img class="alignnone size-full wp-image-538 " src="{{ site.baseurl }}/assets/images/2017/01/img_5877c4e25b997.png" alt="" /></p>
+<p>Looking at this <a href="https://github.com/PerfectoCode/AndroidDemoApp" target="_blank">sample code</a>, I asked myself: "Why should the UI format this number, isn't that going to hide what the underlying application logic is saying?"</p>
+<p>So it was a great thing that Android Studio shows little messages like this because it got me thinking about how to properly handle currency in the view layer.</p>
+<p><strong>Simply changing your app code won't save you!</strong></p>
+<p>This is a case where view layer formatting isn't the appropriate place to deal with rounding. The business logic of this application, the algorithm that calculates tips, should ultimately be in charge of rounding to the locale-appropriate currency decimal place, in Java this means using the <a href="http://www.opentaps.org/docs/index.php/How_to_Use_Java_BigDecimal:_A_Tutorial" target="_blank">BigDecimal</a> class for manipulating values. So, I forked <a href="https://github.com/paulsbruce/AndroidDemoApp" target="_blank">my own copy</a> and updated the sample to remove the view formatting code.</p>
+<p>Then I changed the locale on my device, and my Espresso tests started breaking.</p>
+<p>See, when you write your format codes and test logic under a narrow mindset of one locale/language/currency (en_US), <em>the test data you use can break your tests</em> if the app is run under a different locale (ar-IQ) which format things like currencies (USD, IQD) to a different arithmetic precision (the dollar uses 2 decimal places, the Dinar uses 3). <a href="https://help.salesforce.com/articleView?id=admin_supported_locales.htm&amp;language=en_US&amp;type=0" target="_blank">[locale/currency lookup table]</a></p>
+<p>An example of an Espresso test written assuming western currencies can be found below. Dinar has three decimal places, so this particular sample fails because values are handled as doubles (floating point numbers). Without controller logic to deal with rounding, it comes out as 35.912 which is not the same as the 2-decimal data "35.91" in my test code.<img class="alignnone size-full wp-image-540 " src="{{ site.baseurl }}/assets/images/2017/01/img_587841fe2273e.png" alt="" /></p>
+<p>To simplify things, much of the code is written using doubles to pass currency around, even though this isn't best practice. Even still, so long as we use BigDecimal to handle the higher-order calculations, we can downgrade the decimal precision in outbound double values to the view layer. Then we have the option of using locale-accurate test data, managing the precision in our tests as well.</p>
+<p><strong>Check it out for yourself...</strong></p>
+<p>If you want to spin these examples up yourself, you can <a href="https://github.com/paulsbruce/AndroidDemoApp" target="_blank">clone my repo</a>. Also, if you want to see this work in continuous integration, check out my article on running a <a href="http://paulsbruce.io/blog/2017/01/jenkins-on-docker-to-build-android-apps/">Jenkins / Android build server on Docker</a>.</p>
+<p>Reference:</p>
+<ul>
+<li><a href="https://help.salesforce.com/articleView?id=admin_supported_locales.htm&amp;language=en_US&amp;type=0" target="_blank">Locale and Currency Reference List</a></li>
+<li><a href="http://stackoverflow.com/questions/179427/how-to-resolve-a-java-rounding-double-issue" target="_blank">How to resolve a Java rounding double issue</a></li>
+<li><a href="http://stackoverflow.com/questions/3730019/why-not-use-double-or-float-to-represent-currency" target="_blank">Why not use double or float to represent currency?</a></li>
+<li><a href="http://stackoverflow.com/questions/8208922/which-rounding-mode-to-be-used-for-currency-manipulation-in-java" target="_blank">Which rounding mode to be used for currency manipulation in java?</a></li>
+</ul>

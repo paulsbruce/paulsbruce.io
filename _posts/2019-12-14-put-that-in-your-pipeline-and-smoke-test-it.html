@@ -1,0 +1,249 @@
+---
+layout: post
+title: Put That in Your Pipeline and Smoke Test It!
+date: 2019-12-14 13:18:33.000000000 -05:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- automation
+- developer
+- DevOps
+- performance
+- quality
+- software
+- testing
+tags: []
+meta:
+  _oembed_332217f052ff05ae16069b5d8f0bb214: <iframe title="Put that in your pipeline
+    and smoke test it!" width="525" height="295" src="https://www.youtube.com/embed/7R-70Bp-rfc?feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  _oembed_time_332217f052ff05ae16069b5d8f0bb214: '1576500610'
+  _thumbnail_id: '1314'
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2019/12/put-that-in-your-pipeline-and-smoke-test-it/"
+---
+<p><!-- wp:paragraph --></p>
+<p>I rarely bother to open my mouth as a speaker and step into a spotlight anymore. I've been mostly focused on observing, listening, and organizing tech communities in my local Boston area for the past few years. I just find that others'</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><a href="https://twitter.com/lisacrispin" target="_blank" rel="noreferrer noopener" aria-label="A friend of mine  (opens in a new tab)">A friend of mine </a>asked if I would present at <a href="https://www.meetup.com/ministry-of-testing-boston/events/266465853/" target="_blank" rel="noreferrer noopener" aria-label="the local Ministry of Testing meetup (opens in a new tab)">the local Ministry of Testing meetup</a>, and since she did me a huge last-minute favor last month, I was more than happy to oblige.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3>"Testing Is Always Interesting Enough to Blog About"</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:image {"id":1311,"sizeSlug":"large"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/images/2019/12/image-5.png" alt="" class="wp-image-1311" /><br />
+<figcaption>Permissioned quote from the Boston DevOps community, Dec 12th 2019. James Goin, DevOps Engineer</figcaption>
+</figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>The state and craft of quality (not to mention performance) engineering has changed dramatically in the past 5 years since I purposely committed to it. After wasting most of my early tech career as a developer not writing testable software, the latter part of my career as of late has been what some might consider penance to that effect. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>I now work in the reliability engineering space. More specifically, I'm a Director of Customer Engineering at a company focusing on the F500. As a performance nerd, everything inherits a statistical perspective, not excluding how I view people, process, and technology. In this demographic, "maturity" models are a complex curve across dozens of teams and a history of IT decisions, not something you can pull out of an Agilista's sardine can or teach like the CMMI once thought it could. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3>A Presentation as Aperitif to Hive Minding</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>This presentation is a distillation of those experiences to date as research and mostly inspired to learn what other practitioners like me think when faced with challenges in translating the importance of holistic thinking around software quality to business leaders.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:core-embed/youtube {"url":"https://youtu.be/7R-70Bp-rfc","type":"video","providerNameSlug":"youtube","className":"wp-embed-aspect-4-3 wp-has-aspect-ratio wp-embed-aspect-16-9"} --></p>
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio wp-embed-aspect-16-9">
+<div class="wp-block-embed__wrapper">
+https://youtu.be/7R-70Bp-rfc
+</div>
+</figure>
+<p><!-- /wp:core-embed/youtube --></p>
+<p><!-- wp:paragraph --></p>
+<p>Slides: <a href="http://bit.ly/put-that-in-your-pipeline-2019">bit.ly/put-that-in-your-pipeline-2019</a></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Like I say at the beginning of this presentation, the goal is to incite collaboration about concepts, sharing the puzzle pieces I am actively working to clarify so that the whole group can get involved with each other in a constructive manner.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3>Hive Minding on What Can/Must/Shouldn't Be Tested</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>The phrase '<a href="http://paulsbruce.io/blog/2019/10/afterthoughts-on-hive-minding/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">Hive Minding</a>' is (to my knowledge and Google results) a turn-of-phrase invention of my own. It's one incremental iteration past my work and research in open spaces, emphasizing the notions of:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Collective, aggregated collaboration</li>
+<li>Striking a balance between personal and real-time thinking</li>
+<li>Mindful, structured interactions to optimize outcomes</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>At this meetup, I beta launched the <a href="http://www.liberatingstructures.com/1-1-2-4-all/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">1-2-4-All method from Liberating Structures</a> that seemed to work so well <a href="http://paulsbruce.io/blog/2019/10/crossing-cross-functional-chasms/">when I was in France</a> at a product strategy session last month.  It so well balanced the opposite divergent and convergent modes of thinking, as discussed in <a href="http://awayandaway.com/writing-resources/think-creatively-quantity-leads-to-quality/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)"><em>The Creative Thinker's Toolkit</em></a>, that I was compelled again to continue my active research into improving group facilitation.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Even after a few people had to leave the meetup early, there were still six groups of four. In France there were eight contributors, so I felt that this time I had a manageable but still scaled (4x) experiment of how hive minding works with larger groups.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3>My personal key learnings</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Before I share some of the community feedbacks (below), I should mention what I as the organizer saw during and as outcomes after the meetup:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>I need to use a bell or chime sound on my phone rather than having to interrupt people once the timers elapse for each of the 1-2-4 sessions; I hate stopping good conversation just because there's a pre-agreed-to meeting structure.</li>
+<li>We were able to expose non-quality-engineer people (like SysOps and managers) to concepts new to them, such as <a rel="noreferrer noopener" aria-label="negative testing (opens in a new tab)" href="https://en.wikipedia.org/wiki/Negative_testing" target="_blank">negative testing</a> and service virtualization; hopefully next time they're hiring a QA manager, they'll have new things to chat about</li>
+<li>Many people confirmed some of the hypotheses in the presentation with real-world examples; you can't test all the things, sometimes you can't even test the thing because of non-technical limitations such as unavailability of systems, budget, or failure of management to understand the impact on organizational risk</li>
+<li>I was able to give shout-outs to great work I've run across in my journeys, such as <a rel="noreferrer noopener" aria-label="Resilient Coders (opens in a new tab)" href="http://www.resilientcoders.org/" target="_blank">Resilient Coders</a> of Boston and technical projects like <a rel="noreferrer noopener" aria-label="Mockiato (opens in a new tab)" href="https://github.com/Optum/mockiato" target="_blank">Mockiato</a> and <a rel="noreferrer noopener" aria-label="OpenTelemetry (opens in a new tab)" href="https://opentelemetry.io/" target="_blank">OpenTelemetry</a></li>
+<li>Quite a few people hung out afterward to express appreciation and interest in the sushi menu of ideas in the presentation. They are why I work so hard on my research areas.</li>
+<li>I have to stop saying "you guys". It slipped out twice and I was internally embarrassed that this is still a latent habit. At least one-third of the attendees were women in technology and as important as being an accomplice to improving underrepresented communities (including non-binary individuals), my words need work.</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2>A Few Community Feedbacks, Anonymized</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:image {"id":1315,"sizeSlug":"large"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/images/2019/12/20191211_211121-1-1024x836.jpg" alt="" class="wp-image-1315" /><br />
+<figcaption>Consolidated outcomes of "Hive Minding" on the topics "What must be tested?" and "What can't we test?"</figcaption>
+</figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>What <strong>must</strong> we test?
+<ul>
+<li>Regressions, integrations, negative testing</li>
+<li>Deliver what you promised</li>
+<li>Requirements &amp; customer use cases</li>
+<li>Underlying dependency changes</li>
+<li>Access to our systems</li>
+<li>Monitoring mechanisms</li>
+<li>Pipelines</li>
+<li>Things that lots of devs use (security libraries)</li>
+<li>Things with lots of dependencies</li>
+</ul>
+</li>
+<li>What <em>can't</em> we test?
+<ul>
+<li>Processes that never finish (non-deterministic, infinite streams)</li>
+<li>Brute-force enterprise cracking</li>
+<li>Production systems</li>
+<li>Production data (privacy concerns)</li>
+<li>"All" versions of something, some equipment, types of data</li>
+<li>Exhaustive testing</li>
+<li>Randomness</li>
+<li>High-fidelity combinations where dimensions exponentially multiply cases</li>
+<li>Full system tests (takes too long for CI/CD)</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>A few thoughts from folks in Slack (scrubbed for privacy)...</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:group --></p>
+<div class="wp-block-group">
+<div class="wp-block-group__inner-container"><!-- wp:paragraph --></p>
+<p><strong><em>Anonymized community member:</em></strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Writing up my personal answers to <a href="https://bostondevops.slack.com/team/UC9A0N5TJ">@paulsbruce</a>’s hivemind questions yesterday evening: <em>What can/should you test?</em></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>well specified properties of your system, of the form <code>if A then B</code>. Only test those when your gut tells you they are complex enough to warrant a test, or as a preliminary step to fixing a bug, and making sure it won't get hit again (see my answer to the next question).</li>
+<li>your monitoring and alerting pipeline. You can never test up front for everything, things will break. The least you can do is test for end failure, and polish your observability to make debugging/fixing easier.</li>
+</ul>
+<p><!-- /wp:list --></div>
+</div>
+<p><!-- /wp:group --></p>
+<p><!-- wp:paragraph --></p>
+<p><em>What can't/shouldn't you test?</em></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>my answer here is a bit controversial, and a bit tongue in cheek (I'm the person writing more than 80% of the tests at my current job). You should test the least amount possible. In software, writing tests is very expensive. Tests add code, sometimes very complex code that is hard to read and hard to test in itself. This means it will quickly rot, or worse, it will prevent/keep people from modifying the software architecture or make bold moves because tests will break/become obsolete. For example, assume you tested every single detail of your current DB schema and DB behaviour. If changing the DB schema or moving to a new storage backend is "the right move" from a product standpoint, all your tests become obsolete. </li>
+<li>tests will often add a lot of complexity to your codebase, only for the purpose of testing. You will have to add mocking at every level. You will have to set up CICD jobs. The cost of this depends on what kind of software you write, the problem is well solved for webby/microservicy/cloudy things, much less so for custom software / desktop software / web frontends / software with complex concurrency. For example, in my current job (highly concurrent embedded firmware, everything is mocked: every state machine, every hardware component, every ocmmunication bus is mocked so that individual state machines can be tested against. This means that if you add a new hardware sensor, you end up writing over 200 lines of boilerplate just to satisfy the mocking requirements. THis can be alleviated with scaffolding tools, some clever programming language features, but there is no denying the added complexity)</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>To add to this, I think this is especially a problem for junior developers / developers who don't have enough experience with large scale codebases. They are either starry-eyed about TDD and "best practices" and "functional programming will save the world", and so don't exercise the right judgment on where to test and where not to test. So you end up with huge test suites that basically test that calling <code>database.get_customer('john smith') == customer('john smith')</code> which is pretty useless. much more useful would be logging that <code>result.name != requested_name</code> in the function <code>get_customer</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>the first is going to be run in a mocked environment either on the dev machine, on the builder, or in a staging environment, and might not catch a race condition between writers and readers that happens under load every blue moon. the logging will, and you can alert on it. furthermore, if the bug is caught as a user bug "i tried to update the customer's name, but i got the wrong result", a developer can get the trace, and immediately figure out which function failed</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Then someone else chimed in:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:quote --></p>
+<blockquote class="wp-block-quote"><p>It sounds like you’re pitting your anecdotal experience against the entire history of the industry and all the data showing that bugs are cheaper and faster to fix when found “to the left” i.e. before production. The idea that a developer can get a trace and immediately figure out which function failed is a starry-eyed fantasy when it comes to most software and systems in production in the world today.</p>
+</blockquote>
+<p><!-- /wp:quote --></p>
+<p><!-- wp:paragraph --></p>
+<p>The original contributor then continues with:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:quote --></p>
+<blockquote class="wp-block-quote"><p>yeah, this is personal experience, and we don't just yeet stuff into production. as far data-driven software engineering, I find mostly scientific studies to be of dubious value, meaning we're all back to personal experience. as for trace driven debugging, it's working quite well at my workplace, I can go much more into details about how these things work (I had a webinar with qt up online but I think they took it down)</p>
+<p>as said, it's a bit tongue in cheek, but if there's no strong incentive to test something, I would say, don't. the one thing i do is keep tabs on which bugs we did fix later on, which parts of the sourcecode were affected, who fixed them, and draw conclusions from that</p>
+</blockquote>
+<p><!-- /wp:quote --></p>
+<p><!-- wp:heading --></p>
+<h2>Sailboat Retrospective</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Using the concept of a <a rel="noreferrer noopener" aria-label="sailboat retrospective (opens in a new tab)" href="https://www.pagerduty.com/blog/4-step-agile-sailboat-retrospective/" target="_blank">sailboat retrospective</a>, a few things that I'd like to improve are below, namely:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4>Things that propel us:</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Many people said they really liked the collaborative nature of hive minding and would love to do this again because it got people to share learnings and ideas</li>
+<li>Reading the crowd in real-time, I could see that people were connecting with the ideas and message; there were no "bad actors" or trolls in the crowd</li>
+<li>Space, food, invites and social media logistics were handled well (not on me)</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4>Things that slowed us:</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>My presentation was 50+ mins, way too long for a meetup IMO. </p>
+<p>To improve this, I need to:
+<ul>
+<li>Break my content and narratives up to smaller chunks, ones that I can actually stick to a 20min timeframe on. If people want to hear more, I can chain on topics.</li>
+<li>Recruit a timekeeper from the audience, someone who provides accountability</li>
+<li>Don't get into minutia and examples that bulk out my message, unless asked</li>
+</ul>
+</li>
+<li>Audio/video recording and last-minute mic difficulties kind of throws speakers off
+<p>To fix this? Maybe bring my own recording and A/V gear next time.</li>
+<li>Having to verbally interrupt people at the agree upon time-breaks in 1-2-4-All seems counter to collaborative spirit.
+<p>To improve this, possibly use a Pavlovian sound on my phone (ding, chime, etc.)</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4>Things to watch out for:</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>I used the all-to-common gender-binary phrase "you guys" twice. Imagine rooms where it would somehow be fine to say that, but saying "hey ladies" to a mixed crowd would be considered pejorative to many cisgender men. Everything can be improved and this is certainly one thing I plan to be very conscious of.</li>
+<li>Though it's important to have people write things down themselves, not everyone's handwriting can be read back by others after, and certainly not without high-fidelity photos of the post-its afterward.
+<p>To improve this, maybe stand <em>with</em> the final group representatives and if needed re-write the key concepts they verbalize to the "all" group on the whiteboard next to their post-it.</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>More reading:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li><a href="http://paulsbruce.io/blog/2019/10/afterthoughts-on-hive-minding/">Afterthoughts on Hive Minding</a></li>
+<li><a href="http://paulsbruce.io/blog/2019/10/crossing-cross-functional-chasms/">Crossing Cross-Functional Chasms</a></li>
+<li><a href="http://www.liberatingstructures.com/1-1-2-4-all/" target="_blank" rel="noreferrer noopener" aria-label="Liberating Structures: 1-2-4-All Method (opens in a new tab)">Liberating Structures: 1-2-4-All Method</a></li>
+</ul>
+<p><!-- /wp:list --></p>

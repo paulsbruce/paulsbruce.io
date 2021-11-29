@@ -1,0 +1,54 @@
+---
+layout: post
+title: 'Adhocathon: Selenium Conf Chicago 2018 - Rstats in Grid'
+date: 2018-10-14 12:31:29.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _edit_last: '1'
+  _oembed_d148797de1b1c95b481aa29648bec0d4: "{{unknown}}"
+  dsq_thread_id: '6969692247'
+  _wp_old_slug: adhockathon-selenium-conf-chicago-2018-rstats-in-grid
+  _thumbnail_id: '1144'
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2018/10/adhocathon-selenium-conf-chicago-2018-rstats-in-grid/"
+---
+<p>The goal of this time-boxed, scoped hackathon is to visualize the health and activities of a Selenium Grid instance by contributing the code necessary to report key metrics via Statsd. This supports observability and operational reliability requirements of continuous testing "at scale".</p>
+<p>Date/time: Thu Oct 18th, 6-8pm in the LaSalle room</p>
+<p>Sign up here: <a href="https://goo.gl/forms/SztY8j7j83RZQEkJ2" target="_blank" rel="noopener">https://goo.gl/forms/SztY8j7j83RZQEkJ2</a></p>
+<h2>Why Selenium Grid and Statsd?</h2>
+<p>Out of the box, visibility into how Selenium Grid is working/performing can be...limiting. This is a problem, because when a test fails (maybe multiple times), how can you quickly know where the issue originated (app, test, environment, data) if all of these things are not easily observable?</p>
+<p>...and because lots of people use both of these technologies, or at least should, and they are both premised on separation of concerns at architecturally significant points, such as test-vs-environment and business-logic-vs-logging. Also, this is a stated potential area of focus for improvement by a few of the Selenium core contributors, and because the Statsd protocol has extremely wide-spread support in the industry.</p>
+<p>Why So Last Minute at the Conference?</p>
+<p>A few weeks ago while helping to organize DevOps Days Boston, I had a mental breakthrough about why testing gets talked about very little in organic DevOps communities: much of automated functional and non-functional testing doesn't speak the same lingo as development and operations.</p>
+<p>One of the core DoD organizers, Laura Stone, had just published a set of training videos on Statsd which I was impressed with, learned something from, and it struck home that we don't have telemetry for Selenium Grid, a focus of my recent pet project during the day.</p>
+<p>Many large organizations I work with use WebDriver extensively, and in order to fit something as critical as functional testing into a DevOps-minded delivery pipeline, software components and services <em>must</em> be operationally visible. The health of supportive dependencies, as they contribute affinities and deficiencies, are often as important as the health of primary deliverables.</p>
+<p>So I had the courage to reach out to my volunteers' contact at Selenium Conf Chicago about an idea I had on contributing to the Selenium project, namely layering in Statsd functionality into Selenium Grid to improve the observability.</p>
+<h2>Why Is This Not a Hackathon?</h2>
+<p>My ideas are shit. Not always, but most of life is an opportunity to learn what you don't know. A majority of hackathons typically structure as a competition for prizes, and typically gravitate around some narrow vendor offering or are staged solely to promote some new service. Some business sets the tone and parameters, then judges contributions based on a set of meritable characteristics. This is not what I want.</p>
+<p>In every area of my professional life, I look for opportunities to listen, learn, and deliver value. What better way to do those things that get a lot of other people to do them with you, multiplying the chances of exfoliating great ideas rapidly! The closest I know to this idea is a hackathon, but much of the work to getting the best ideas out quickly isn't coding; it's necessary, but often not the most relevant outcomes. So I needed a new name: "ADHOCATHON" is an iterative, time-boxed design-code-deliver session format.</p>
+<h2>How Is It Going to Go?</h2>
+<p>I have no idea. I often get these things right, like last month when I got 40+ managers together as a meetup to have a "forward dialog" about hiring and recruiting challenges and tips in the current Boston tech climate. The point is not that you know what to expect, but that you can facilitate the "best" outcomes to become a useful contribution.</p>
+<p>That said, the conference organizers were happy to help however they could, and now we have a room at the venue right next to the first-day reception area. I have a number of customers and colleagues signed up to be there. There will be tweets going out via the conference handle. And I will have found my way into the place that Tim O'Reilly describes as "creating more value than you capture".</p>
+<p>For the next few days, I will be scrambling to provide minimalistic resources to accomplish this goal, such as:</p>
+<ul>
+<li>A temporary code repo of example code I've written and fought with to date:<br />
+<a href="https://github.com/paulsbruce/selenium-server-statsd" target="_blank" rel="noopener">github.com/paulsbruce/selenium-server-statsd</a></li>
+<li>A slide deck for the multi-cast screen share at the beginning of the session:<br />
+<a href="https://docs.google.com/presentation/d/1Xo_79lcQ-_FXy0GtJM0D2akFrk-EGK3UWGj2gFq6wsE/edit?usp=sharing" target="_blank" rel="noopener">https://docs.google.com/presentation/d/1Xo_79lcQ-_FXy0GtJM0D2akFrk-EGK3UWGj2gFq6wsE/edit?usp=sharing</a></li>
+<li>Snacks and maybe drinks</li>
+<li>Venue logistics, set up and teardown, and other checklists</li>
+<li>Post-hocathon stewardship actions to formally contribute our efforts</li>
+</ul>
+<p>Whatever happens, it will definitely be interesting. I'll publish a follow-up article on what happened and outcomes here after the conference ends.</p>
+<p>&nbsp;</p>

@@ -1,0 +1,71 @@
+---
+layout: post
+title: Iterative Security - DevOps Days Boston 2017
+date: 2017-09-19 07:02:40.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- DevOps Days Boston 2017
+tags:
+- DevOps Days Boston 2017
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '813'
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2017/09/iterative-security-devops-days-boston-2017/"
+---
+<p><a href="https://twitter.com/tmclaughbos" target="_blank" rel="noopener">Tom McLaughlin</a> presented on iterative security,  incorporating security into DevOps cycles through early detection and prevention of vulnerabilities. His slide are <a href="https://www.slideshare.net/TomMcLaughlin9/iterative-security-secrets-when-youre-not-ready-for-vault-or-conjur" target="_blank" rel="noopener">here</a>. This is a loose transcript of taking points from his talk at <a href="https://www.devopsdays.org/events/2017-boston/" target="_blank" rel="noopener">DevOps Days Boston 2017</a>.</p>
+<h2>Breaches in Practice vs. Theory</h2>
+<p>Tom made the point that breaches often occur in areas that aren't covered by development or security teams because vulnerabilities escape due to a lack of objective and continuous risk assessment.</p>
+<p>Code still has passwords and tokens in it. Lots of assumed knowledge going from dev to prod. Account access and password policies, patching, is usually handled by someone else. Leads to "good luck, it's up to you" syndrome.</p>
+<p>There's also security paralysis. When we don't think we know how to do something, we just won't. And we're rewarded for accomplishing things. So long as disaster doesn't strike, we get by.</p>
+<h2>Why Do We Suffer from Security Breaches?</h2>
+<p>Mostly, we get distracted. 0-day exploits, crypto weaknesses, hash collisions. We get distracted by logos and discussion threads, but <a href="https://www.consumer.ftc.gov/blog/2017/09/equifax-data-breach-what-do" target="_blank" rel="noopener">not patching the system</a>. We get caught up in all of this stuff instead of actually doing what improves security.</p>
+<p id="Faaragu"><img class="alignnone size-full wp-image-812 " src="{{ site.baseurl }}/assets/images/2017/09/img_59c005a49cb2d.png" alt="" /></p>
+<p>Think about all the publicly exposed mongodb and Elasticsearch instances you've seen...being proactive isn't always hard, but is rarely incentivized well.</p>
+<p>We don't do a good job explaining how to get from where you are to where you should be. We also don't always practice critical thinking. What is you goal? What is your posture about security? Proactive, reactive?</p>
+<p>We also don't always have a wealth of layered instructional content. There's a lot of information at the extremes (101 and advanced tutorials), but most of us are in the middle.</p>
+<h2>Solve the Problem Like You're At Work</h2>
+<p>So then let's develop a threat model together, as an example. Let's start by being realistic. What kind of org and product matters? Align with your company on risk management policies and processes.</p>
+<p>Prioritize. Use <a href="https://www.slideshare.net/chuckbt/stride-and-dread" target="_blank" rel="noopener">DREAD (or STRIDE)</a> for rating threats and modeling risk.</p>
+<p>Also take care of the easy stuff: USB sticks over man in the ceiling.</p>
+<p>"<em>Do you still use a service after it's been breached?</em> I leave that up to you."</p>
+<p>Decompose the system. Map out your architecture and understand the systems. Look at the perimeters, how are credentials proliferated? Understand your data pipeline, where is your really valuable data stored?</p>
+<p id="zgretmk"><img class="alignnone size-full wp-image-813 " src="{{ site.baseurl }}/assets/images/2017/09/img_59c005bd924cd.png" alt="" /></p>
+<p>Take time to consider things like exposed net ports, unpached containers, weak secrets...there are tools for this. These tools can be found in later slide <a href="https://www.slideshare.net/TomMcLaughlin9/iterative-security-secrets-when-youre-not-ready-for-vault-or-conjur" target="_blank" rel="noopener">here</a>.</p>
+<h2>Putting a Response to Security Threats into Action</h2>
+<p>Two words: impose constraints. To find which constrains work for you and start with a simple discovery process that includes:</p>
+<ul>
+<li>Time, how long to solve? Timebox solutions, defensible use of existing time.</li>
+<li>Complexity, how hard is it? Ask deep questions, iterate over which help.</li>
+<li>Risk, how risky is the problem and solution?</li>
+</ul>
+<p>Secrets management is a first start. Tom pretty much pwns this space and I encourage you to seriously check out his extensive work on the topic <a href="https://www.threatstack.com/blog/author/tom-mclaughlin/" target="_blank" rel="noopener">here</a>.</p>
+<p>In terms of tactical actions you can take today, Tom mentioned these few, but of course there are more:</p>
+<ul>
+<li>At the code, start with at least something like git-crypt.<br />
+Ask yourself, what should be thrown out before it goes anywhere else?</li>
+<li>In configuration management scripts:<br />
+Developing a master re-key strategy is a great exercise to flesh this out.</li>
+<li>Storage...a tool like sneaker for S3<br />
+Really makes you ask questions...who/how are buckets managed.</li>
+</ul>
+<h2>Summary</h2>
+<p>We need to be better at security, continuous or otherwise. We need to act. There are simple things you can do, but they need to be aligned to your team/organization risk strategy. And make it easy for others to do the right thing, so that it's far more likely to happen without imposing huge effort cost.</p>
+<p>Tom's a great speaker, engaging and fun to listen to. He is also a huge community contributor and even runs a distributed DevRel (developer relations) slack group. Tom is currently working on the <a href="https://cloudzero.com/" target="_blank" rel="noopener">CloudZero</a> team.</p>
+<p>More reading:</p>
+<ul>
+<li><a href="https://www.threatstack.com/blog/author/tom-mclaughlin/" target="_blank" rel="noopener">Tom's pantheon of posts at ThreatStack</a></li>
+<li><a href="https://www.threatstack.com/blog/the-three-pillars-of-continuous-security-improvement/" target="_blank" rel="noopener">Three Pillars of Continuous Security Improvement</a></li>
+<li><a href="http://www.esecurityplanet.com/network-security/which-threat-risk-model-is-right-for-your-organization.html" target="_blank" rel="noopener">Which Threat Risk Model is Right for Your Organization?</a></li>
+</ul>
+<div dir="auto"></div>
+<p>[wonderplugin_slider id="1"]</p>

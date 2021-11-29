@@ -2,19 +2,21 @@
 layout: default
 ---
 
-<div id="main" role="main" style="z-index:1000;">
+<div id="main" role="main">
 
   {{ content }}
-
-  {% if posts.size > 0 %}
-
-  <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
   {% if paginator %}
     {% assign posts = paginator.posts %}
   {% else %}
     {% assign posts = site.posts %}
   {% endif %}
+
+  {% assign posts = posts | slice: 0,5 %}
+
+  {% if posts.size > 0 %}
+
+  <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
   {% assign entries_layout = page.entries_layout | default: 'list' %}
   <div class="entries-{{ entries_layout }}">

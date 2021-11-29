@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?playlist_id=PLFXQmSmq7uXQU3IrbypXKetf5Tos_XWOU"/>
+ <id>yt:playlist:PLFXQmSmq7uXQU3IrbypXKetf5Tos_XWOU</id>
+ <yt:playlistId>PLFXQmSmq7uXQU3IrbypXKetf5Tos_XWOU</yt:playlistId>
+ <yt:channelId>UCWFunSpaAaOmqEzw2SaY8Mw</yt:channelId>
+ <title>Professional Content</title>
+ <author>
+  <name>Paul Bruce</name>
+  <uri>https://www.youtube.com/channel/UCWFunSpaAaOmqEzw2SaY8Mw</uri>
+ </author>
+ <published>2014-08-11T13:14:19+00:00</published>
+ <entry>
+  <id>yt:video:7R-70Bp-rfc</id>
+  <yt:videoId>7R-70Bp-rfc</yt:videoId>
+  <yt:channelId>UCWFunSpaAaOmqEzw2SaY8Mw</yt:channelId>
+  <title>Put that in your pipeline and smoke test it!</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=7R-70Bp-rfc"/>
+  <author>
+   <name>Paul Bruce</name>
+   <uri>https://www.youtube.com/channel/UCWFunSpaAaOmqEzw2SaY8Mw</uri>
+  </author>
+  <published>2019-12-15T01:00:10+00:00</published>
+  <updated>2021-09-01T21:03:52+00:00</updated>
+  <media:group>
+   <media:title>Put that in your pipeline and smoke test it!</media:title>
+   <media:content url="https://www.youtube.com/v/7R-70Bp-rfc?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/7R-70Bp-rfc/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Presentation on 2019-12-11 about what testing should, can and can't be automated in continuous delivery (#DevOps) pipelines. Complete blog at http://bit.ly/put-that-in-your-pipeline
+
+Premise: if you can't automate a part of your process, why not? This research explores aspects of automation using personal field experiences in F100 and key considerations of scaling out software delivery practices using &quot;as code&quot; methodologies.</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="69"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:Jdd5-eWXA1c</id>
+  <yt:videoId>Jdd5-eWXA1c</yt:videoId>
+  <yt:channelId>UCKlF3GIFy9KVUefVbycx_vw</yt:channelId>
+  <title>Progressive Performance Testing in Every Pipeline</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=Jdd5-eWXA1c"/>
+  <author>
+   <name>CloudBeesTV</name>
+   <uri>https://www.youtube.com/channel/UCKlF3GIFy9KVUefVbycx_vw</uri>
+  </author>
+  <published>2018-11-07T17:28:12+00:00</published>
+  <updated>2021-04-02T11:07:12+00:00</updated>
+  <media:group>
+   <media:title>Progressive Performance Testing in Every Pipeline</media:title>
+   <media:content url="https://www.youtube.com/v/Jdd5-eWXA1c?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/Jdd5-eWXA1c/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Systems live and die by how they perform. Why wait for the best-laid architecture plans to move through implementation and operation only to see them choke under real-world stress? Join Paul Bruce and Henrik Rexed of Neotys to learn how you can:
+-  Express API and end-to-end performance tests natively in Jenkins Pipeline as code
+-  Develop a performance testing strategy that delivers fast, reliable feedback to developers
+-  Dynamically scale performance testing infrastructure on-demand with Docker and cloud resources
+- Integrate real-user experience metrics into views to share comprehensive analysis across teams</media:description>
+   <media:community>
+    <media:starRating count="2" average="5.00" min="1" max="5"/>
+    <media:statistics views="227"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:lmNxeYgd_xA</id>
+  <yt:videoId>lmNxeYgd_xA</yt:videoId>
+  <yt:channelId>UCWFunSpaAaOmqEzw2SaY8Mw</yt:channelId>
+  <title>Testing Strategy in DevOps - Paul Bruce - 2018</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=lmNxeYgd_xA"/>
+  <author>
+   <name>Paul Bruce</name>
+   <uri>https://www.youtube.com/channel/UCWFunSpaAaOmqEzw2SaY8Mw</uri>
+  </author>
+  <published>2018-02-17T03:06:37+00:00</published>
+  <updated>2021-10-05T09:55:14+00:00</updated>
+  <media:group>
+   <media:title>Testing Strategy in DevOps - Paul Bruce - 2018</media:title>
+   <media:content url="https://www.youtube.com/v/lmNxeYgd_xA?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/lmNxeYgd_xA/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This talk was presented and the Greater Boston Selenium Users Group on February 15th 2018 at Salesforce Commerce Cloud HQ in Burlington Massachusetts. Article &amp; Slides: http://bit.ly/devops-testing-for-dummies
+
+How does testing right-fit quality into DevOps culture? Collaboration, improvement, and alignment.</media:description>
+   <media:community>
+    <media:starRating count="2" average="5.00" min="1" max="5"/>
+    <media:statistics views="466"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:uimBrIaJERU</id>
+  <yt:videoId>uimBrIaJERU</yt:videoId>
+  <yt:channelId>UCIA4-x6EsC_EauXAxxe6-lQ</yt:channelId>
+  <title>DevOpsDays Boston 2020: BDO Meetup and Community Update by Paul Bruce</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=uimBrIaJERU"/>
+  <author>
+   <name>DevOpsDays Boston</name>
+   <uri>https://www.youtube.com/channel/UCIA4-x6EsC_EauXAxxe6-lQ</uri>
+  </author>
+  <published>2020-10-03T13:55:18+00:00</published>
+  <updated>2021-09-10T23:14:14+00:00</updated>
+  <media:group>
+   <media:title>DevOpsDays Boston 2020: BDO Meetup and Community Update by Paul Bruce</media:title>
+   <media:content url="https://www.youtube.com/v/uimBrIaJERU?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/uimBrIaJERU/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="6"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:oP6wdXpJNXE</id>
+  <yt:videoId>oP6wdXpJNXE</yt:videoId>
+  <yt:channelId>UCLKOtaBdQAJVRJqhJDuOlPg</yt:channelId>
+  <title>Interview with Paul Bruce &amp; Jonah Kowall about the OpenTelemetry community</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=oP6wdXpJNXE"/>
+  <author>
+   <name>OpenObservability</name>
+   <uri>https://www.youtube.com/channel/UCLKOtaBdQAJVRJqhJDuOlPg</uri>
+  </author>
+  <published>2020-08-06T12:51:34+00:00</published>
+  <updated>2021-06-13T19:13:58+00:00</updated>
+  <media:group>
+   <media:title>Interview with Paul Bruce &amp; Jonah Kowall about the OpenTelemetry community</media:title>
+   <media:content url="https://www.youtube.com/v/oP6wdXpJNXE?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/oP6wdXpJNXE/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Taken from the Episode 2 of OpenObservability Talks on July 30th, where we hosted Paul Bruce of  Neotys and Jonah Kowall of Logz.io. Our topic of discussion was OpenTelemetry and the thriving community around it, we covered where it came from and where it's going.
+
+If you have a talk or a subject you'd like to talk about send it here https://forms.gle/pTVwDMCP1fK32tAF9
+
+Socials:
+- Twitter: https://twitter.com/OpenObserv
+- Twitch: https://www.twitch.tv/openobservability
+- Website: https://openobservability.io/</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="61"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:cj4pnvdDsMw</id>
+  <yt:videoId>cj4pnvdDsMw</yt:videoId>
+  <yt:channelId>UCOhDUW3wqro_ydGVvVVQpyg</yt:channelId>
+  <title>Webinar - Key Findings From The 2020 State of Performance Engineering Report</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=cj4pnvdDsMw"/>
+  <author>
+   <name>Neotys</name>
+   <uri>https://www.youtube.com/channel/UCOhDUW3wqro_ydGVvVVQpyg</uri>
+  </author>
+  <published>2020-11-05T06:32:59+00:00</published>
+  <updated>2021-09-24T17:11:07+00:00</updated>
+  <media:group>
+   <media:title>Webinar - Key Findings From The 2020 State of Performance Engineering Report</media:title>
+   <media:content url="https://www.youtube.com/v/cj4pnvdDsMw?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/cj4pnvdDsMw/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Performance engineering has become more urgent in the last months with the current situation where the digital transformation is accelerating faster than ever before and organizations are urged to deliver the best user experience.
+
+In this webinar, the authors of the State of Performance Engineering Report will walk you through the most important things they learned about how organizations deal with software performance and pragmatic recommendations for organizations transitioning to Agile and DevOps seeking to adapt to how they ensure application speed and reliability.
+
+Register for this webinar to learn more about the following topics:
+
+• What makes software performance part of an organization’s culture
+• How teams are organized to ensure performance, what are their practices, and their main challenges.
+• What are the trends shaping performance engineering
+
+Webinar presenters: Antoine Aymer, Sogeti &amp; Paul Bruce, Neotys</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="82"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:nkg5dcL57Wg</id>
+  <yt:videoId>nkg5dcL57Wg</yt:videoId>
+  <yt:channelId>UCWFunSpaAaOmqEzw2SaY8Mw</yt:channelId>
+  <title>Fast Feedback: Auto-complete for your DevOps pipeline</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=nkg5dcL57Wg"/>
+  <author>
+   <name>Paul Bruce</name>
+   <uri>https://www.youtube.com/channel/UCWFunSpaAaOmqEzw2SaY8Mw</uri>
+  </author>
+  <published>2017-02-17T17:17:16+00:00</published>
+  <updated>2021-10-04T19:41:05+00:00</updated>
+  <media:group>
+   <media:title>Fast Feedback: Auto-complete for your DevOps pipeline</media:title>
+   <media:content url="https://www.youtube.com/v/nkg5dcL57Wg?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/nkg5dcL57Wg/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="48"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:h85ZaRvG2mU</id>
+  <yt:videoId>h85ZaRvG2mU</yt:videoId>
+  <yt:channelId>UCWFunSpaAaOmqEzw2SaY8Mw</yt:channelId>
+  <title>Espresso Is Awesome, But Where Are It's Edges?</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=h85ZaRvG2mU"/>
+  <author>
+   <name>Paul Bruce</name>
+   <uri>https://www.youtube.com/channel/UCWFunSpaAaOmqEzw2SaY8Mw</uri>
+  </author>
+  <published>2016-12-07T03:30:03+00:00</published>
+  <updated>2021-10-18T16:39:46+00:00</updated>
+  <media:group>
+   <media:title>Espresso Is Awesome, But Where Are It's Edges?</media:title>
+   <media:content url="https://www.youtube.com/v/h85ZaRvG2mU?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/h85ZaRvG2mU/hqdefault.jpg" width="480" height="360"/>
+   <media:description>A presentation at AnDevCon SF 2016 on the pros and cons of Espresso testing for Android. Slides are available at: http://bit.ly/espresso-edges-andevcon</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="64"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:edItCi-LSVU</id>
+  <yt:videoId>edItCi-LSVU</yt:videoId>
+  <yt:channelId>UCWFunSpaAaOmqEzw2SaY8Mw</yt:channelId>
+  <title>An informal chat with Sam Edwards at Droidcon Boston</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=edItCi-LSVU"/>
+  <author>
+   <name>Paul Bruce</name>
+   <uri>https://www.youtube.com/channel/UCWFunSpaAaOmqEzw2SaY8Mw</uri>
+  </author>
+  <published>2017-05-10T12:29:33+00:00</published>
+  <updated>2021-10-22T16:26:07+00:00</updated>
+  <media:group>
+   <media:title>An informal chat with Sam Edwards at Droidcon Boston</media:title>
+   <media:content url="https://www.youtube.com/v/edItCi-LSVU?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/edItCi-LSVU/hqdefault.jpg" width="480" height="360"/>
+   <media:description>After his presentation on Android debug features and tools, I had a chance to chat informally about his work on app development and deployment. More info and slides here: http://bit.ly/droidconbos17-chat-sam-edwards</media:description>
+   <media:community>
+    <media:starRating count="3" average="5.00" min="1" max="5"/>
+    <media:statistics views="68"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:SUKOShqBuPE</id>
+  <yt:videoId>SUKOShqBuPE</yt:videoId>
+  <yt:channelId>UCWFunSpaAaOmqEzw2SaY8Mw</yt:channelId>
+  <title>DevOps Days Boston 2017 - David Fredricks</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=SUKOShqBuPE"/>
+  <author>
+   <name>Paul Bruce</name>
+   <uri>https://www.youtube.com/channel/UCWFunSpaAaOmqEzw2SaY8Mw</uri>
+  </author>
+  <published>2017-10-09T23:04:46+00:00</published>
+  <updated>2021-04-17T02:49:36+00:00</updated>
+  <media:group>
+   <media:title>DevOps Days Boston 2017 - David Fredricks</media:title>
+   <media:content url="https://www.youtube.com/v/SUKOShqBuPE?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/SUKOShqBuPE/hqdefault.jpg" width="480" height="360"/>
+   <media:description>A quick chat between Paul Bruce and David Fredricks, organizer of DevOps Days Boston 2017. For links in this podcast, visit: http://paulsbruce.io/blog/2017/09/recap-of-devops-…with-corey-quinn/</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="64"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:7odT95kmf_w</id>
+  <yt:videoId>7odT95kmf_w</yt:videoId>
+  <yt:channelId>UCXJrmV7hOKYqYaJjPj9hCyQ</yt:channelId>
+  <title>Guerilla Testing for the IoT / REST Jungle - Paul Bruce at API Days SF 2015</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=7odT95kmf_w"/>
+  <author>
+   <name>PARISOMA</name>
+   <uri>https://www.youtube.com/channel/UCXJrmV7hOKYqYaJjPj9hCyQ</uri>
+  </author>
+  <published>2016-01-07T10:13:02+00:00</published>
+  <updated>2021-10-14T12:09:18+00:00</updated>
+  <media:group>
+   <media:title>Guerilla Testing for the IoT / REST Jungle - Paul Bruce at API Days SF 2015</media:title>
+   <media:content url="https://www.youtube.com/v/7odT95kmf_w?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/7odT95kmf_w/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Paul Bruce is API Product Manager at Smartbear Software. Testing and Development teams around the world use SmartBear's automation, development and monitoring tools to build better software and applications.
+
+http://smartbear.com/
+
+-----
+On June 17th-18th we organized API Days SF 2015, where we discussed API Design and Strategy for the Internet of Things.
+
+
+API Days SF 2015 was focused on the API Design &amp; Strategy that supports the Internet of Things revolution. City, Transportation and Home are the three different scales we decided to discuss with experts from various industries.
+
+
+Thank you to the speakers and sponsors: IBM, CA Technologies, Axway, WSO2, Mulesoft, Mashape, Context.io, 3scale.
+
+More info can be found on http://sf.apidays.io
+Global editions can be found on http://www.apidays.io
+
+Organized by:
+FABERNOVEL (http://www.fabernovel.com)
+OAuth.io (http://oauth.io)
+PARISOMA (http://www.parisoma.com)</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="68"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:R9tBFfSzB0w</id>
+  <yt:videoId>R9tBFfSzB0w</yt:videoId>
+  <yt:channelId>UCWnPjmqvljcafA0z2U1fwKQ</yt:channelId>
+  <title>DevOpsDays Boston 2018 - Progressive Testing to Meet the Performance Imperative by Paul Bruce</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=R9tBFfSzB0w"/>
+  <author>
+   <name>Confreaks</name>
+   <uri>https://www.youtube.com/channel/UCWnPjmqvljcafA0z2U1fwKQ</uri>
+  </author>
+  <published>2018-10-17T17:07:23+00:00</published>
+  <updated>2021-09-30T19:02:05+00:00</updated>
+  <media:group>
+   <media:title>DevOpsDays Boston 2018 - Progressive Testing to Meet the Performance Imperative by Paul Bruce</media:title>
+   <media:content url="https://www.youtube.com/v/R9tBFfSzB0w?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/R9tBFfSzB0w/hqdefault.jpg" width="480" height="360"/>
+   <media:description>DevOpsDays Boston 2018 - Progressive Testing to Meet the Performance Imperative by Paul Bruce
+
+Users care as much about how your service performs as they do what job it helps them accomplish. This is the modern performance imperative. So why do we still see so many 503 errors and slow apps? The answer is empathy, a lack thereof. Performance is the most tangible element of “non-functional” quality criteria we regularly ignore until it’s too late. The cloud doesn’t save us magically either. “Building quality in” starts with a mindset guided by technical experience, team alignment, and empathy for your customers.
+
+The automated delivery process is the substrate we all work in now, and the viscosity of our app/configuration/deployment code often dictates our rate of flow. Reducing these friction points with fast and complete feedback loops help us improve the pace of delivery. In this presentation, we’ll uncover:
+
+how to include and improve performance criteria into stories and features
+key performance indicators for cloud deployments and high-availability services
+progressive performance testing strategies to radiate early feedback in our pipelines
+advanced scenarios of dynamically provisioning test environments
+Hopefully, you’ll walk away with some cool new techniques and questions to ask your own team, but the goal is to root our work in empathy in order to reset our vision of how to deliver high-performance systems.</media:description>
+   <media:community>
+    <media:starRating count="4" average="4.00" min="1" max="5"/>
+    <media:statistics views="148"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:rH3S7kYegbA</id>
+  <yt:videoId>rH3S7kYegbA</yt:videoId>
+  <yt:channelId>UCIA4-x6EsC_EauXAxxe6-lQ</yt:channelId>
+  <title>DevOpsDays Boston 2020: Organizer Wrap-up and Thanks</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=rH3S7kYegbA"/>
+  <author>
+   <name>DevOpsDays Boston</name>
+   <uri>https://www.youtube.com/channel/UCIA4-x6EsC_EauXAxxe6-lQ</uri>
+  </author>
+  <published>2020-10-03T13:55:18+00:00</published>
+  <updated>2021-09-10T19:16:21+00:00</updated>
+  <media:group>
+   <media:title>DevOpsDays Boston 2020: Organizer Wrap-up and Thanks</media:title>
+   <media:content url="https://www.youtube.com/v/rH3S7kYegbA?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/rH3S7kYegbA/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="6"/>
+   </media:community>
+  </media:group>
+ </entry>
+</feed>

@@ -1,0 +1,87 @@
+---
+layout: post
+title: Performance Engineer vs. Tester
+date: 2019-06-01 23:43:37.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- DevOps
+- performance
+- teams
+- testing
+tags: []
+meta:
+  _thumbnail_id: '1229'
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2019/06/performance-engineer-vs-tester/"
+---
+<p><!-- wp:paragraph --></p>
+<p>A performance engineer's job is to get things to work really, really well.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Some might say that the difference between being a performance tester and a performance engineer boils down to scope. The scope of a tester is testing, to construct, execute and verify test results. An engineer seeks to understand, validate, and improve the operational context of a system.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Sure, let's go with that for now, but really the difference is an appetite for curiosity. Some people treat monoliths as something to fear or control. Others explore them, learn how to move beyond them, and how to bring others along in the journey.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4>Testing Is Just a Necessary Tactic of an Engineer</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Imagine being an advisor to a professional musician, their performance engineer. What would that involve? You wouldn't just administer tests, you would carefully coach, craft instruction, listen and observe, seek counsel from other musicians and advisors, ultimately to provide the best possible path forward to your client. You would need to know their domain, their processes, their talents and weaknesses, their struggle.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>With software teams and complex distributed systems, a lot can go wrong very quickly. Everyone tends to assume their best intentions manifest into their code, that what they build is today's best. Then time goes by and everything more than 6 months old is already brownfield. What if the design of a thing is already so riddled with false assumptions and unknowns that everything is brownfield before it even begins. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Pretend with me for a moment, that if you were to embody the software you write, become your code, and look at your operational lifecycle as if it was your binary career, your future would be a bleak landscape of retirement options. Your code has a half-life.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4>Everything Is Flawed from the Moment of Inception</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Most software is like this...not complete shit but more like well-intentioned gift baskets full of fruits, candies, pretty things, easter eggs, and bunny droppings. Spoils the whole fucking lot when you find them in there. A session management microservice that only starts to lose sessions once a few hundred people are active. An obese 3mb CSS file accidentally included in the final deployment. A reindexing process that tanks your order fulfillment process to 45 seconds, giving customers just enough time to rethink.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Performance engineer doesn't simply polish turds. We help people not to build broken systems to begin with. In planning meetings, we coach people to ask critical performance questions by asking those questions in a way that appeals to their ego and curiosity at a time that's cost effective to do so. We write in BIG BOLD RED SHARPIE in a corner of the sprint board what the percentage slow-down to the login process the nightly build as now caused. We develop an easy way to assess the performance of changes and new code, so that task templates in JIRA can include the "performance checkbox" in a meaningful way with simple steps on a wiki page.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4>Engineers Ask Questions Because Curiosity Is Their Skill</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>We ask how a young SRE's good intentions of wrapping u statistical R models from a data sciences product team in Docker containers to speed deployment to production will affect resources, how they intend on measuring the change impact so that the CFO isn't going to be knocking down their door the next day. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>We ask why the architects didn't impose requirements on their GraphQL queries to deliver only the fields necessary within JSON responses to mobile app clients, so that developers aren't even allowed to reinvent the 'SELECT * FROM' mistake so rampant in legacy relational and OLAP systems. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>We ask what the appropriate limits should be to auto-scaling and load balancing strategies and when we'd like to be alerted that our instance limits and contractual bandwidth limits are approaching cutoff levels. We provide cross-domain expertise from Ops, Dev, and Test to continuously integrate the evidence of false assumptions back into the earliest cycle possible. There should be processes in place to expose and capture things which can't always be known at the time of planning.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Testers ask questions (or should) before they start testing. Entry/exit criteria, requirements gathering, test data, branch coverage expectations, results format, sure. Testing is important but is only a tactic.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4>Engineers Improve Process, Systems, and Teams</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>In contrast, engineering has the curiosity and the expertise to get ahead of testing so that when it comes time, the only surprises are the ones that are actually surprising, those problems that no one could have anticipated, and to advise on how to solve them based on evidence and team feedbacks collected throughout planning, implementation, and operation cycles. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>An engineer's greatest hope is to make things work really, really well. That hope extends beyond the software, the hardware, and the environment. It includes the teams, the processes, the business risks, and the end-user expectations.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Additional Resources:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li><a href="https://techbeacon.com/app-dev-testing/how-go-performance-tester-performance-engineer" target="_blank" rel="noreferrer noopener">Scott Moore on "How to go from Performance Tester to Engineer"</a></li>
+</ul>
+<p><!-- /wp:list --></p>

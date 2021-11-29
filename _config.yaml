@@ -22,7 +22,7 @@ subtitle                 : "Thoughts on tech, culture, and humanity. My own opin
 name: "paulsbruce.io"
 description: "Thoughts on tech, culture, and humanity. My own opinions."
 url                      : "https://paulsbruce.io"
-baseurl                  : "/"
+baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -86,6 +86,8 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - /import
+  - /ssl
 keep_files:
   - .git
   - .svn

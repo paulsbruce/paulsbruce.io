@@ -1,0 +1,110 @@
+---
+layout: post
+title: On Lack of Transparency in SaaS Providers
+date: 2019-08-30 10:45:38.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- DevOps
+- performance
+tags: []
+meta:
+  _thumbnail_id: '1246'
+  dsq_thread_id: ''
+  _wp_old_slug: on-lack-of-transparency-in-cloud-providers
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2019/08/on-lack-of-transparency-in-saas-providers/"
+---
+<p><!-- wp:paragraph --></p>
+<p>As many organizations transition their technical systems to SaaS offerings they don't own or operate, I find it surprising that when a company acquires a 3rd-party offering deployed on said offerings, they are often told to "just trust us" about security, performance, and scalability. I'm a performance nerd, that and DevOps mindset are my most active areas of work and research, so this perspective is scoped to that topic.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>In my experience amongst large organizations and DevOps teams, the "hope is not a strategy" principle seems to be missing in the transition from internal team speak and external service agreement. Inside a 3rd-party vendor, say Salesforce Commerce Cloud, I'm sure they very skilled at what they do (I'm not guessing here, I know folks who work in technical teams in Burlington MA). But even espousing a trust-but-verify culture internally, when your statement to customers who are concerned about performance at scale of your offering is "just trust us", seems maligned.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3>TL;DR: SaaS Providers, Improve Your Transparency</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>If you provide a shared tenancy service that's based on cloud and I can't acquire service-level performance, security audits, and error logs that are isolated to my account, it's a transparent view into how little your internal processes (if they even exist around these concerns) actually improve service for me, your customer.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>If you do provide these metrics to internal [product] teams, ask "why do we do that in the first place?" Consider that the same answers you come up with almost always equally apply to those external consumers who pay for your services that are also technologists, have revenue on the line, and care about delivering value successfully with minimal issues across a continuous delivery model.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>If you don't do a good job internally of continuously measuring and synthesizing the importance of performance, security, and error/issue data, please for the love of whatever get on that right now. It helps you, the teams you serve, and ultimately customers to have products and services that are accurate, verifiable, and reliable.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3>How Do You Move from "Trust Us" to Tangible Outcomes? </h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Like any good engineer, when a problem is big or ambiguous, start breaking that monolith up. If someone says "trust us", be specific about what you're looking to achieve and what you need to do that, which puts the ownness on them to map what they have to your terms. Sometimes this is easy, other times it's not. Both are useful areas of useful information, what you do know and what you don't. Then you can double-click into how to unpack unknowns (unknowables) in the new landscape.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>For SaaS performance, at a high level we look for:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li><strong><em>Uptime and availability</em></strong> reports (general) and the frequency of publication</li>
+<li>Data on <strong><em>latency</em></strong>, the more granular to service or resource the better</li>
+<li><strong><em>Throughput</em></strong> (typically in Mbps etc.) for the domains hosted or serviced</li>
+<li><strong><em>Error # and/or rate</em></strong>, and if error detail is also provided in the form of logs</li>
+<li><strong><em>Queueing</em></strong> or otherwise service ingress congestion </li>
+<li>Some gauge or measure of <strong><em>usage vs. [account] limits and capacity</em></strong></li>
+<li><strong><em>Failover and balancing events</em></strong> (such as circuit breaks or load balancing changes)</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>You may be hard-pressed to expect some of these pieces of telemetry provided in real-time from your SaaS provider, but they serve as concrete talking points of what typical performance engineering practices need to verify about systems under load.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3>Real-world Example: Coaching a National Retailer</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>A message I sent today to a customer, names omitted:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>[Dir of Performance Operations],</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>As I’m on a call with the IEEE on supplier/acquirer semantics in the context of DevOps, it occurs to me that the key element missing in [Retailer's] transition from legacy web solution last year to that which is now deployed via Commerce Cloud, the lack of transparency (or simply not asking on our part) over service underpinnings is a significant risk, both in terms of system readiness and unanticipated costs. My work with the standard brought around two ideas in terms of what [Retailer] should expect from Salesforce:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>A) what their process is for verifying the readiness of the services and service-level rendered to [Retailer], and </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>B) demonstrated evidence of<br />
+what occurs (service levels and failover mechanisms) under significant pressure<br />
+to their services</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>In the past, [Retailer's] performance engineering practice had the agency to both put pressure on your site/services AND importantly how to measure the impact on your infrastructure. The latter is missing in their service offering, which means that if you run tests and the system results don’t meet your satisfaction, the dialog to resolve them with Salesforce lacks minimum-viable technical discussion points on what is specifically going wrong and how to fix it. This will mean sluggish MTTR and potentially synthesizing the expectation of longer feedback cycles into project/test planning.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Because of shared tenancy, you can’t expect them to hand over server logs, service-level measurements, or real-time entry points to their own internal monitoring solutions. Similarly, no engineering-competent service provider can reasonably expect for consumers to “just trust” that an aggregate product-plus-configuration-plus-customizations solution will perform at large scale, particularly when mission-critical verification was in place before fork-lifting your digital front door to Salesforce. We [vendor] see this need for independent verification of COTS all the time across many industries, despite a lack of proof of failure in the past.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>My recommendation is that, as<br />
+a goal of what you started by creating a ticket with them on this topic, we<br />
+should progressively seek to receive thorough information on points A and B<br />
+above from a product-level authority (i.e. product team). If that’s via a<br />
+support or account rep, that’s fine, but it should be adequate for you to be<br />
+able to ask more informed questions about architectural service limits, balancing,<br />
+and failover.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>//Paul</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3>What Do You Think?</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>I'm always seeking other perspectives that my own. If you have a story to tell, question, or otherwise augmentation to this post, please do leave a comment. You can also reach out to me on <a rel="noreferrer noopener" aria-label="Twitter (opens in a new tab)" href="https://twitter.com/paulsbruce" target="_blank">Twitter</a>, <a rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)" href="https://www.linkedin.com/in/paulsbruce/" target="_blank">LinkedIn</a>, or email ["me" -at-- "paulsbruce" --dot- "io"]. My typical SLA for latency is less than 48hrs unless requests are malformed or malicious.</p>
+<p><!-- /wp:paragraph --></p>

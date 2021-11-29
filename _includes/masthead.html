@@ -1,7 +1,6 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
-<div class="masthead_wrapper">
-
+<div class="masthead_wrapper" id="masthead_wrapper">
   {% if page.permalink == "/" %}
   <style type="text/css">
     .masthead_wrapper {
@@ -53,10 +52,15 @@
       src.type = 'video/mp4';
       bgvid.appendChild(src);
     }
+    setTimeout(function() {
+      if(Math.round(window.scrollY)<10) {
+        document.getElementById("masthead").scrollIntoView();
+      }
+    },1000)
   </script>
   {% endif %}
 
-  <div class="masthead">
+  <div class="masthead" id="masthead">
 
     <div class="masthead__inner-wrap">
       <div class="masthead__menu">
