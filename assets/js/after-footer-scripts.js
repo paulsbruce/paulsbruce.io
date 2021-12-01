@@ -32,7 +32,7 @@ function updateYoutubeLinksToEmbeds() {
       path = path.slice(3,path.length).join("/")
       if(path.indexOf('watch?v=')==0)
         path = path.replace('watch?v=','')
-      $(o).before('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+path+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+      $(o).replaceWith('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+path+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
     }
   });
 }

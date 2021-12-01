@@ -55,7 +55,7 @@ footer:
       url: "https://www.linkedin.com/in/paulsbruce/"
 
 after_footer_scripts:
-- "/assets/js/after-footer-scripts.js?20211201091925"
+- "/assets/js/after-footer-scripts.js?20211201092725"
 
 # Reading Files
 include:
