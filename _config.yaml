@@ -54,6 +54,8 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/paulsbruce/"
 
+after_footer_scripts:
+- "/assets/js/after-footer-scripts.js?20211201091925"
 
 # Reading Files
 include:

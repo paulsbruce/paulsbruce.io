@@ -39,28 +39,15 @@
     {% include scripts.html %}
 
     <script type="text/javascript">
-          $(function () {   //  <- jquery is not yet initialized
+          $(function () {
+            // some functions in /assets/js/after-footer-scripts.js and included in site.after_footer_scripts via scripts.html
+            updateYoutubeLinksToEmbeds()
             updateOffsiteLinksToOpenInBlank()
 
             if(window.onloadqueue && window.onloadqueue != undefined && window.onloadqueue.length > 0) {
               $.each(window.onloadqueue,function(i,v) { v() });
             }
           });
-          function updateOffsiteLinksToOpenInBlank() {
-            var host = document.location.hostname
-            var els = $("a:not(:target)").each(function(i,o) {
-              if(((o.href+"").trim().length > 0 && (o.href.indexOf('://'+host)<1 || $(o).attr('use-same-tab') == "false"))) {
-                if($(o).attr('is-external-link') != "true") {
-                  $(o).attr('is-external-link','true')
-                  $(o).attr('target','_blank')
-                  var span = $('<span class="external-link-icon"></span>')
-                  span.click(function() { $(o).click() })
-                  span.insertAfter(o)
-                }
-              }
-            });
-            //alert(els.length);
-          }
         </script>
   </body>
 </html>
