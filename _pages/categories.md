@@ -1,6 +1,6 @@
 ---
 layout: categories
-permalink: "/categories" # needed for simplifying masthead
+permalink: "/categories/" # needed for simplifying masthead
 ---
 
 {{ content }}

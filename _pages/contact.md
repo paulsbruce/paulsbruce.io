@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: "/contact" # needed for simplifying masthead
+permalink: "/contact/" # needed for simplifying masthead
 ---
 
 # How to contact Paul
