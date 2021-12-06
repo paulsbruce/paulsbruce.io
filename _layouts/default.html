@@ -41,8 +41,7 @@
     <script type="text/javascript">
           $(function () {
             // some functions in /assets/js/after-footer-scripts.js and included in site.after_footer_scripts via scripts.html
-            updateYoutubeLinksToEmbeds()
-            updateOffsiteLinksToOpenInBlank()
+            updatePageDynamics()
 
             if(window.onloadqueue && window.onloadqueue != undefined && window.onloadqueue.length > 0) {
               $.each(window.onloadqueue,function(i,v) { v() });
