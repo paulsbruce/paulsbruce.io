@@ -106,7 +106,7 @@ Oh there were so many things, but here are the ones worth sharing:
 | [DevOpsDays Boston](https://devopsdaysbos.org/) | [YearUp](https://www.yearup.org/) | $7,000 | organizers disbursal |
 | [DevOpsDays Boston](https://devopsdaysbos.org/) | [KodeConnect](https://kodeconnect.org/) | $7,000 | organizers disbursal |
 | [DevOpsDays Boston](https://devopsdaysbos.org/) | [Resilient Coders](https://www.resilientcoders.org/) | $7,000 | organizers disbursal |
-| [o11yfest](https://o11yfest.org) - synopsys | [Resilient Coders](https://www.resilientcoders.org/) | $2,000 | contributor sponsorship |
+| [DevSecOps Days Boston](https://devsecopsdaysboston.org) - synopsys | [Resilient Coders](https://www.resilientcoders.org/) | $2,000 | contributor sponsorship |
 | [o11yfest](https://o11yfest.org) - Harness.io | [Stop AAPI Hate](https://stopaapihate.org/) | $2,000 | contributor sponsorship |
 | [o11yfest](https://o11yfest.org) - Chronosphere | [Stop AAPI Hate](https://stopaapihate.org/) | $2,000 | contributor sponsorship |
 | [o11yfest](https://o11yfest.org) - attendees | [Stop AAPI Hate](https://stopaapihate.org/) | $500 | balance of net ticket sales |
