@@ -74,6 +74,8 @@ So fast forward from 'free tickets' to directly generating $17,000 for important
 
 [![From "They Called Us Enemy" p.24-25 - George Takei, Justin Eisinger, Steven Scott, Harmony Becker]({{ site.baseurl }}/assets/images/2021/12/20211208_121234.jpg)]({{ site.baseurl }}/assets/images/2021/12/20211208_121234.jpg)
 
+***[From "They Called Us Enemy" p.24-25 - George Takei, Justin Eisinger, Steven Scott, Harmony Becker](https://www.amazon.com/They-Called-Enemy-George-Takei/dp/1603094504)***
+
 Also, two of the three good causes have already reached back out to us to personally thank us AND to figure out how we can collaborate together in 2022! This is already part of my charter as part of the [Boston DevOps Network](https://bostondevopsnetwork.org) board who underwrites the [DevOpsDays Boston](https://devopsdaysbos.org/) event, and I'm excited to develop this interest into action and tangible positive impact moving forward.
 
 # The Breakdown: How Did This Work?
