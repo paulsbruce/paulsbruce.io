@@ -127,3 +127,9 @@ A special thanks to [Liz Fong-Jones](https://twitter.com/lizthegrey) who was my 
 [Kate Ruh](https://www.linkedin.com/in/kate-ruh/), who helped with DevSecOps Days on a whim, and then totally came through and is now one of the [DevOpsDays Boston](https://devopsdaysbos.org/) organizers! So insightful, effective, efficient, and generative.
 
 [Amelia Mango](https://twitter.com/ameliamango), for the second year in a row, prompted me to get off my ass and do something! Not only a proven good actor in the OTel and API spaces around intelligent marketing, she also helped a lot with ideation, logistics and just keeping the ball rolling on tactical work as bigger general management things started to take all my time up. Always interested in working with Amelia about, well, anything.
+
+[Ruth Lennon](https://www.linkedin.com/in/ruth-g-lennon/), a wise and fearless leader in the standards and higher ed technology space. Ruth was co-chair of [DevSecOps Days Boston](https://devsecopsdaysboston.org), which generated ~$2,672 in donations as a first-year virtual conference. Her insight and guidance on topics and presentations for this event was instrumental to putting on a top-quality event.
+
+# It Really Takes a Village
+
+Again, none of this would have happened without a lot of peoples' concerted efforts, off-hours and completely volunteer. If you're interested in helping with these events or even just becoming part of the Boston DevOps or o11yfest communities, please reach out to me via [LinkedIn](https://www.linkedin.com/in/paulsbruce/) and let's chat!
