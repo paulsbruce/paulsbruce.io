@@ -28,7 +28,7 @@ As part of my usual duties, Tricentis asked me to name a few key themes and tren
 There is no predicting the future, there's only keeping your eyes and ears open
  and developing intuition, then collecting evidence for AND against hypotheses.
 
-Before it is recorded and published on Dec 14th 2021, you can sign up [here](https://www.bigmarker.com/techwell-corporation/5-Trends-Shaping-the-Future-of-Performance-Engineering). After it is broadcast, I will update this article to provide a link to the video (may require signup).
+You can signup/view the recording of this webinar [here](https://www.bigmarker.com/techwell-corporation/5-Trends-Shaping-the-Future-of-Performance-Engineering)
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQCtC7zalzcJkXfSYgFXcKyFoek4pTX494cZglTU303devTx1csCx-CBb-PrCroklIaCjunraJ19SI2/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
