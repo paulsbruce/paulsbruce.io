@@ -44,7 +44,7 @@ I currently:
 * Co-organize [DevOpsDays Boston](https://devopsdays.org/events/2022-boston/welcome/)
 * Chair [o11yfest](https://o11yfest.org/)
 * Co-organize the [Boston DevOps meetup](https://www.meetup.com/Boston-Devops/) and their Community Slack
-* Act as the President and Chair of the
+* Act as the President and Chair of the [Boston DevOps Network](https://bostondevopsnetwork.org/), the NPO underwriter of DevOpsDays Boston
 * Chaired [DevSecOps Days Boston 2021](https://devsecopsdaysboston.org/)
 * Occasionally help with OTel Comms SIG
 
