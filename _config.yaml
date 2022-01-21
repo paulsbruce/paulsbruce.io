@@ -44,6 +44,9 @@ analytics:
 # Site Footer
 footer:
   links:
+    - label: "Work with me!"
+      icon: "fab fa-fw fa-discord"
+      url: "/work-with-me"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/paulsbruce"

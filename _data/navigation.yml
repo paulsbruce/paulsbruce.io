@@ -2,7 +2,7 @@
 main:
   - title: "Blog"
     url: /blog/
-  # - title: "Works"
-  #   url: /works/
+  - title: "Work with me!"
+    url: /work-with-me/
   - title: "Contact"
     url: /contact/
