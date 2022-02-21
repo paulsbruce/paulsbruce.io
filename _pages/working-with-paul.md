@@ -6,14 +6,16 @@ permalink: "/working-with-paul/"
 
 # My Values
 
-- Strong Work Ethic
-- Empathy and Good-humored Grit
-- Inclusive and Equitable
-- Health and Family First
-- Outcomes Over Output
-- "Good Enough" and "Too Much"
-- Create More Value Than Consumed
-- Success With Others
+- [My Values](#my-values)
+- [Strong Work Ethic](#strong-work-ethic)
+- [Empathy and Good-humored Grit](#empathy-and-good-humored-grit)
+- [Inclusive and Equitable](#inclusive-and-equitable)
+- [Health and Family First](#health-and-family-first)
+- [Outcomes Over Output](#outcomes-over-output)
+- ["Good Enough" and "Too Much"](#good-enough-and-too-much)
+- [Create More Value Than Consumed](#create-more-value-than-consumed)
+- [Success With Others](#success-with-others)
+- [What I'm Working on Full-time Now](#what-im-working-on-full-time-now)
 
 [BONUS: What I'm Working on Full-time Now](/work-with-me/)
 

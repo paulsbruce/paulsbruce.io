@@ -8,10 +8,11 @@ permalink: "/work-with-me/"
 
 I work on multiple fronts:
 
-* Professional / Full-time
-* Community Organizing
-* Volunteering
-* Consulting
+- [Areas of Work](#areas-of-work)
+- [Professional / Full-time](#professional--full-time)
+- [Community Organizing](#community-organizing)
+- [Volunteering](#volunteering)
+- [Consulting](#consulting)
 
 # Professional / Full-time
 
