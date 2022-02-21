@@ -78,7 +78,7 @@ Sometimes a developer, a writer, product strategist, and always a listener. I wo
         $("#vid_frame").attr("src","https://www.youtube.com/embed/"+vid+"?rel=0&showinfo=0&autohide=0")
       else {
         var itm = $('<div class="vid-item" videoId="'+vid+'"><div class="vid-thumb"><img src="https://img.youtube.com/vi/'+vid+'/0.jpg" alt="'+txt+'" title="'+txt+'" /></div><div class="vid-desc"></div></div>')
-        itm.click(function() { var frm=document.getElementById('vid_frame');frm.src='http://youtube.com/embed/'+itm.attr('videoId')+'?autoplay=1&rel=0&showinfo=0&autohide=1';frm.scrollIntoView() })
+        itm.on('click touchend', function() { var frm=document.getElementById('vid_frame');frm.src='http://youtube.com/embed/'+itm.attr('videoId')+'?autoplay=1&rel=0&showinfo=0&autohide=1';frm.scrollIntoView() })
         list.append(itm)
       }
       isFirst = false
