@@ -6,7 +6,6 @@ permalink: "/working-with-paul/"
 
 # My Values
 
-- [My Values](#my-values)
 - [Strong Work Ethic](#strong-work-ethic)
 - [Empathy and Good-humored Grit](#empathy-and-good-humored-grit)
 - [Inclusive and Equitable](#inclusive-and-equitable)
