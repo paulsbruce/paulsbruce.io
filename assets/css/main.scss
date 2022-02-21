@@ -69,6 +69,7 @@ h1,h2,h3,h4,h5,h6 {
 .masthead, #site-nav {
   background-color:#444;
   padding: 0px;
+  z-index: 5;
 }
 #site-nav {
   margin:0px;
@@ -87,6 +88,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .initial-content {
   padding-top: 1em;
+  z-index: 3;
 }
 
 div.site-subtitle {
@@ -134,7 +136,7 @@ a, .flexbox-button, .flexbox-button a {
 }
 
 .masthead_wrapper {
-  z-index:2;
+  z-index:5;
 }
 .masthead_video {
   position:fixed;

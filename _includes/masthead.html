@@ -1,12 +1,17 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
+<div class="masthead_video" id="masthead_video">
+
+</div>
+
 <div class="masthead_wrapper" id="masthead_wrapper">
   {% if page.permalink == "/" %}
   <style type="text/css">
     .masthead_wrapper {
+      z-index:4;
     }
     .masthead {
-      z-index:3;
+      z-index:4;
       margin-top:50vw;
       vertical-align:bottom;
     }
@@ -14,9 +19,6 @@
       z-index:3;
     }
   </style>
-  <div class="masthead_video" id="masthead_video">
-
-  </div>
   <script type="text/javascript">
     window.mobileAndTabletCheck = function() {
       let check = false;

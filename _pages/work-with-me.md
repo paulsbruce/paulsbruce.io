@@ -15,23 +15,9 @@ I work on multiple fronts:
 
 # Professional / Full-time
 
-I currently work at Tricentis as the Head of Incubation Engineering (IncEng). IncEng
- is a critical function of business and you can think of it like an internal startup
- incubator or accelerator. My team:
+{% include full-time-work-intro.html %}
 
-* encourages innovation across the organization in product/service like outcomes
-* vets internal projects for business value and payoff likelihoods
-* provides business and engineering hours towards accepted ideas to guide them into successful graduates
-* facilitates internal gatherings such as weekly "Mug Clubs", monthly showcases, and quarterly awards events
-* continuously improves the above work motions, our own selves, and each other
-
-I'm ALWAYS hiring, even if I'm not. Between my professional team, other teams inside
- my organization, and even from my volunteer organizing work, I can probably help
- you move in the direction you're looking to go in your career. Maybe we can help each other too.
-
-CURRENT OPEN OPPORTUNITIES:
-
-- [Sr. Incubation Engineer](https://tricentis.wd1.myworkdayjobs.com/en-US/Tricentis_Careers/job/US---Atlanta/Senior-Incubation-Engineer_JR100462)
+You can [read more about what it's like to work with me personally here](/working-with-paul).
 
 # Community Organizing
 

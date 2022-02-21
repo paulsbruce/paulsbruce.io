@@ -19,6 +19,8 @@ ul.cloud a[data-weight="{{ category.last.size }}"] { --size: {{ category.last.si
 
 Sometimes a developer, a writer, product strategist, and always a listener. I work with teams and organizations to make things better for everyone. I keep things simple, short, and sweet.
 
+<a href="/work-with-me/">Com work with me!</a>
+
 </div>
 
 {% assign defaultVideoId = "R9tBFfSzB0w" %}
