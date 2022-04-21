@@ -21,6 +21,9 @@ author:
 permalink: /blog/2022/03/telemetry-to-transform-testing
 ---
 
+[Sign up to access the full broadcast](https://www.skilupdays.io/cicd-22/agenda/session/873478)
+
+<p>[embed]https://youtu.be/Ju168RTf8dc[/embed]</p>
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRdp3lLf2LYbYdmD34ALYWoXpb6w2FPbGeaE_N7YvvC0h07hZTbRgz9hl5woQ6qEFCdXVy5sKaNJFg3/embed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
