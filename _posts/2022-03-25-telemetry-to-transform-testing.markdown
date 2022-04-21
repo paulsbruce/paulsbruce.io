@@ -21,7 +21,8 @@ author:
 permalink: /blog/2022/03/telemetry-to-transform-testing
 ---
 
-[TBD: this is a placeholder for resources]
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRdp3lLf2LYbYdmD34ALYWoXpb6w2FPbGeaE_N7YvvC0h07hZTbRgz9hl5woQ6qEFCdXVy5sKaNJFg3/embed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 # Session Title
 
@@ -48,8 +49,6 @@ Come learn about how to inject context back into your work in this session.
 * How additional context dramatically improves actionable outcomes of testing
 * How OpenTelementry applies to both software systems AND testing processes
 * How to get started using OpenTelemetry in your code bases
-
-# Notes
 
 # Speaker Bio
 
