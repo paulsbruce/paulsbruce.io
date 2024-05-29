@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "'Scratching' at the Surface of Leadership'"
+title: "'Scratching' at the Surface of Leadership"
 date: 2024-05-29T14:31:41.000Z
 type: post
 parent_id: '0'
