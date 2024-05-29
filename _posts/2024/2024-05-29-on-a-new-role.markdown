@@ -21,6 +21,8 @@ author:
 permalink: /blog/2024/2024-05-29-on-a-new-role
 ---
 
+![Picture of Container Garden](/assets/images/2024/2024-05-29-on-a-new-role.jpg)
+
 In the [past](/blog/2020/09/personal-log-2020-09-02/), I have tried to be consistent in my personal blogs, both in their delivery timing and in value for readers. Unfortunately, I failed at this for many reasons, some of which recently cleared up for me. I am on a new leg of my journey. I am doing my personal best now, not solely someone else's.
 
 I love to garden, not just with soil and plants, but ideas and insights. The past few weeks has afforded me times where I can diverge and converge about topics I want to write about. I may even publish some of them, but that is not the goal of my timespend right now. It is to generate, synthesize, and consolidate the puzzle pieces in my mind. So, though I'm not likely to be externally consistent in my publication schedule, I will certainly have at the ready at any point in time, something to pound out on a keyboard to share. 
