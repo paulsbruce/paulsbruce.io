@@ -29,11 +29,15 @@ I love and appreciate learning. This happens in so many ways, but especially sur
 I currently:
 
 * Co-organize [DevOpsDays Boston](https://devopsdays.org/events/2022-boston/welcome/)
-* Chair [o11yfest](https://o11yfest.org/)
 * Co-organize the [Boston DevOps meetup](https://www.meetup.com/Boston-Devops/) and their Community Slack
-* Act as the President and Chair of the [Boston DevOps Network](https://bostondevopsnetwork.org/), the NPO underwriter of DevOpsDays Boston
+* Clerk and At-large Advising Director of the [Boston DevOps Network](https://bostondevopsnetwork.org/), the NPO underwriter of DevOpsDays Boston
+
+In the past, I have:
+
+* Acted as the President and Chair of the [Boston DevOps Network](https://bostondevopsnetwork.org/)
+* Chaired [o11yfest](https://o11yfest.org/)
 * Chaired [DevSecOps Days Boston 2021](https://devsecopsdaysboston.org/)
-* Occasionally help with OTel Comms SIG
+* Occasionally helped with OTel Comms SIG
 
 If you're interested in getting involved in any of the above, [contact me](/contact)!
 
