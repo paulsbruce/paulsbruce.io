@@ -27,7 +27,7 @@ Note: I started drafting this article on May 30th at 9:04am after A) thinking fo
 
 **Personal Context**
 
-I am a gardener, not a career executive. I know what it takes to be a great people manager at certain levels and respect when that’s done well but it’s not my passion to date. I facilitate learners, fostering experimentation at work and at home. The legos I grew up on are quicker to prototype with than biological systems; similarly, backyard gardening is faster than horticulture on which to experiment. Since I don’t have a sprawling estate (re: "...my second home is in Montana...") and never would anyway, I buy some containers for a roof deck and sow seeds. Growth is on you.
+I am a gardener, not a career executive. I know what it takes to be a great people manager at certain levels and respect when that’s done well but it’s not my passion to date. I facilitate learners, fostering experimentation at work and at home. The legos I grew up on are quicker to prototype with than biological systems; similarly, backyard gardening is faster than horticulture on which to experiment. Since I don’t have a sprawling estate (re: "...my second home is in Montana...") and never would anyway, I buy some containers for a roof deck and sow seeds.
 
 In short: if you don’t have a path to develop a storied career in executive leadership, don’t wait for something magic to happen...make your own and drive outcomes.
 
