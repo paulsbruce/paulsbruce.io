@@ -23,7 +23,7 @@ permalink: /blog/2024/2024-06-01-your-next-exec-will-be-chief-garden-officer
 
 ![Leadership that doesn't garden...should](/assets/images/2024/2024-06-01-your-next-exec-will-be-chief-garden-officer.jpg)
 
-Note: I started drafting this article on May 30th at 9:04am after A) thinking for weeks about how startups could benefit from consolidating executive travel plans after many years of observation, and B) well before visible announcements of any kind.
+Note: I started drafting this article on May 30th at 9:04am after A) thinking for weeks about how startups could benefit from consolidating executive travel plans and many years of observation, and B) well before visible announcements of any kind.
 
 **Personal Context**
 
