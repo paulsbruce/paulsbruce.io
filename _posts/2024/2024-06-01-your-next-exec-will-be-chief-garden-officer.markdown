@@ -11,7 +11,7 @@ categories:
   - leadership
   - teams
   - reflection
-  - garxdening
+  - gardening
 tags: []
 author:
   login: pbruce
