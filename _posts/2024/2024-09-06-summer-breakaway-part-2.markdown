@@ -12,6 +12,7 @@ categories:
   - teams
   - reflection
   - volunteering
+  - farmtech
 tags: []
 author:
   login: pbruce
