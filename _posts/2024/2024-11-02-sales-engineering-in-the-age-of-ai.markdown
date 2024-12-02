@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sales Engineering in the Age of AI"
+title: Sales Engineering in the Age of AI
 date: 2024-11-02T08:31:41.000Z
 type: post
 parent_id: '0'
@@ -21,15 +21,33 @@ author:
   last_name: Bruce
 permalink: /blog/2024/2024-11-02-sales-engineering-in-the-age-of-ai
 ---
-
 ![Sales Engineering in the Age of AI](/assets/images/2024/2024-11-02-sales-engineering-in-the-age-of-ai.jpg)
 
-#TL;DR
+# TL;DR
 
 - Human sales engineering isn't going away
 - People who are better using AI will sell more
 - Your experiences and expertise is still needed
 - Explore both common and uncommon AI-based use cases
+
+## Contents
+
+<!-- toc -->
+
+- [Preface: Looking Forward to Technical Sales with an Eye for AI](#preface-looking-forward-to-technical-sales-with-an-eye-for-ai)
+- [The Big Changes In High Tech](#the-big-changes-in-high-tech)
+- [The Changes in Customer Behavior](#the-changes-in-customer-behavior)
+- [Adjusting to These Changes as a Sales Engineer](#adjusting-to-these-changes-as-a-sales-engineer)
+  * [Time-saving Maybe's (the old tricks)](#time-saving-maybes-the-old-tricks)
+  * [Use Cases in Tools and Platforms](#use-cases-in-tools-and-platforms)
+    + [Customer Relationship Management (CRM)](#customer-relationship-management-crm)
+    + [Example: How AI can help your relationships with account managers](#example-how-ai-can-help-your-relationships-with-account-managers)
+  * [Be Prepared to Help with Integrations](#be-prepared-to-help-with-integrations)
+- [Still-Human Areas for 'Finesse'](#still-human-areas-for-finesse)
+  * [New Areas of Potential Impact](#new-areas-of-potential-impact)
+- [Conclusion](#conclusion)
+
+<!-- tocstop -->
 
 # Preface: Looking Forward to Technical Sales with an Eye for AI
 
@@ -61,7 +79,7 @@ We should now ask, "who's customer are you anyway", evoking imagery of a formula
 
 A good sales engineer is equally proficient at technology and people. A great sales engineer seeks to regularly expand (not simply maintain) those areas of proficiency. The 'magic box' of LLMs can remain a box that you don't have to know everything about simply to benefit from it, though at times it's very fun to be curious about how things work on the inside. The question is: 
 
- How much of the AI craze is being forced on you instead of you proactively seeking which places AI is truly useful to apply?
+> How much of the AI craze is being forced on you instead of you proactively seeking which places AI is truly useful to apply?
 
 Sales engineers already have to think on their feet, on live calls and customer visits, in discussions with their account executives and product managers, especially with their own leadership when discussing pipeline and commitments. There's a deluge of tasks and distractions throughout the day leaving little time to step back and think objectively about where to save time and improve engagements. It's not enough to be running a race; you need to know your direction, your position, and your ultimate destination.
 
