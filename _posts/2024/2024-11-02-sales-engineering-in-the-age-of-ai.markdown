@@ -27,7 +27,7 @@ permalink: /blog/2024/2024-11-02-sales-engineering-in-the-age-of-ai
 
 - Human sales engineering isn't going away
 - People who are better using AI will sell more
-- Your experiences and expertise is still needed
+- Your experiences and expertise are still integral to closing well
 - Explore both common and uncommon AI-based use cases
 
 ## Contents
