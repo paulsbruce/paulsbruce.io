@@ -23,7 +23,7 @@ Sometimes a developer, a writer, product strategist, and always a listener. I wo
 
 </div>
 
-{% assign defaultVideoId = "R9tBFfSzB0w" %}
+{% assign defaultVideoId = "QDaNysCCFNo" %}
 
 <div style="clear:both">
 
