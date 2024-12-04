@@ -1,0 +1,66 @@
+---
+layout: post
+title: No Root Cause in Emergent Behavior - DevOps Days Boston 2017
+date: 2017-09-18 20:34:41.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- DevOps Days Boston 2017
+tags:
+- DevOps Days Boston 2017
+- emergent behavior
+- systems thinking
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '817'
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2017/09/no-root-cause-in-emergent-behavior-devops-days-boston-2017/"
+---
+<p>At <a href="https://www.devopsdays.org/events/2017-boston/" target="_blank" rel="noopener">DevOpsDays Boston 2017</a>, <a href="https://twitter.com/matthewboeckman" target="_blank" rel="noopener">Matthew Boeckman</a> presented on how emergent behavior in complex systems requires us to re-think our root cause analysis paradigms. His slides are <a href="https://www.slideshare.net/MatthewBoeckman/there-is-no-root-cause-emergent-behavior-in-complex-systems/" target="_blank" rel="noopener">here</a>. I also had a great time talking meta with Matthew afterhours, but that's for a later post.</p>
+<h2>Traditional RCA in Complex Systems</h2>
+<p>Unfortunately, traditional RCA focuses on what and who. Despite its roots stemming from NASA, in the software world, RCA is misaligned to find only one channel of causality. A fishbone diagram shows this:</p>
+<p id="XrkTori"><img class="alignnone size-full wp-image-817 " src="{{ site.baseurl }}/assets/images/2017/09/img_59c0587a3b2d0.png" alt="" /></p>
+<p>This might be okay for simple systems (i.e. 3-tier web/app/data servers). There's much more to this: networking, hosting, and operating environments. Beyond that, users access in both benign and benevolent ways.</p>
+<p>Waterfall encouraged us to minimize complexity by locking down state (i.e. promote a "don't change" mentality). Waterfall (think 12mo cycles) encourages us to think that change is the developer's fault. And there were a lot of constrains in the 80s and 90s, most of them are no longer true.</p>
+<p id="UCTDzmZ"><img class="alignnone size-full wp-image-819 " src="{{ site.baseurl }}/assets/images/2017/09/img_59c058d8c61ce.png" alt="" /></p>
+<p>Root cause is fine for static models, but there are bad when it comes to "lots of boxes", cloud-based dynamic and distributed systems. It's very hard to trace the source of problems in this new world. Change vectors (a/b testing, reconfigurations, migrations, feature flags) abound, in fact they're encouraged.</p>
+<p>Our systems are far more complex than they were 20 years ago. They involve the whole stack, the whole team, and the whole organization.</p>
+<p id="ChudUrW"><img class="alignnone size-full wp-image-818 " src="{{ site.baseurl }}/assets/images/2017/09/img_59c058a4a913e.png" alt="" /></p>
+<h2>Paul's Take: Occam's Anti-Razor</h2>
+<p>A heuristic idea we often employ is Occam's razor, in general that, the simplest answer is often the right one. Coupled with a confirmation bias, we (humans) often look for a single causal root to the problems we see. Then we build processes that inherit our bias. But what if operational failures occur because of multiple causes, chain reactions that exceed the typical '5 whys' RCA model?</p>
+<p>As quickly as the concept of the razor was introduced, <a href="https://en.wikipedia.org/wiki/Occam%27s_razor#Anti-razors" target="_blank" rel="noopener">Chatton</a>, a contemporary, countered the idea with: "If three things are not enough to verify an affirmative proposition about things, a fourth must be added, and so on." Similarly, many ascribe a balance of simplicity and complexity in solving problems to the quote "Make things as simple as possible, but no simpler." by Einstein.</p>
+<p>The idea is right fit...right fit of simplicity/complexity to the problem at hand. With complex systems, we can't always assume that the simple answer is the most useful one in future scenarios.</p>
+<h2>Our Systems Aren't Trees, They're Forests</h2>
+<p>Emergence is about collective behaviors, systems we connect and integrate over time, and not simply the aggregate of behaviors emitted by individual subcomponents and nodes.</p>
+<p>We need to develop, test, deploy, monitor and issue resolve them like the complex semi-organic systems they are, part of an ecosystem of services and fallible subsystems that they are. We can no longer afford to ignore better paradigms for dealing with them.</p>
+<p>Enter <a href="https://thesystemsthinker.com/introduction-to-systems-thinking/">Systems Thinking</a>. Understanding why things emerge takes more than an ops dashboard and intuition. Sometimes analysis on complex problems requires a multi-variate perspective.</p>
+<p><em>Paul's advice: System's thinking is a much broader topic that, if you haven't actually studied, it would serve you well to listen to <a href="https://www.audible.com/pd/Business/The-Fifth-Discipline-Audiobook/B002V0KT8K" target="_blank" rel="noopener">The Fifth Discipline by Peter Senge</a>. As context for <a href="http://paulsbruce.io/blog/2017/04/dont-panic-or-how-to-prepare-for-iot-with-a-mature-testing-strategy/" target="_blank" rel="noopener">my presentation in April on IoT testing</a>, this made me realize that systems thinking was a necessary mental tool moving forward.</em></p>
+<p>Systems thinking helps us to identify activities, interactions, and ultimately change vectors contributing to emergent behaviors. Understanding which dials and levers are involved in the problem enables later actions to resolve the issue. This feeling of being at home in the problem space is also similar to "cynefin", a welch/gaelic term that in Scottish (my heritage!) means:</p>
+<p>"a place to live and belong. where the nature of what's around you feels right and welcoming"</p>
+<p>Not at all coincidentally, the <a href="https://en.wikipedia.org/wiki/Cynefin_framework" target="_blank" rel="noopener">Cynefin framework</a> as applied to emergent behavior helps us make quick decisions during and about incident management situations.</p>
+<h2>Staying Ahead of Emergent Behavior</h2>
+<p>The fact is that most workforces, small or large, are a revolving door. So is your current system state after multiple releases and infrastructure migrations. There be the monsters. Software is dynamic, and so should be your product discovery process, your learning loops, your incident management model, and so on.</p>
+<p>The Cynefin framework gives us this quadrant visual to show that various issues need to be addressed differently:</p>
+<p id="qILUmWR"><img class="alignnone size-full wp-image-822 " src="{{ site.baseurl }}/assets/images/2017/09/img_59c065d554875.png" alt="" /></p>
+<p>The fact is, each of these quadrants assume two things:</p>
+<ol>
+<li>The issue occurred already, so you need to fix it and learn from it</li>
+<li>Information needs to be radiated (sensed) to make "sense" of it</li>
+</ol>
+<p>In my after-hours chat with Matthew, we dived into the issue of metrics. Measuring issue tracking goes beyond mean-time-to-resolution (MTTR). Issues that are flagged with *how* they were resolved using Cynefin categories now have an opportunity for improvement.</p>
+<p><em>Paul's Take: could this be a JIRA custom field? Just thinking out loud.</em></p>
+<p>Tracking the delta on a specific issue (what approach someone thought should be used at first vs. what would have been better after the fact) is a way to measure successfulness and improvement on a spot basis.</p>
+<p>Then over time, aggregates can be used to show team and organizational reflexiveness to dynamic, emergent behavior. Though neither of us have customer anecdotes or proof-of-concept clients, I challenge you who are reading this to try it out for a few sprints or whatever intervals you use.</p>
+<h2>Summary</h2>
+<p>We need to embrace emergent behavior and learn how to approach incidents better using systems thinking and frameworks like Cynefin. Unlike traditional RCA, we'll need to step out of our comfort zones, see what works, and learn from our mistakes.</p>
+<p>Matthew is a Denver, Colorado native, and has spoken at other conferences like Gluecon (wicked!). If you have questions, ping <a href="https://twitter.com/matthewboeckman" target="_blank" rel="noopener">him</a> (and <a href="https://twitter.com/paulsbruce" target="_blank" rel="noopener">me</a>) up on Twitter and let's get a dialog going.</p>
+<div dir="auto"></div>
+<p>[wonderplugin_slider id="1"]</p>

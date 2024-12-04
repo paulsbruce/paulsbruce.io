@@ -1,0 +1,157 @@
+---
+layout: post
+title: 'Wrangling Promises in Node.js: 3 Misconceptions Resolved'
+date: 2017-09-01 16:07:57.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Node.js
+tags:
+- concurrency
+- Javascript
+- Promises
+meta:
+  _oembed_271f27c092f0da0445e20077cf2e37a6: "{{unknown}}"
+  _edit_last: '1'
+  _thumbnail_id: '765'
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2017/09/wrangling-promises-in-node-js-3-misconceptions-resolved/"
+---
+<p>ES6 (i.e. proper Javascript) isn't the first time Promises were introduced, but formally supports them now. Believe me, you want to start using Promises in your Node.js scripts, but if you're new to the pattern, it can be tricky to get your head around. That's what I hope to help you do in the next 5 minutes.</p>
+<h2>What Are Javascript/ES6 Promises?</h2>
+<p>My way of explaining it is that Promises are chaining pattern, a convention that helps decouple your code blocks from your execution pattern. Promises can dramatically improve your approach to asynchronous programming (such as how Node.js 8+ prefers) and simplify your callbacks by helping you express them in a linear fashion.</p>
+<p>[caption id="attachment_762" align="alignnone" width="801"]<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"><img class="wp-image-762 size-full" src="{{ site.baseurl }}/assets/images/2017/09/img_59a9a0e93ffcf.png" alt="" width="801" height="297" /></a> from Promise (object) on MDN web docs[/caption]</p>
+<p>The really easy thing about them is that a Promise ends in either of two conditions:</p>
+<ul>
+<li>Become <em>fulfilled by a value</em></li>
+<li>Become <em>rejected with an exception</em></li>
+</ul>
+<p>Consider the following code example:</p>
+<pre class="lang:js mark:2 decode:true" title="Fetching a JSON document using a Promise chain">var fetchJSON = function(url) {
+  return new Promise((resolve, reject) =&gt; {
+    request({ // synchronous call wrapped in Promise
+        url: url,
+        json: true
+    }, function (error, response, body) {
+        if(!error &amp;&amp; response.statusCode === 200)
+          resolve(body); // transformed to an object via 'json: true' above
+        else
+          reject(error ? error : new Error('Was not 200 OK: ' + body));
+    })
+  });
+}</pre>
+<p>In the above example, the 'fetchJSON' function returns a Promise, not the result of executing the request. Expressing things this way allows us to execute the code immediately, or as part of an asynchronous chain, such as:</p>
+<pre class="lang:js decode:true">// begins to execute immediately, but results come back asynchronously
+fetchJSON('http://paulsbruce.io/wp-json/wp/v2/tags')
+  .then(jsonObj =&gt; {
+    console.info(jsonObj.map(it =&gt; { // print the array of values
+      return jp.value(it,"$..name"); // for each tag, value is 'name'
+     }));
+  })
+  .catch(error =&gt; {
+    console.error(error);
+  });
+console.log('after fetchJSON call')</pre>
+<p>What's the alternative? Well...I hesitate to show you (the interweb loves to copy and paste) because we would have to:</p>
+<ul>
+<li>express every asynchronous action as a callback function (which is bulky)</li>
+<li>indent/embed blocks in a recursive step pattern</li>
+<li>chain commands by calling the next function from our executing function</li>
+</ul>
+<p>So far, I've made a career of learning how to stand up and say 'I will not build that'. We should do that more often #facebook and you should read <a href="https://blog.intercom.com/mule-design-mike-monteiro/" target="_blank" rel="noopener">this</a>.</p>
+<h2>The 3 Misconceptions You Want to Immediately Overcome</h2>
+<p>Amongst many I had while learning to use Promises, these are the top three I and most others often struggle to overcome:</p>
+<ol>
+<li>You can't mix synchronous/callback-oriented code with Promise-based code</li>
+<li>It's okay to ignore catching errors because it's optional to the Promise chain</li>
+<li>There's no way to join parallel executing paths of asynchronous Promises</li>
+</ol>
+<p>I focus on these 3 misconceptions because when they're not in your head, you can focus on the simplicity of Promise code. When writing, ask yourself: "is the code I just wrote elegant?" If the answer is no, chances are you're getting hung up on a misconception.</p>
+<h2>Mixing Synchronous/Callback-Oriented Code with Promises</h2>
+<p>You CAN inject legacy synchronous code (code that doesn't emit Promises), but you have to handle Promise-related tie-ins manually. The code example in the last section does exactly that with the 'request' function. However you DO have to wrap it in a function/lambda that eventually calls the 'resolve' or 'reject' handlers.</p>
+<p>For instance, in a recent integration to Twitter, their 'stream' function does not return a Promise and only provides a callback mechanism, so I wrapped it to resolve or reject:</p>
+<pre class="lang:js mark:5,19 decode:true">async function createTwitterStream(ctx) {
+  return new Promise(function(resolve, reject) {
+    try {
+      client.stream("user", { }, function(stream) {
+        resolve(stream);
+        stream.on("data", function(event) {
+
+          q.push(function() {
+            onTwitterEvent(event, ctx);
+          });
+
+        });
+        stream.on("error", function(error) {
+          console.error(error)
+          throw error;
+        });
+      });
+    } catch(err) {
+      reject(err);
+    }
+  })
+}</pre>
+<p>I decided to 'Promisify' this functionality because I wanted to wrap this logic in a Promise-based retry mechanism so that if the initial stream negotiation failed, it would only fail out of the entire script when multiple attempts failed. I opted to pull in <a href="https://www.npmjs.com/package/promise-retry" target="_blank" rel="noopener">the 'promise-retry' package</a> from npmjs. Simplified the calling code dramatically:</p>
+<pre class="lang:default mark:5 decode:true ">    // retry twitter stream up to 5 times
+    promiseRetry(function (retry, number) {
+        console.info('attempt number', number);
+
+        return createTwitterStream(ctx)
+          .catch(function(err) {
+            console.log(err)
+            if(number &lt;= 5) retry(err);
+            throw err
+          });
+    })
+    .catch(err =&gt; {
+      console.log('Epic failure to establish Twitter stream after multiple attempts.')
+      throw err;
+    });
+</pre>
+<p>Can you see how powerful Promises are now? Imagine how coupled the retry code would be with the stream initialization logic. Again, not going to show you what it looked like before for fear of the copy-n-paste police.</p>
+<h2>Don't Ignore Error Catching Simply Because the Code Validates!</h2>
+<p>At first, as I was re-writing blocks of code to Promise-savvy statements, I was getting a lot of these errors:</p>
+<p id="sVyxbSf"><img class="alignnone size-full wp-image-763 " src="{{ site.baseurl }}/assets/images/2017/09/img_59a9b3439484a.png" alt="" /></p>
+<p>The problem was that I didn't have '.catch' statements <em>anywhere</em> in the Promise chain. Node.js was interpreting the code as valid until runtime when the error occurred. Bad. Really bad of me. Glad that Node 8 was warning me.</p>
+<p>You don't have to write '.catch' after every Promise, particularly if you're returning Promises through functions, so long as the error is handled in at least one place up the Promise chain hierarchy. <em>The Promise model provides you granularity on which errors you want to bubble up. </em></p>
+<p>For instance, in the above code, I DON'T bubble up individual event/tweet errors, but I DO allow stream initialization errors to bubble up to the calling retry code. I can also selectively extend the individual stream event errors to become a bigger problem if the message back from twitter is something like '420 Enhance Your Calm' which essentially means "back the fuck off, asshole".</p>
+<h2>You CAN Join/Wait for Parallel Executing Promises</h2>
+<p>The Promise chain lets us string together as many sequential steps as we want via the '.then' handler. But what about waiting for parallel threads of code?</p>
+<p>Using the 'Promise.all' function, we can execute separate Promises asynchronously in parallel to each other, but wait in a parent async function by prefixing with the 'await' statement. For example:</p>
+<pre class="lang:js mark:1 decode:true ">  await Promise.all([
+    loadKeywords(ctx)
+      .then((kwds) =&gt; {
+        ctx.keywords = kwds;
+        console.debug("Keywords: " + ctx.keywords);
+      })
+    ,
+    loadFriendlies(ctx)
+      .then((frnds) =&gt; {
+        ctx.friendlies = frnds;
+        console.debug("Friendlies: " + ctx.friendlies);
+      })
+  ]);
+
+  console.debug("Initialization complete. Processing events.");</pre>
+<p>Within an async function, the above code will wait for both Promises to complete before printing the final statement to the console.</p>
+<p>I can tell, now you're really getting the power of decoupling code <em>expression</em> from code <em>execution</em>. I told you that you'd want to start using Promises. As such, I suggest reading up on the links at the end of the article.</p>
+<h2>Hidden Lesson: Don't Bury Your Head in the Sand!</h2>
+<p>My takeaway from all this learning is that I should have been applying lessons learned in my Java 7 work to other areas like Node.js. Promises isn't a new idea (i.e. Java Futures, Async C#). If a pattern emerges in one language or framework, it's very likely to already exist in others. If not, find people and contribute to the solution yourself.</p>
+<p>If you run into issues, ping me up on <a href="https://twitter.com/paulsbruce" target="_blank" rel="noopener">Twitter</a> or <a href="https://www.linkedin.com/in/paulsbruce" target="_blank" rel="noopener">LinkedIn</a>, and I'll do my best to help in a timely manner.</p>
+<p>More reading:</p>
+<ul>
+<li><a href="http://www.datchley.name/es6-promises/" target="_blank" rel="noopener">ES6 Promises, Dave Atchley</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises" target="_blank" rel="noopener">Javascript Promises, an Introduction</a></li>
+<li><a href="http://www.sohamkamani.com/blog/2016/08/28/incremenal-tutorial-to-promises/" target="_blank" rel="noopener">Intro to async Javascript, an Incremental Tutorial to Promises</a></li>
+<li><a href="https://www.youtube.com/watch?v=WPU5jNP2BH0" target="_blank" rel="noopener">"I will not build this" - Mike Monteiro - In Praise of Ordinary People</a></li>
+<li><a href="http://www.erights.org/elib/distrib/pipeline.html" target="_blank" rel="noopener">Promise Pipelineing: how expressing your code differently can reduce latency</a></li>
+</ul>

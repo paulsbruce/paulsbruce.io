@@ -16,7 +16,7 @@ permalink: "/working-with-paul/"
 - [Success With Others](#success-with-others)
 - [What I'm Working on Full-time Now](#what-im-working-on-full-time-now)
 
-[BONUS: What I'm Working on Full-time Now](/work-with-me/)
+[BONUS: What I'm Working on Full-time Now](/sales-engineering/)
 
 # Strong Work Ethic
 

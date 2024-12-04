@@ -3,8 +3,7 @@ layout: single
 permalink: "/contact/" # needed for simplifying masthead
 ---
 
-# How to contact Paul
+If you'd like to reach out to me, you can do so via:
 
-- [Twitter: paulsbruce](https://twitter.com/paulsbruce)
 - [LinkedIn: paulsbruce](https://www.linkedin.com/in/paulsbruce/)
 - Email: me [-at-] paulsbruce [-dot-] io

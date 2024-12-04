@@ -15,11 +15,11 @@ ul.cloud a[data-weight="{{ category.last.size }}"] { --size: {{ category.last.si
 
 <div style="text-align:center;" markdown=1>
 
-### I'm a technologist by trade, an engineer at heart.
+### Technologist by trade, engineer at heart.
 
-Sometimes a developer, a writer, product strategist, and always a listener. I work with teams and organizations to make things better for everyone. I keep things simple, short, and sweet.
+I am a high tech professional who enjoys people and winning. I've worked in many areas of software, but my passion in technical sales. I am currently looking for the right team to work with full-time.
 
-<a href="/work-with-me/">Come work with me!</a>
+<a href="/sales-engineering/">I could be your next sales engineer!</a>
 
 </div>
 
@@ -89,6 +89,35 @@ Sometimes a developer, a writer, product strategist, and always a listener. I wo
 <div style="clear:both;margin-bottom:1em;">
 &nbsp;
 </div>
+
+<div>
+  {% if paginator %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
+  {% assign posts = posts | slice: 0,5 %}
+
+  {% if posts.size > 0 %}
+
+  <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+  {% assign entries_layout = page.entries_layout | default: 'list' %}
+  <div class="entries-{{ entries_layout }}">
+    {% for post in posts %}
+      {% include archive-single.html type=entries_layout %}
+    {% endfor %}
+  </div>
+
+  {% include paginator.html %}
+
+  {% endif %}
+</div>
+<div style="clear:both;margin-bottom:1em;">
+&nbsp;
+</div>
+
 
 <ul class="cloud" role="navigation" x-data-show-value>
 {% for category in site.categories %}

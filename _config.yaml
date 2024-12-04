@@ -10,13 +10,14 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
+# remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title: "paulsbruce.io (input) =&gt; output"
+title: "Paul Bruce, Technologist"
 title_separator          : "-"
 subtitle                 : "Thoughts on tech, culture, and humanity. My own opinions."
 name: "paulsbruce.io"
@@ -44,18 +45,18 @@ analytics:
 # Site Footer
 footer:
   links:
+    - label: "Career"
+      icon: "fab fa-fw fa-handshake"
+      url: "/sales-engineering"
     - label: "Work with me!"
       icon: "fab fa-fw fa-discord"
       url: "/work-with-me"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/paulsbruce"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/paulsbruce"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/paulsbruce/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/paulsbruce"
 
 after_footer_scripts:
 - "/assets/js/after-footer-scripts.js?20211206110925"

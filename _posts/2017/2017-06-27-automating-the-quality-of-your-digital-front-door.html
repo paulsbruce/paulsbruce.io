@@ -1,0 +1,172 @@
+---
+layout: post
+title: Automating the Quality of Your Digital Front Door
+date: 2017-06-27 12:05:50.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- automation
+- DevOps
+- IoT
+- Jenkins
+tags: []
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '693'
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2017/06/automating-the-quality-of-your-digital-front-door/"
+---
+<p><span style="font-weight: 400;">Mobile is the front door to your business for most / all of your users. But how often do you use your front door, a few times a day? How often do your users use your app? How often would you like them to? It’s really a high-traffic front door between people and you.</span></p>
+<p>This is how you welcome people into what you’re doing. If it’s broken, people don’t feel welcome.</p>
+<p>[7/27/2017: For my presentation at Mobile Tea Boston, my slides and code samples are below]</p>
+<p>&nbsp;</p>
+<p><iframe width="480" height="299" src="https://docs.google.com/presentation/d/1tMUOFRXe2AJqWVVMySBCEYu4nHF9xa6oLu8DG2PfU2g/embed?start=false&amp;loop=true&amp;delayms=5000" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe></p>
+<p>Slides with notes: <a href="http://bit.ly/2tgGiGr" target="_blank" rel="noopener">http://bit.ly/2tgGiGr</a><br />
+Git example: <a href="https://github.com/paulsbruce/FingerprintDemo" target="_blank" rel="noopener">https://github.com/paulsbruce/FingerprintDemo</a></p>
+<p><strong>The Dangers of Changing Your Digital Front Door</strong></p>
+<p>In his book “On Intelligence”, Hawkins describes how quickly our human brains pick up on minute changes with the analogy of someone replacing the handle on your front door with a knob while you’re out. When you get back, things will seem very weird. You feel disoriented, alienated. Not emotions we want to invoke in our users.</p>
+<p>Now consider what it’s like for your users to have you changing things on their high-traffic door to you. <em>Change is good, but only good changes.</em> And when changes introduce problems, forget sympathy, forget forgiveness, people revolt.</p>
+<p><strong>What Could Possibly Go Wrong?</strong></p>
+<p>A lot. Even for teams that are great at what they do, delivering a mobile app is fraught with challenges that lead to:</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Lack of strategy around branching, merging, and pushing to production</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Lack of understanding about dependencies, impacts of changes</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Lack of automated testing, integration woes, no performance/scalability baselines, security holes</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Lack of communication between teams (Front-end, API, business)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Lack of planning at the business level (marketing blasts, promotions, advertising)</span></li>
+</ul>
+<p><span style="font-weight: 400;">Users don’t care about our excuses. A <a href="https://www.perfectomobile.com/why-apps-fail-survey">survey</a> by Perfecto found that more than 44% of defects in mobile apps are found by users. User frustrations aren’t just about what you designed, they are about how they behave in the real world too. Apps that are too slow will be treated as broken apps and uninstalled just the same.</span></p>
+<p><strong>What do we do about it?</strong></p>
+<p>We test, but testing is a practice unto itself. There are many test types and methodologies like TDD, ATDD, and BDD that drive us to test. Not everyone is cut out to be a great tester, especially when developers are driven to write only things that works, and not test for when it shouldn't (i.e. lack of negative testing).</p>
+<p>[caption id="attachment_701" align="alignright" width="279"]<img class=" wp-image-701" src="{{ site.baseurl }}/assets/images/2017/06/img_59551f5c0532e.png" alt="" width="279" height="255" /> Allistar Scott - Test 'Ice Cream Cone'[/caption]</p>
+<p>In many cases, automation gaps and issues make it easier for development teams to fall back to manual testing. This is what Allistar Scott (of Ruby Waitr) calls the anti-pattern <a href="https://watirmelon.blog/2012/01/31/introducing-the-software-testing-ice-cream-cone/" target="_blank" rel="noopener">'ice cream cone'</a>, an inversion of the ideal <a href="https://martinfowler.com/bliki/TestPyramid.html" target="_blank" rel="noopener">test pyramid</a>, and <a href="https://www.mountaingoatsoftware.com/blog/the-forgotten-layer-of-the-test-automation-pyramid" target="_blank" rel="noopener">Mike Cohen</a> has good thoughts on this paradigm too.</p>
+<p>To avoid this downward spiral, we need to prioritize automation AND which tests we chose to automate. Testing along architecturally significant boundaries, as <a href="https://youtu.be/YyhfK-aBo-Y?t=43m56s" target="_blank" rel="noopener">Kevin Henney</a> puts it, is good; but in a world full of both software and hardware, we need to broaden that idea to '<strong>technologically significant boundaries</strong>'. The camera, GPS, biometric, and other peripheral interfaces on your phone are a significant boundary...fault lines of the user experience.</p>
+<p>Many development teams have learned the hard way that <em>not</em> including real devices in automated testing leaves these UX fault lines at risk of escaping defects. People in the real world use real devices on real networks under real usage conditions, and our testing strategy should reflect this reality too.</p>
+<p>The whole point of all this testing is to maintain confidence in our release readiness. We want to be in an 'always green' state, and there's no way to do this without automated, continuous testing.</p>
+<p><strong>Your Code Delivery Pipeline to the Rescue!</strong></p>
+<p><span style="font-weight: 400;">Confidence comes in two flavors: quality and agility. Specifically, does the code we write do what we intend, and can we iterate and measure quickly?</span></p>
+<p><span style="font-weight: 400;">Each team comes with their own definition of done, their own acceptable levels of coverage, and their own level of confidence over the what it takes to ship, but a</span><span style="font-weight: 400;">nswering both of these questions definitively requires adequate testing and a reliable pipeline for our code.</span></p>
+<p><img class="alignnone size-full wp-image-702 " src="{{ site.baseurl }}/assets/images/2017/06/img_595520c7e5787.png" alt="" /></p>
+<p><span style="font-weight: 400;">Therein lies the </span>dynamic tension<span style="font-weight: 400;"> between agility (nimbleness) and the messy world of reality. What’s the point of pushing out something that doesn’t match the needs of reality? So we try to pull reality in little bits at a time, but reality can be slow. Executing UI tests takes time. So we need to code and test in parallel, automate as much as possible, and be aware of the impact of changes on release confidence.</span></p>
+<p><span style="font-weight: 400;">The way we manage this tension is to<em> push smaller batches more frequently</em> through the pipeline, bring the pain forward, in other words continuous delivery and deployment. Far away from monolithically, we shrink the whole process to an individual contributor level. Always green at the developer level...merge only code that has been tested automatically, thoroughly.</span></p>
+<p><strong>Even in a Perfect World, Your Front Door Still Jams</strong></p>
+<p><span style="font-weight: 400;">So automation is crucial to this whole thing working. But what happens when we can’t automate something? </span><span style="font-weight: 400;">This is often why the “ice cream cone” exists.</span></p>
+<p><span style="font-weight: 400;">Let’s walk through it together. Google I/O or WWDC drops new hardware or platform capabilities on us. There’s a rush to integrate, but a delay in tooling and support gums up development all the way through production troubleshooting. We mock what we have to, but fall back to manual testing.</span></p>
+<p><span style="font-weight: 400;">This not only takes our time, it robs us of velocity and any chance to reach that “always green” aspiration.</span></p>
+<p><span style="font-weight: 400;">The worst part is that we don’t even have to introduce new functionality to fall prey to this problem. Appium was stuck behind lack of iOS 10 support for months, which means most companies had no automated way to validate on a platform that was out already.</span></p>
+<p><span style="font-weight: 400;">And if anything, history teaches us that technology advances whether the last thing is well-enough baked or not. </span><span style="font-weight: 400;">We are still dealing with camera (i.e. driver stack) flakiness! Fingerprint isn’t as unreliable, but still part of the UI/UX. And many of us now face an IoT landscape with very few standards that developers follow.</span></p>
+<p><span style="font-weight: 400;">So when faced with architectural boundaries that have unpolished surfaces, what do we do? Mocks...good enough for early integration, but who will stand up and say testing against mocks is good enough to go to production?</span></p>
+<p><strong>IoT Testing Provides Clues to How We Can Proceed</strong></p>
+<p><span style="font-weight: 400;">In many cases, introducing IoT devices into the user experience means adding architecturally significant boundaries. Standards like BLE, MQTT, CoAP and HTTP provide flexibility to virtualize much of the interactions across these boundaries.</span></p>
+<p><span style="font-weight: 400;">In the case of Continuous Glucose Monitoring (CGM) vendors, their hardware and mobile app dev cycles are on very different cycles. But to integrate often, they virtualize BLE signals to real devices in the cloud as part of their mobile app test scripts. They also adopt “IoT ninjas” as part of the experience team, hardware/firmware engineers that are in change of prototyping changes on the device side, to make sure that development and testing on the mobile app side is as enabled as possible.</span></p>
+<p id="fFdaujt"><img class="alignnone size-full wp-image-704 " src="{{ site.baseurl }}/assets/images/2017/06/img_5955218dc3e5c.png" alt="" /></p>
+<p><span style="font-weight: 400;">Adding IoT to the mix will change your pyramid structure, adding pressure to rely on standards/interfaces as well as manual testing time for E2E scenarios.</span></p>
+<p><a href="http://paulsbruce.io/blog/2017/04/dont-panic-or-how-to-prepare-for-iot-with-a-mature-testing-strategy/" target="_blank" rel="noopener">[For more on IoT Testing, see my deck from Mobile/IoT Dev+Test 2017 here]</a></p>
+<p><strong>Automated Testing Requires Standard Interfaces</strong></p>
+<p id="bzUYpbN"><img class="alignright wp-image-705 size-medium" src="{{ site.baseurl }}/assets/images/2017/06/img_595521cea60a4-300x175.png" alt="" width="300" height="175" /></p>
+<p><span style="font-weight: 400;">There are plenty of smart people looking to solve the busy-work problem with writing tests. Facebook Infer, Appdiff, Functionalize, and MABL are just a few of the new technologies that integrate machine learning and AI to reduce time-spend on testing busy-work.</span></p>
+<p><span style="font-weight: 400;">But any and all programmatic approach, even AI, requires standard interfaces; in our case, universally accepted development AND testing frameworks and technologies. </span></p>
+<p><span style="font-weight: 400;">Tool ecosystems don’t get built without foundational standards, like HTML/CSS/JS, Android, Java, and Swift. And when they want to innovate on hardware or platform, there will always be some gaps, usually in automation around the new stuff.</span></p>
+<p><strong>Example Automation Gap: Fingerprint Security</strong></p>
+<p>Unfortunately for those of us who see the advantages of integrating with innovative platform capabilities like biometric fingerprint authentication, automated testing support is scarce.</p>
+<p>What this means is that we either don't test certain critical workflows in our app, or we manually test them. What a bummer to velocity.</p>
+<p>The solution is to have people who know how to implement multiple test frameworks and tools in a way that matches the velocity requirements of development.</p>
+<p><a href="http://paulsbruce.io/blog/2017/06/using-appium-to-test-fingerprint-authentication-on-android-devices/" target="_blank" rel="noopener"><img class="alignnone size-large wp-image-713" src="{{ site.baseurl }}/assets/images/2017/06/img_59552f3a472bf-1024x509.png" alt="" width="525" height="261" /></a></p>
+<p>For more information in this, see my deep-dive on <a href="http://paulsbruce.io/blog/2017/06/using-appium-to-test-fingerprint-authentication-on-android-devices/" target="_blank" rel="noopener">how to use Appium in Android development to simulate fingerprint activities in automated tests</a>. It's entirely possible, but requires experience and a planning over how to integrate a mobile lab into your continuous integration pipeline.</p>
+<p>&nbsp;</p>
+<p><strong>Tailoring Fast Feedback to Resources (and vice versa)</strong></p>
+<p><span style="font-weight: 400;">As you incrementally introduce reality into every build, you’ll run into two problems: execution speed and device pool limits.</span></p>
+<p><span style="font-weight: 400;">To solve the execution speed, most development teams parallelize their testing against multiple devices at once, and split up their testing strategy to different schedules. This is just an example of a schedule against various testing types.</span></p>
+<p id="RaUDkUF"><img class="alignnone size-full wp-image-710 " src="{{ site.baseurl }}/assets/images/2017/06/img_5955290c75d5a.png" alt="" /></p>
+<p><span style="font-weight: 400;">For more on this, <a href="http://bit.ly/bvt-primer" target="_blank" rel="noopener">I published a series of whitepapers</a> on how to do this.</span></p>
+<p><strong>TL;DR recap</strong></p>
+<p>Automating the quality of our web and mobile apps keeps us accurate, safe, and confident; but isn't easy. Fortunately we have many tools and a lot of thought put in already to how to do this. <span style="font-weight: 400;">Notwithstanding ignorance of <a href="https://www.wired.com/2017/03/hate-break-steve-mnuchin-ais-already-taking-jobs/" target="_blank" rel="noopener">some individuals</a>, automation continues to change the job landscape over and over again. </span></p>
+<p>Testing always takes tailoring to the needs of the development process to provide fast feedback. The same is true in reverse: developers need to understand where support gaps exist in test frameworks and tooling, otherwise they risk running the "ship" aground.</p>
+<p>This is why, and my mantra remains, it is imperative to velocity to <em><strong>have the right people in the planning room</strong></em> when designing new features and integrating capabilities across significant technological boundaries.</p>
+<p>Similarly, in <a href="https://www.perfectomobile.com/cfp-rpt-path-releasing-confidently-devops" target="_blank" rel="noopener">my research on developer efficiency</a>, we see that there is a correlation between increased coverage over non-functional criteria on features and test coverage. Greater completeness in upfront planning saves time and effort, it's just that simple.</p>
+<p><span style="font-weight: 400;">Just like <a href="https://www.melconway.com/Home/Conways_Law.html" target="_blank" rel="noopener">Conway’s “law”</a>, the result of your team, it’s structure, communication patterns, functions and dysfunctions, all show up in the final product. Have the right people in the room when planning new features, retros, and determining your own definition of done. Otherwise you end up with more gaps than simply in automation.</span></p>
+<p><strong>Meta / cliff notes:</strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">“Everyone owns quality” means that <em><strong>the whole team needs to be involved in testing strategy</strong></em></span>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">To what degree are various levels of testing included in Definition of Done?</span></li>
+<li>Which test sets (i.e. feedback loops) provide the most value?</li>
+<li>How are various tests triggered, considering their execution speed?</li>
+<li>Who's responsible for creating which types of tests?</li>
+<li>How are team members enabled to interpret and use test result data?</li>
+<li>When defects do escape certain stages, how is RCA used to close the gap?</li>
+<li>Who manages/fixes the test execution framework and infrastructure?</li>
+<li>Does the benefits of the current approach to testing outweigh the cost?</li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Multiple testing framework / tool / platform is 200 OK</span>
+<ul>
+<li>We already use separate frameworks for separate test types
+<ul>
+<li>jUnit/TestNG (Java) for unit (and some integration) testing</li>
+<li>Chakram/Citrus/Postman/RestAssured for API testing</li>
+<li>Selenium, Appium, Espresso, XCTest for UI testing</li>
+<li>jMeter, Dredd, Gatling, Siege for performance testing</li>
+</ul>
+</li>
+<li>Tool sprawl can be a challenge, but <em><strong>proper coverage requires plurality</strong></em></li>
+<li>Don't overtax one framework or tool to do a job it can't, just find a better fit</li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Incremental doses of reality across architecturally significant boundaries</span>
+<ul>
+<li>We need reality (real devices, browsers, environments) to spot fragility in our code and our architecture</li>
+<li>Issues tend to clump around <em><strong>architecturally significant boundaries</strong></em>, like API calls, hardware interfaces, and integrations to monolithic components</li>
+<li>We stub/mock/virtualize to speed development; signs of "significant" boundaries, but it only tells us what happens in isolation</li>
+<li>A reliable code pipeline can do the automated testing for you, but you still need to tell it what and when to test; have a test execution strategy that considers:
+<ul>
+<li>testing types (unit, component, API, integration, functional, performance, installation, security, acceptance/E2E, ...)</li>
+<li>execution speed (&lt;2m, &lt;20m, &lt;2h, etc) vs. demand for fast feedback</li>
+<li>portions of code that are known-fragile</li>
+<li>various critical-paths: login, checkout, administrative tasks, etc.</li>
+</ul>
+</li>
+<li>Annotations denote tests that relate across frameworks and tools
+<ul>
+<li>@Signup, @Login, @SearchForProduct, @V2Deploy</li>
+<li>Tag project-based work (like bug fixes) like: JIRA-4522</li>
+</ul>
+</li>
+</ul>
+</li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Have the right people in the room when planning features</span>
+<ul>
+<li>Future blockers like test framework support for new hardware capabilities will limit velocity, so have <strong><em>test engineers</em></strong> in the planning phases</li>
+<li>Close the gap between what was designed vs. what is feasible to implement by having <em><strong>designers and developers prototype together</strong></em></li>
+<li>Including <em><strong>infrastructure/operations engineers</strong></em> in planning reduces later scalability issues; just like testers, this can be a blocker to release readiness</li>
+<li>Someone, if not all the people above, should <em><strong>represent the user's voice</strong></em></li>
+</ul>
+</li>
+</ul>
+<p><strong>More reading:</strong></p>
+<ul>
+<li><a href="https://www.amazon.com/Intelligence-Understanding-Creation-Intelligent-Machines/dp/0805078533" target="_blank" rel="noopener">On Intelligence, Jeff Hawkins</a></li>
+<li><a href="http://blog.beanstalkapp.com/post/72775789188/branch-permissions-for-your-git-repositories" target="_blank" rel="noopener">Branch Permissions for your Git repositories</a></li>
+<li><a href="https://devops.com/continuous-integration-doesnt-work/" target="_blank" rel="noopener">Continuous Integration Doesn't Work</a></li>
+<li><a href="https://www.perfectomobile.com/why-apps-fail-survey" target="_blank" rel="noopener">Why Apps Fail, a Survey of Mobile Users</a></li>
+<li><a href="https://martinfowler.com/bliki/TestPyramid.html" target="_blank" rel="noopener">The Test Pyramid - Martin Fowler</a></li>
+<li><a href="https://www.mountaingoatsoftware.com/blog/the-forgotten-layer-of-the-test-automation-pyramid" target="_blank" rel="noopener">The Forgotten Layer of the Test Automation Pyramid - Mike Cohen</a></li>
+<li><a href="https://watirmelon.blog/2012/01/31/introducing-the-software-testing-ice-cream-cone/" target="_blank" rel="noopener">Allistar Scott - The Test Pyramid Ice Cream Cone Anti-pattern</a></li>
+<li><a href="https://youtu.be/YyhfK-aBo-Y?t=43m56s" target="_blank" rel="noopener">Kevin Henney, "Code at Risk" (architectural boundaries), Goto Conference</a></li>
+<li><a href="https://www.ftsafe.com/products/BlockChain" target="_blank" rel="noopener">Blockchain on IoT - Fingerprint Security for Your Bitcoin Wallet, FTSafe</a></li>
+<li><a href="http://paulsbruce.io/blog/2017/04/dont-panic-or-how-to-prepare-for-iot-with-a-mature-testing-strategy/">DON'T PANIC (or how to prepare for IoT with a mature test strategy)</a></li>
+<li><a href="https://www.wired.com/2015/06/facebooks-ai-tool-squashing-bugs-now-open/" target="_blank" rel="noopener">Facebook Infer - AI tool squashes bugs with intelligent static code analysis</a></li>
+<li><a href="https://blog.appdiff.com/appdiff-launches-first-ai-powered-mobile-testing-platform-15002908873e" target="_blank" rel="noopener">Appdiff - the first API-powered mobile testing platform</a></li>
+<li><a href="https://medium.com/app-quality-and-testing/ai-for-software-testing-44052eb0d834">AI for software testing closes the coverage gap between tests and features</a></li>
+<li><a href="https://www.mabl.com/" target="_blank" rel="noopener">MABL - machine intelligence for microservices and apps</a></li>
+<li><a href="http://bit.ly/bvt-primer" target="_blank" rel="noopener">A Developer's Guide to Build-time Quality - Paul Bruce</a></li>
+<li><a href="https://www.perfectomobile.com/cfp-rpt-path-releasing-confidently-devops" target="_blank" rel="noopener">The Path to Releasing Confidently in DevOps - Paul Bruce, Peter Crocker</a></li>
+</ul>

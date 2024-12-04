@@ -1,0 +1,55 @@
+---
+layout: post
+title: How do you test the Internet of Things?
+date: 2016-01-14 22:23:22.000000000 -05:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- API
+- automation
+- IoT
+- quality
+- testing
+tags: []
+meta:
+  _edit_last: '1'
+  _oembed_99ed2ef0f9aa2f29b1c7078fbb86ebee: <iframe width="660" height="371" src="https://www.youtube.com/embed/7odT95kmf_w?feature=oembed"
+    frameborder="0" allowfullscreen></iframe>
+  _oembed_time_99ed2ef0f9aa2f29b1c7078fbb86ebee: '1452828017'
+  _thumbnail_id: '192'
+  dsq_thread_id: '4492433212'
+  _oembed_84dd5b75f1b1d604e54a458d3ebae3ec: <iframe width="525" height="295" src="https://www.youtube.com/embed/7odT95kmf_w?feature=oembed"
+    frameborder="0" allowfullscreen></iframe>
+  _oembed_time_84dd5b75f1b1d604e54a458d3ebae3ec: '1484590379'
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2016/01/how-do-you-test-the-internet-of-things/"
+---
+<p>If we think traditional software is hard, just wait until all the ugly details of the physical world start to pollute our perfect digital platforms.</p>
+<p>[embed]https://www.youtube.com/watch?v=7odT95kmf_w[/embed]</p>
+<p><strong>What is the IoT?</strong></p>
+<p>The Internet of Things (IoT) is a global network of digital devices that exchange data with each other and cloud systems. I'm not <a href="http://postscapes.com/internet-of-things-history" target="_blank">Wikipedia</a>, and I'm not a <a href="http://postscapes.com/internet-of-things-history" target="_blank">history book</a>, so I'll just skip past some things in this definitions section.</p>
+<p><strong>Where is the IoT?</strong></p>
+<p>It's everywhere, not just in high-tech houses. Internet providers handing out <a href="http://www.geekwire.com/2014/comcast-rolling-controversial-xfinity-wifi-public-hotspot-feature-home-routers/" target="_blank">new cable modems</a> that cat as their own WiFi is just a new "backbone" for these devices to connect in over, in almost every urban neighborhood now.</p>
+<p><strong>Enter the Mind of an IoT Tester</strong></p>
+<p>How far back should we go? How long do you have? I'll keep it short: the simpler the system, the less there is to test. Now ponder the staggering complexity of the low-cost <a href="https://www.youtube.com/watch?v=WR0ghM3U0M4" target="_blank">Raspberry Pi</a>. Multiplied by the number of humans on Earth that like to tinker, educated or no, throw in some APIs and ubiquitous internet access for fun, and now we have a landscape, a view of the magnitude of possibility that the IoT represents. It's a huge amount of worry for me personally.</p>
+<p><strong>Compositionality as a Design Constraint</strong></p>
+<p>Good designers will often put constraints in their own way purposely to act as a sort of scaffolding for their traversal of a problem space. Only three colors, no synthetic materials, exactly 12 kilos, can I use it without tutorials, less materials. Sometimes the unyielding makes you yield in places you wouldn't otherwise, flex muscles you normally don't, reach farther.</p>
+<p>IoT puts <em>compositionality</em> right up in our faces, just like APIs, but with hardware and in ways that both very physical and personal. It forces us to consider how things will be combined in the wild. For testing, this is the nightmare scenario.</p>
+<p><strong>Dr. Strangetest, or How I Learned to Stop Worrying and Accept the IoT</strong></p>
+<p>The only way out of this conundrum is in the design. You need to design things to very discrete specifications and target very focused scenarios. It moves the matter of quality up a bit into the space of orchestration testing, which by definition is scenario based. Lots of little things are easy to prove working independent of each other, but once you do that, the next challenges lie in the realm of how you intend to use it. Therein lies both the known and unknown, the business cases and the business risks.</p>
+<p><strong>If you code or build, find someone else to test it too</strong></p>
+<p>As a developer, I can always pick up a device I just flashed with my new code, try it out, and prove that it works. Sort of. It sounds quick, but rarely is. There's lots of plugging and unplugging, uploading, waiting, debugging, and fiddling with things to get them to just work. I get sick of it all; I just want things to work. And when they finally *do* work, I move on quickly.</p>
+<p><em>If I'm the one building something to work a certain way, I have a sort of programming myopia, where I only always want it to work. Confirmation bias.</em></p>
+<p><strong>What do experts say?</strong></p>
+<p>I'm re-reading Code Complete by Steve McConnell, written more than 20 years ago now, eons in the digital age. Section 22.1:</p>
+<p>"Testing requires you to assume that you'll find errors in your code. If you assume you won't, you probably won't."</p>
+<p>"You must hope to find errors in your code. Such hope might feel like an unnatural act, but you should hope that it's you who find the errors and not someone else."</p>
+<p>True that, for code, for IoT devices, and for life.</p>

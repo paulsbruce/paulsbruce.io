@@ -1,0 +1,99 @@
+---
+layout: post
+title: Using Appium to Test Fingerprint Authentication on Android Devices
+date: 2017-06-29 12:52:35.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Android
+- Appium
+- Espresso
+tags: []
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '713'
+  dsq_thread_id: '5951617879'
+author:
+  login: pbruce
+
+  display_name: Paul Bruce
+  first_name: Paul
+  last_name: Bruce
+permalink: "/blog/2017/06/using-appium-to-test-fingerprint-authentication-on-android-devices/"
+---
+<p>In this article, I'll show how you can use Appium to automate fingerprint authentication on Android mobile devices. The general process also applies to iOS, though specific implementation is not discussed here.</p>
+<p>This is based on work I did in preparation for presenting at <a href="https://www.meetup.com/mobiletea/events/240414407/" target="_blank" rel="noopener">Mobile Tea Boston</a> in June 2017. This example is just a small part of a broader conversation on <a href="http://paulsbruce.io/blog/2017/06/automating-the-quality-of-your-digital-front-door/" target="_blank" rel="noopener">automating quality across the delivery pipeline</a>.</p>
+<p>Git example: <a href="https://github.com/paulsbruce/FingerprintDemo" target="_blank" rel="noopener">https://github.com/paulsbruce/FingerprintDemo</a></p>
+<p><strong>Fingerprint Security: Great for UX</strong></p>
+<p id="LlIQWrA"><a href="http://paulsbruce.io/wp-content/uploads/2017/06/img_5955320eed024-e1498755617571.png"><img class="alignright wp-image-715 size-medium" src="{{ site.baseurl }}/assets/images/2017/06/img_5955320eed024-211x300.png" alt="" width="211" height="300" /></a></p>
+<p>First question I asked was "<em><strong>why</strong></em> would we integrate fingerprint login functionality into our apps?" The short answer is "<a href="https://auth0.com/blog/how-fingerprint-auth-gives-you-security/" target="_blank" rel="noopener">high security, low friction</a>". There are compelling use cases for fingerprint authentication.</p>
+<p>Paswordless systems usually require people to use SMS or email to confirm login...high friction IMO to the user experience, but who wants their user to leave their UX purposely? This is better security at the cost of poor workflow.</p>
+<p>Multi-factor authentication is another good user case. Using biometric ensures that the unique identity of the individual is presented along with additional credentials.</p>
+<p>Step-up authentication is another popular method of keeping the run-rate user experience frictionless, yet increasing protection over sensitive information and operations on a user's account.</p>
+<p><strong>Fingerprint Security: Bad for Development Velocity</strong></p>
+<p id="gZYlFYP"><img class="alignright wp-image-716 size-medium" src="{{ site.baseurl }}/assets/images/2017/06/img_59553280360a5-161x300.png" alt="" width="161" height="300" /></p>
+<p>So for teams who want to implement fingerprint authentication into their mobile apps, this also means they need to automate tests that integrate fingerprint security. What does the test automation process look like?</p>
+<p>In short, it's a mess. Android libraries and the default UI test framework Espresso contain zero support for fingerprint automation. Since October 2015 with the release of Android 6.0 M, Google provides a standard API for integrating these features into mobile app code, but no way of automating it.</p>
+<p>The same is true for <a href="https://navoshta.com/unit-tests-for-touch-id/" target="_blank" rel="noopener">Touch ID</a> on iOS, though there are interactive ways to simulate fingerprint events when running XCTest suites in XCode, there is no easy way of writing an automated test that can provide coverage over these workflows.</p>
+<p>Without some other automation alternative, these portions of functionality fall prey to the ice-cream cone anti-pattern. What a pity.</p>
+<p><strong>Solution: Find the Right Framework</strong></p>
+<p>Espresso is fast because it runs directly alongside the main app code on the device. However, since the only way Google provided us to simulate fingerprint events is through ADB (i.e. 'adb -e emu finger touch ...'), this has to be run on the machine where Android tools are installed and where the device is connected.</p>
+<p><img class="alignnone size-full wp-image-698 " src="{{ site.baseurl }}/assets/images/2017/06/img_595511785dc18.png" alt="" /></p>
+<p><a href="http://appium.io/" target="_blank" rel="noopener">Appium</a>, an open source outgrowth of Selenium for mobile apps, is architected differently from Espresso and XCTest. Though often slower for this reason, it has some advantages too:</p>
+<p id="dbeveOD"><img class="alignnone size-full wp-image-699 " src="{{ site.baseurl }}/assets/images/2017/06/img_595512fc66627.png" alt="" /></p>
+<p>Instead of running directly on the device as a sibling process, Appium tests are executed from a server to which the devices are connected. This provides a context whereby we can inject device-specific commands against the device, in combination with the calls through the testing framework itself, to simulate the entire workflow on the device in one script.</p>
+<p>An example of this can be found in <a href="https://github.com/paulsbruce/FingerprintDemo" target="_blank" rel="noopener">my Github FingerprintDemo repo.</a></p>
+<p>Because I want to write all my code and tests in the same IDE, I keep unit tests and Espresso tests as part of the normal conventions in the 'app' module, but I create a separate module called 'appium' that can be compiled as a separate jar artifact from the main APK. This keeps my Gradle dependencies for testing separate from my app and my build.gradle scripts clean and clear.</p>
+<p>In short, it boils down to test code that looks like this:</p>
+<p id="qfsmpfU"><img class="alignnone size-full wp-image-697 " src="{{ site.baseurl }}/assets/images/2017/06/img_595510d146b8f.png" alt="" /></p>
+<p><strong>Appium + fingerprint = depends on your lab</strong></p>
+<p>If you manage a very small local lab, you have the <del>liability</del> control to execute whatever custom commands you need to on your devices.</p>
+<p>If you've graduated to using devices (emulators/simulators/real) in the cloud via some service like Firebase, Perfecto, or TestObject, then your ability to simulate fingerprint events reliably really depends on which one you're using.</p>
+<p><img class="alignnone size-full wp-image-707 " src="{{ site.baseurl }}/assets/images/2017/06/img_59552365a2ea3.png" alt="" /></p>
+<p>For instance, both Perfecto and TestObject provide SSH direct connections to devices, so in theory you could run custom ADB commands against them; Firebase and AWS Device Farm aren't even close to having this capability.</p>
+<p>In practice, these cloud services also provide automation endpoints and SDKs to execute these tasks reliably. Perfecto, for instance, has both DevTunnel direct access and <a href="http://developers.perfectomobile.com/display/PD/Simulate+Fingerprint+Authentication" target="_blank" rel="noopener">scripted fingerprint simulation support</a> in Appium.</p>
+<p><strong>Treat Code and Tests as Equal Citizens</strong></p>
+<p>Everyone should have access to app code AND test code. Period. Some large organizations often fear that this will leak proprietary secrets to offshore and out-of-cycle testing teams. That's what contracts and proper repository permissions are for.</p>
+<p>The benefit for modern teams is that test engineers have better visibility into the app, making test creation faster and initial root cause analysis of defects found faster. In my example, this is what the simplified IDE experience looks like:</p>
+<p><img class="alignnone size-full wp-image-708 " src="{{ site.baseurl }}/assets/images/2017/06/img_595523f4cc36b.png" alt="" /></p>
+<p>Now that we can press the play button on A) our app, B) our unit and Espresso tests, and C) our E2E fingerprint Appium tests, everyone on the team has the option to make sure their changes don't introduce negative impacts on all aspects of the user experience.</p>
+<p><strong>'Works on My Machine' Isn't Good Enough</strong></p>
+<p>Test code applies first and foremost to the development experience, but also to the build system later on. In the case in including Appium tests in an Android project, this means we need to be keenly aware of the test infrastructure used to simulate fingerprint actions locally against emulators.</p>
+<p>Expect that you will need to “productionize” this process to fit into the build process. By introducing a number of new moving parts (emulators, Appium, custom adb commands) we’ll also need to perpetuate that as a build stack.</p>
+<p>I’m a Jenkins nerd, so what this means in terms of build infrastructure is that we need to create build nodes that contain the components necessary to run Appium tests in isolation of other processes as well. Emulators keep the solution device-independent and can simplify the test execution logistics, but only provide a very narrow slice of reality.</p>
+<p id="vyqlpEF"><img class="alignnone size-full wp-image-709 " src="{{ site.baseurl }}/assets/images/2017/06/img_595526325008e.png" alt="" /></p>
+<p id="OOictnC">To integrate real devices into this mix, you either have to manage a local Appium grid (which again, is challenging) or write your tests to use a cloud lab solution. In the end, you'll have to parameterize your tests along the following environment variables:</p>
+<ul>
+<li>Appium server address
+<ul>
+<li>localhost for development workstations and Appium emulator stack in CI</li>
+<li>Shared/cloud host for real devices</li>
+</ul>
+</li>
+<li>(if emulators)
+<ul>
+<li>emulator image (i.e. Nexus_6_API_24, etc.)</li>
+</ul>
+</li>
+<li>Device capabilities
+<ul>
+<li>Platform (Android/iOS)</li>
+<li>Platform version</li>
+<li>App (binaries) under test</li>
+<li>(if shared/cloud) credentials or API keys</li>
+</ul>
+</li>
+</ul>
+<p>Recap:</p>
+<p>Since there's no support for fingerprint simulation directly from Espresso, we have to rely on other test frameworks like Appium to cover these use cases. Really, the test architecture needs to fit the use case, and Appium provides us a way to mix test framework calls with native commands to other mobile tools. This requires us to introduce complexity carefully, plan for how that impacts our build-verification testing stack when triggered by continuous integration.</p>
+<p><strong>More reading:</strong></p>
+<ul>
+<li><a href="http://paulsbruce.io/blog/2017/06/automating-the-quality-of-your-digital-front-door/">Automating the Quality of Your Digital Front Door - Paul Bruce, June 2017</a></li>
+<li><a href="https://auth0.com/blog/how-fingerprint-auth-gives-you-security/" target="_blank" rel="noopener">Why fingerprint security? High-security, low friction.</a></li>
+<li><a href="https://github.com/paulsbruce/FingerprintDemo" target="_blank" rel="noopener">paulsbruce@Github: Fingerprint Demo (Android app)</a></li>
+<li><a href="https://devops.com/testing-mobile-apps-consider-mobile-device-cloud/" target="_blank" rel="noopener">DevOps.com: when testing mobile apps, use a mobile device cloud</a></li>
+<li><a href="http://developers.perfectomobile.com/display/PD/Simulate+Fingerprint+Authentication" target="_blank" rel="noopener">How to Automate Fingerprint authentication with Perfecto cloud devices</a></li>
+</ul>

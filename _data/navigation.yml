@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Career"
+    url: "/sales-engineering"
   - title: "Blog"
     url: /blog/
   - title: "Work with me!"
