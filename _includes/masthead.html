@@ -30,7 +30,7 @@
       return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
     }
     var masthead_video = document.getElementById('masthead_video')
-    var defaultImageUrl = "assets/images/home-loop-1.jpg"
+    var defaultImageUrl = "{site.home.masthead.image}"
     if(window.mobileAndTabletCheck()||isCellData||isSmallScreen()) {
       var bgimg = document.createElement('img');
       bgimg.src = defaultImageUrl
@@ -45,10 +45,10 @@
       bgvid.poster = defaultImageUrl;
       masthead_video.appendChild(bgvid)
       var bgvid = document.getElementById('bgvid')
-      var url = '/assets/images/home-loop.mp4'
+      var url = '{site.home.masthead.relative_video}'
       var dd = document.domain.toLowerCase()
       if(dd==='paulsbruce.io'||dd==='paulsbruce.github.io')
-        url = 'https://media.githubusercontent.com/media/paulsbruce/paulsbruce.io/master/assets/images/home-loop.mp4'
+        url = '{site.home.masthead.relative_video}'
       var src = document.createElement('source');
       src.src = url;
       src.type = 'video/mp4';

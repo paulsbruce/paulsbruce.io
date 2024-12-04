@@ -200,3 +200,9 @@ defaults:
       comments: # true
       share: true
       related: true
+
+home:
+  masthead:
+    image: 'assets/images/2024/top-se-low.jpg' #'assets/images/home-loop-1.jpg'
+    relative_video: '/assets/images/2024/top-se-low.mp4'
+    absolute_video: 'https://media.githubusercontent.com/media/paulsbruce/paulsbruce.io/master/assets/images/2024/top-se-low.mp4'
