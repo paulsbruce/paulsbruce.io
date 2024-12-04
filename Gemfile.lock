@@ -99,12 +99,14 @@ GEM
       faraday (> 0.8, < 2.0)
 
 PLATFORMS
+  arm64-darwin-24
+  ruby
   x86_64-darwin-18
 
 DEPENDENCIES
-  jekyll (~> 3.7)
+  jekyll (= 3.9.1)
   kramdown-parser-gfm
   minimal-mistakes-jekyll
 
 BUNDLED WITH
-   2.2.32
+   2.5.23
