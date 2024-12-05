@@ -1,7 +1,7 @@
 
 {% assign tab_id=include.tab %}
 
-{% assign entries = site.data.testamonials.entries | where_exp:"item", "item.published == true" | where_exp:"item", "item.tabs contains tab_id"  %}
+{% assign entries = site.data.testimonials.entries | where_exp:"item", "item.published == true" | where_exp:"item", "item.tabs contains tab_id"  %}
 
 {% for entry in entries %}
     <div style="display: flex; flex-direction: row;">

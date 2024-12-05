@@ -1,11 +1,11 @@
 ---
 layout: default
-permalink: "/personal-testamonials/"
+permalink: "/personal-testimonials/"
 ---
 
 {% assign page_tabs = "" | split: ',' %}
 
-{% for tab in site.data.testamonials.tabs %}
+{% for tab in site.data.testimonials.tabs %}
   {% assign page_tabs = page_tabs | push: tab %}
 {% endfor %}
 
@@ -27,7 +27,7 @@ permalink: "/personal-testamonials/"
 <div id="{{tab_id}}" class="tabcontent">
 {% endif %}
 
-{% include testamonials_by_tab.html tab=tab_id %}
+{% include testimonials_by_tab.html tab=tab_id %}
 
 </div>
 

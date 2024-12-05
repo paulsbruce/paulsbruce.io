@@ -6,8 +6,8 @@ tabs:
     button: "TL;DR"
   - id: record
     button: "Track Record"
-  - id: testamonials
-    button: "Testamonials"
+  - id: testimonials
+    button: "Testimonials"
   - id: summary
     button: "Values"
 ---
@@ -81,13 +81,13 @@ I now know that my balance of successful and happy lives in sales engineering.
 
 </div>
 
-<div id="testamonials" class="tabcontent">
+<div id="testimonials" class="tabcontent">
 
 <div style="display:flex;flex-direction:row-reverse;">
-    <a href="/personal-testamonials/">More testamonials</a>
+    <a href="/personal-testimonials/">More testimonials</a>
 </div>
 
-{% include testamonials_by_tab.html tab="sales" default_tab="sales" %}
+{% include testimonials_by_tab.html tab="sales" default_tab="sales" %}
 
 </div>
 
