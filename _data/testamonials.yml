@@ -1,0 +1,162 @@
+tabs:
+- id: sales
+  button: "Sales"
+- id: product
+  button: "Product"
+- id: marketing
+  button: "Marketing"
+- id: executive
+  button: "Executive"
+entries:
+- name: Chris Colosimo
+  published: true
+  linkedin: ccolosimo
+  photo: https://images.crunchbase.com/image/upload/c_thumb,h_170,w_170,f_auto,g_face,z_0.7,b_white,q_auto:eco,dpr_2/vf8xjputfasyhdza2lzp
+  categories:
+  - product management
+  - informal
+  tabs:
+  - product
+  text: |
+    Paul and I had many discussions that directly impacted my PM decisions. I could always count on him to make time to listen, think, and constructively challenge new feature work I ran by him. He also hosted some great internal sessions for our team to experiment which led to fantastic ideas that customers were excited about. He is one of the most supportive colleagues I've ever had the pleasure of working with.
+
+- name: Eric Marhafer
+  published: true
+  linkedin: eric-marhafer-284b8a
+  photo: https://media.licdn.com/dms/image/v2/C4E03AQGRz3w57cV01Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1649348892886?e=1738800000&v=beta&t=697yxMkXHkwetyPCTQCfMKc6A70XOe5nK0AnACked70
+  tabs:
+  - sales
+  text: |
+    Paul and I crushed it at Neotys for years. In the office, on the road, on every remote session we needed...he had my back. It didn't take long for us to win huge logos and close some of the biggest deals in the company's history. Hope to work with him again at some point!
+
+- name: Eric Sherman
+  published: true
+  linkedin: shermaneric
+  photo: https://media.licdn.com/dms/image/v2/D4E03AQFl4c6XB9DDxg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728672187265?e=1738800000&v=beta&t=q0E3OuqEamX6GZBiGl-roh7n5sUj_6V5qOZQnDuwnsE
+  tabs:
+  - sales
+  - executive
+  text: |
+    Paul was instrumental in maturing our evangelism in the performance and dev ops community. He is a well respected technical mind in that arena. His commitment to improving sales execution as a sales engineer was key to our ability to win more deals. He pushed me as a leader to work with him to develop more advanced sales methodologies. Paul is never satisfied with the status quo. 
+
+- name: Bryan Cole
+  published: true
+  linkedin: bryancole
+  photo: https://media.licdn.com/dms/image/v2/C4E03AQG9vEYB60aaTQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517737587157?e=1738800000&v=beta&t=5YyliTI3YTJcFNi-u-1iwQKYGdzDsDgI4Lql2N8rT_s
+  categories:
+  - customer engineering  
+  tabs:
+  - sales
+  text: |
+    We worked together in Customer Engineering, a revenue-critical function he set up at Neotys before acquisition and one that I've seen grow in value since 2021. His support of other employees and customers provided great opportunities for further account expansion and industry recognition.
+
+- name: Patrick Curran
+  published: true
+  linkedin: patrickcurran05
+  photo: https://media.licdn.com/dms/image/v2/D5603AQGS5c4HB6AotQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680738310824?e=1738800000&v=beta&t=VOV873_5wwQA_gtrfjj7HjmUnBLn-h8_0VzBTw57lbM
+  tabs:
+  - sales
+  text: |
+    Paul and I worked on many customers working through their DevOps and cloud transformations. He was always ready and never failed to impress some of our most technical and developer-focused accounts. I'd bring him along on a trip to San Francisco any time.
+
+- name: Cyrus Manouchehrian 
+  published: true
+  linkedin: cyrusmanouch
+  photo: https://media.licdn.com/dms/image/v2/D4E03AQH-ihkqy-2HuA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1685474995237?e=1738800000&v=beta&t=HFHGDiOHN2PwQoFuvvaO8lW0-bw_F-6sCA_rUOlbRes
+  tabs:
+  - product strategy
+  text: |
+    In our corporate development overlap, Paul led the effort to provide highly credible pre-acquisition technical due diligence. I was always impressed with his ability to summarize actionable intel from deep-dives, sometimes even consolidating a huge amount of work into easy to understand decisions. He also grew trust between groups which is rare and necessary for long-term success.
+
+- name: Evan Sylverster
+  published: true
+  linkedin: evan-sylvester
+  photo: https://media.licdn.com/dms/image/v2/C4E03AQFz6tzil5IfBg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516299199342?e=1738800000&v=beta&t=7ViVnqvmKVKYsezoNGDscbFUaHS-qLLgTDOAlloQsqQ
+  tabs:
+  - sales
+  text: |
+    Paul Bruce worked with us on big accounts as a DevOps advocate. He cracked open opportunity with some of the most advanced engineering teams and helped us expand in some very large accounts. Don't be surprised when he brings some post-its and makes friends on-site!
+
+- name: Scott Doughty
+  published: true
+  linkedin: sdoughty
+  photo: https://media.licdn.com/dms/image/v2/C5103AQHCFs-fq2TW7Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516358048672?e=1738800000&v=beta&t=KD--Sf3jtyPwYzs0fOTbLIopQ7NMTpzJRYrLKjgRUs8
+  tabs:
+  - sales
+  text: |
+    Between Smartbear and Neotys, I had the pleasure of working with Paul on a handful of really important customers. He is a very technical guy but knows how to read the room and follow up well. Especially with the more complicated integration demos and objection handling, this is something not ever sales engineer can do well.
+
+- name: Keith Alsheimer
+  published: true
+  linkedin: keithalsheimer
+  photo: https://media.licdn.com/dms/image/v2/C4E03AQFD77kMMeCQpw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517701495418?e=1738800000&v=beta&t=rVkQl3ChLcJNESElgGUU73BjA99cZ20kabELQ_m6Iik
+  categories:
+  - product marketing
+  tabs:
+  - marketing
+  text: |
+    Paul is the most talented and effective technologist and change agent I have ever known. Paul is innately curious with a voracious appetite for learning that is seemingly boundless. But Paul's true genius is his passion for teaching. Whether speaking at conferences, leading meet-ups, advising clients or just casual conversation with colleagues, Paul creates interactive learning environments where he thoughtfully and energetically enables fertile learning environments. As the Head of Marketing, I routinely relied upon Paul for product marketing insights and to work collaboratively in a wide variety of community and field marketing events. In addition to being an amazing technologist and teacher, Paul is also one of the finest humans I know. People naturally want to follow Paul because of his brilliance, but also because his sincerity and empathy is so genuine. I would jump at the opportunity to work with Paul again in a heartbeat!
+
+- name: Matthew Fermino
+  published: true
+  linkedin: matthew-fermino-20477811
+  photo: https://media.licdn.com/dms/image/v2/C4D03AQE3WxKATjpQOQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1624707509814?e=1738800000&v=beta&t=CyZ2CJBvPjX0bhM5I2l3eJEfIA3HbdTa0RZrcoGTot4
+  tabs:
+  - sales
+  text: |
+    Paul is a friendly, approachable technical expert. He helped our sales org become audible-ready in front of new types of enterprise customer profiles and even supported new hires with one-on-ones. His training helped us improve our discovery process, seek stronger champions, and increase stickiness in accounts. 
+
+    His ability to represent stages of the software lifecycle in a way we could all draw on a whiteboard further helped us to run discovery sessions and find specific challenges my sales team could address. Paul's visualizations regularly found their way into customer-facing decks and materials because they connect my team to developers in a way we all can discuss and reason about, an invaluable aspect of effective selling.
+
+- name: Carlo Cadet
+  published: true
+  linkedin: carlocadet
+  photo: https://media.licdn.com/dms/image/v2/C5603AQHG-vOP6sOORQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1644155873349?e=1738800000&v=beta&t=79g6GI8NRC3ksrSHFCWS_41cySEDa5-r1OtL4pho-BQ
+  categories:
+  - product marketing
+  - product strategy
+  tabs:
+  - marketing
+  - product
+  text: |
+    Paul worked as a Developer Evangelist in my Product Marketing team at Perfecto. He is passionate and hard working. His combination of technical expertise, business acumen, and creative thinking makes him a strong asset to any team. 
+
+    In 2016, we launched several developer-focused platform capabilities. Paul passionately drove key aspects of our sales enablement and go-to-market strategy, including internal training sessions, supporting materials aligned to our core messaging and sales methodologies, and public relations engagements. I would frequently rely on his perspective when it came to communicating complex ideas through easy to understand visuals. His is free hand line art skills were a definite bonus.
+
+    He also played an important role in crafting our story for enterprises moving towards scaled Agile and DevOps cultures, many of his ideas making into customer-facing materials and presentations. 
+    Paul's own presentations at conferences elevated our brand through carefully crafted combination of thought leadership, process-related insights and technical demonstrations. He’s committed to delivering value to his audience.
+    
+    His research often resulted in output that easily supported our content marketing strategy, but also helped to direct future product positioning. 
+
+    He is coachable, adaptable and has an insatiable appetite for learning. 
+
+- name: Chris Willis
+  published: true
+  linkedin: cpwillis
+  photo: https://media.licdn.com/dms/image/v2/D4E03AQEze3Rg42S21A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713897543319?e=1738800000&v=beta&t=bGhayuaHIGphJX1j_KtTEDx40LutsuNMgOXpF8cmKgc
+  categories:
+  - product marketing
+  tabs:
+  - marketing
+  - executive
+  text: |
+    Paul supported my marketing objectives at Perfecto, helping to construct and fulfill our content strategy towards developers. He wrote for our blog, delivered research reports and drove webinars that supported our lead gen goals, drove influencer programs, and generally helped out wherever we needed subject matter expertise. 
+
+    Paul often pushed our definition of done to a new level, using his technical skills in process automation to improve our internal communications. He helped to integrate systems like Slack into our workflows to notify various team members of relevant real-time information related to event sponsorship and speaking opportunities. 
+
+    Paul also managed projects that required alignment across multiple stakeholders, not an easy thing to do. He learns quickly and adapts to the culture of a team to get things done.
+
+- name: Mike Giller
+  published: true
+  linkedin: michaelgiller
+  photo: https://media.licdn.com/dms/image/v2/C4D03AQGRfmlkmw_Pow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1617217582890?e=1738800000&v=beta&t=clw28pPolbetVR5925_mqN1lWi4qxDABUPspd7is9oc
+  tabs:
+  - sales
+  text: |
+    I’ve worked with Paul for his whole tenure with SmartBear, either as a fellow sales engineer or in the same department with API line of products. 
+
+    Paul started at SmartBear as a really passionate sales engineer for performance products. He quickly became an expert in load and performance testing and worked tirelessly in demoing and promoting products alongside with the account reps. 
+    
+    In his later role at SmartBear as API team Product Marketing Manager Paul went above and beyond producing volumes of internal and customer facing content of the highest quality. He would frequently distill really technical features to simplest easy-to-understand explanations. Paul always stayed really active in the API community and proactively worked with every department in SmartBear to greatly improve products. 
+    
+    Paul is one of the most dedicated people I have worked with. He really takes pride and ownership over everything he produces. He’s also really creative and his unique approach to technical challenges produces some groundbreaking ideas. He’ll be missed here at SmartBear 

@@ -1,0 +1,16 @@
+
+{% assign tab_id=include.tab %}
+
+{% assign entries = site.data.testamonials.entries | where_exp:"item", "item.published == true" | where_exp:"item", "item.tabs contains tab_id"  %}
+
+{% for entry in entries %}
+    <div style="display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: column;">
+            <img src="{{entry.photo}}" style="max-width:15vw; min-width:15vw; margin:1em; border-radius: 50%;" />
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <h2><a target="_blank" href="https://www.linkedin.com/in/{{entry.linkedin}}">{{entry.name}}</a></h2>
+            <i>{{ entry.text }}</i>
+        </div>
+    </div>
+{% endfor %}

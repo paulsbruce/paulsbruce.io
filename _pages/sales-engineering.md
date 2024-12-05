@@ -1,34 +1,16 @@
 ---
-layout: default
+layout: tabbed
 permalink: "/sales-engineering/"
+tabs:
+  - id: tldr
+    button: "TL;DR"
+  - id: record
+    button: "Track Record"
+  - id: testamonials
+    button: "Testamonials"
+  - id: summary
+    button: "Values"
 ---
-
-<style type="text/css">
-.summary-sections {
-    max-width: 1024px;
-    margin: auto;
-    padding-left:2em;
-    padding-right:2em;
-}
-.flex-container {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: stretch;
-    gap: 2em;
-}
-.tab {
-    width: 400px;
-    margin: auto;
-}
-</style>
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'tldr')">TL;DR</button>
-  <button class="tablinks" onclick="openCity(event, 'record')">Track Record</button>
-  <button class="tablinks" onclick="openCity(event, 'summary')">Values/Contact</button>
-</div>
 
 <div class="summary-sections">
 
@@ -99,74 +81,14 @@ I now know that my balance of successful and happy lives in sales engineering.
 
 </div>
 
+<div id="testamonials" class="tabcontent">
+
+<div style="display:flex;flex-direction:row-reverse;">
+    <a href="/personal-testamonials/">More testamonials</a>
 </div>
 
-<style type="text/css">
-/* Style the tab */
-.tab {
-  overflow: hidden;
-}
+{% include testamonials_by_tab.html tab="sales" default_tab="sales" %}
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
+</div>
 
-.tablinks {
-    color: #fff;
-}
-/* Change background color of buttons on hover */
-.tab button:hover {
-  
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-}
-
-.tabcontent {
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
-
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-</style>
-
-<script type="text/javascript">
-function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
+</div>
