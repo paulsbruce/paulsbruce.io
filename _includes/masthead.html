@@ -31,7 +31,7 @@
     }
     var masthead_video = document.getElementById('masthead_video')
     var defaultImageUrl = "{{site.home.masthead.image}}"
-    if(window.mobileAndTabletCheck()||isCellData||isSmallScreen()) {
+    if(false && window.mobileAndTabletCheck()||isCellData||isSmallScreen()) {
       var bgimg = document.createElement('img');
       bgimg.src = defaultImageUrl
       masthead_video.appendChild(bgimg)

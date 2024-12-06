@@ -2,9 +2,9 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-//@charset "utf-8";
+@charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin */
 @import "minimal-mistakes"; // main partials
 
 $textColor: #ccc;
@@ -68,8 +68,15 @@ h1,h2,h3,h4,h5,h6 {
 
 .masthead, #site-nav {
   background-color:#444;
+  color:#eee;
   padding: 0px;
   z-index: 5;
+}
+.greedy-nav a {
+  color: #ddd;
+}
+.greedy-nav a:hover {
+  color: #fff;
 }
 #site-nav {
   margin:0px;
