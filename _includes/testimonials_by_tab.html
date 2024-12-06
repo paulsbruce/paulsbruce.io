@@ -1,10 +1,16 @@
-
+<style type="text/css">
+    .testamonial-container {
+        display: flex; 
+        flex-direction: row;
+        margin-bottom:1em;
+    }
+</style>
 {% assign tab_id=include.tab %}
 
 {% assign entries = site.data.testimonials.entries | where_exp:"item", "item.published == true" | where_exp:"item", "item.tabs contains tab_id"  %}
 
 {% for entry in entries %}
-    <div style="display: flex; flex-direction: row;">
+    <div class="testamonial-container">
         <div style="display: flex; flex-direction: column;">
             <img src="{{entry.photo}}" style="max-width:15vw; min-width:15vw; margin:1em; border-radius: 50%;" />
         </div>

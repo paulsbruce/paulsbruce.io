@@ -29,15 +29,32 @@ entries:
   text: |
     Paul and I crushed it at Neotys for years. In the office, on the road, on every remote session we needed...he had my back. It didn't take long for us to win huge logos and close some of the biggest deals in the company's history. Hope to work with him again at some point!
 
+- name: Kristen Webb
+  published: true
+  linkedin: kristenmwebb
+  photo: https://media.licdn.com/dms/image/v2/C4E03AQEqGG9KvuZXnw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1651410855387?e=1738800000&v=beta&t=GjaIZW5TCVQOCCDuJchBhOve_N8SFqooIBikbk2qTy0
+  tabs:
+  - marketing
+  text: |
+    Paul was extremely helpful with positioning around DevOps and on webinars as a subject matter expertise. We worked closely on multiple projects and content pieces where his attention to detail and customer focus made them all the more powerful resources for our sales and marketing teams. Many of his visual contributions also made it into our core messaging and sales decks as well.
+
 - name: Eric Sherman
   published: true
   linkedin: shermaneric
   photo: https://media.licdn.com/dms/image/v2/D4E03AQFl4c6XB9DDxg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728672187265?e=1738800000&v=beta&t=q0E3OuqEamX6GZBiGl-roh7n5sUj_6V5qOZQnDuwnsE
   tabs:
-  - sales
   - executive
   text: |
     Paul was instrumental in maturing our evangelism in the performance and dev ops community. He is a well respected technical mind in that arena. His commitment to improving sales execution as a sales engineer was key to our ability to win more deals. He pushed me as a leader to work with him to develop more advanced sales methodologies. Paul is never satisfied with the status quo. 
+
+- name: Kaia Maeve
+  published: true
+  linkedin: kaiamaeve
+  photo: https://media.licdn.com/dms/image/v2/D5603AQEqcjHFWsLlbQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711568204995?e=1738800000&v=beta&t=_lzh_RU-65dS8sWTTfazPOkvBq5CdjF-Cv2O_Loprc0
+  tabs:
+  - sales
+  text: |
+    Paul is an enthusiastic learner and great cross-functional agent of support for fellow co-workers! Though we were on different teams, his weekly mugclub sessions were always an invaluable space to discuss, compare, and refine our sales approach. He’s the kind of person that quickly earns trust, across internal teams as well as externally with users and their leadership.
 
 - name: Bryan Cole
   published: true
@@ -46,7 +63,7 @@ entries:
   categories:
   - customer engineering  
   tabs:
-  - sales
+  - product
   text: |
     We worked together in Customer Engineering, a revenue-critical function he set up at Neotys before acquisition and one that I've seen grow in value since 2021. His support of other employees and customers provided great opportunities for further account expansion and industry recognition.
 
@@ -57,14 +74,14 @@ entries:
   tabs:
   - sales
   text: |
-    Paul and I worked on many customers working through their DevOps and cloud transformations. He was always ready and never failed to impress some of our most technical and developer-focused accounts. I'd bring him along on a trip to San Francisco any time.
+    Paul is an exceptional solution engineer with deep DevOps and cloud transformation expertise. He masterfully navigates both executive conversations and technical deep dives, creatively removing complex technical blockers, often with lots of sticky-notes, to keep opportunities moving through validation. His unique ability to provide strategic insights and granular solutions makes him an invaluable sales engineer who helped us earn the trust and opportunity to deliver technology and services to many key accounts over the years.
 
 - name: Cyrus Manouchehrian 
   published: true
   linkedin: cyrusmanouch
   photo: https://media.licdn.com/dms/image/v2/D4E03AQH-ihkqy-2HuA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1685474995237?e=1738800000&v=beta&t=HFHGDiOHN2PwQoFuvvaO8lW0-bw_F-6sCA_rUOlbRes
   tabs:
-  - product strategy
+  - product
   text: |
     In our corporate development overlap, Paul led the effort to provide highly credible pre-acquisition technical due diligence. I was always impressed with his ability to summarize actionable intel from deep-dives, sometimes even consolidating a huge amount of work into easy to understand decisions. He also grew trust between groups which is rare and necessary for long-term success.
 
@@ -84,7 +101,7 @@ entries:
   tabs:
   - sales
   text: |
-    Between Smartbear and Neotys, I had the pleasure of working with Paul on a handful of really important customers. He is a very technical guy but knows how to read the room and follow up well. Especially with the more complicated integration demos and objection handling, this is something not ever sales engineer can do well.
+    Between Smartbear and Neotys/Tricentis, I had the pleasure of working closely on a handful of very important customers. As Neotys worked to grow our Enterprise customer base, Paul was very integral in winning those customers confidence and ensuring their success. Paul is a very technical guy but knows how to read the room and follow-up well. This was never more apparent then when we worked with the more complicated integration demos and objection handling, this is something not every sales engineer can do well.
 
 - name: Keith Alsheimer
   published: true
@@ -93,7 +110,7 @@ entries:
   categories:
   - product marketing
   tabs:
-  - marketing
+  - executive
   text: |
     Paul is the most talented and effective technologist and change agent I have ever known. Paul is innately curious with a voracious appetite for learning that is seemingly boundless. But Paul's true genius is his passion for teaching. Whether speaking at conferences, leading meet-ups, advising clients or just casual conversation with colleagues, Paul creates interactive learning environments where he thoughtfully and energetically enables fertile learning environments. As the Head of Marketing, I routinely relied upon Paul for product marketing insights and to work collaboratively in a wide variety of community and field marketing events. In addition to being an amazing technologist and teacher, Paul is also one of the finest humans I know. People naturally want to follow Paul because of his brilliance, but also because his sincerity and empathy is so genuine. I would jump at the opportunity to work with Paul again in a heartbeat!
 
@@ -117,7 +134,6 @@ entries:
   - product strategy
   tabs:
   - marketing
-  - product
   text: |
     Paul worked as a Developer Evangelist in my Product Marketing team at Perfecto. He is passionate and hard working. His combination of technical expertise, business acumen, and creative thinking makes him a strong asset to any team. 
 

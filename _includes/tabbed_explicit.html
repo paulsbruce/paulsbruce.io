@@ -2,7 +2,7 @@
 
 <div class="tab flex-container">
   {% for tab in tabs %}
-      <button class="tablinks" onclick="openTab(event, '{{tab.id}}')">{{tab.button}}</button>
+      <button class="tablinks" onclick="openTab(this, '{{tab.id}}')">{{tab.button}}</button>
   {% endfor %}
 </div>
 
@@ -80,9 +80,13 @@
   </style>
   
   <script type="text/javascript">
-  function openTab(evt, tabId) {
+  function openTab(el, tabId) {
     // Declare all variables
     var i, tabcontent, tablinks;
+    console.log(tabId)
+    console.log(el)
+
+    location.hash = "_"+tabId
   
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -98,6 +102,18 @@
   
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabId).style.display = "block";
-    evt.currentTarget.className += " active";
+    el.className += " active";
   }
+
+  var tabbed_explicit_load = null;
+  tabbed_explicit_load = setInterval(function() {
+    if($) {
+      clearInterval(tabbed_explicit_load)
+      var ht = (""+location.hash).replace("#","");
+      if (ht.indexOf('_') == 0) {
+        var tabId = ht.replace("_","");
+        openTab(document.getElementById(tabId), tabId)
+      }
+    }
+  }, 100)
 </script>

@@ -84,7 +84,7 @@ I now know that my balance of successful and happy lives in sales engineering.
 <div id="testimonials" class="tabcontent">
 
 <div style="display:flex;flex-direction:row-reverse;">
-    <a href="/personal-testimonials/">More testimonials</a>
+    <a href="/personal-testimonials/#_executive">More testimonials</a>
 </div>
 
 {% include testimonials_by_tab.html tab="sales" default_tab="sales" %}
