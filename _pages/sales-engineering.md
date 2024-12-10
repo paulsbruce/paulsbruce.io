@@ -87,7 +87,7 @@ I now know that my balance of successful and happy lives in sales engineering.
     <a href="/personal-testimonials/#_executive">More testimonials</a>
 </div>
 
-{% include testimonials_by_tab.html tab="sales" default_tab="sales" %}
+{% include testimonials_by_collection.html category="sales" %}
 
 </div>
 

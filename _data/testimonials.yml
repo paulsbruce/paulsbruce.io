@@ -8,6 +8,39 @@ tabs:
 - id: executive
   button: "Executive"
 entries:
+
+- name: Thibaud Bussière
+  published: false
+  linkedin: thibaud-bussiere
+  photo: https://media.licdn.com/dms/image/v2/C4E03AQFKGczYBjfu4w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517707353299?e=1739404800&v=beta&t=vgWptRlVBz8QQVmyXIULpVVCbsXNJhqcOf5JD1UzbJw
+  categories:
+  - executive
+  - supervisor
+  tabs:
+  - executive
+  text: |
+    I hired Paul as a Sales Engineer in my growing U.S. team and immediately saw the positive impact, not only in revenue but in sales team development and process improvement. Paul brings an impressive technical and personal level of commitment to teams he's on as well as other groups such as marketing, product, and executive leadership. He was instrumental in elevating our offering in DevOps and continuous delivery teams, writing many early code examples and modernizing our training resources. He also brought our product leaders on-site with some of our biggest customers who were primed to share their internal roadmaps and collaborate on the future of our product because of the trust he helped to develop with them. He even made internal business cases for technology integrations in high demand so that we could make well-timed investment decisions, ultimately leading to the creation of our 'customer engineering' role which is still critical to sales and customer success to this day. It was great to work with him for the years we did!
+
+- name: Grigori Melnik
+  published: true
+  linkedin: melnik
+  photo: https://media.licdn.com/dms/image/v2/D4E03AQE3IaXlqwfLng/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722312524471?e=1739404800&v=beta&t=-UDHUsBowhXGmQxXZYdB-GlmkQ80EfIK5AAm2MuGlVw
+  categories:
+  - executive
+  - supervisor
+  tabs:
+  - executive
+  text: |
+    When Paul pitched Incubation Engineering to me in 2021, it was an easy decision to bring him into my Product organization. He quickly became an invaluable resource -- not only for Quality Engineering and DevOps discussions and advanced demos, but also for his ability to collaborate with a small team to transform innovative ideas into prototypes. Some of these prototypes led to patent filings, while others evolved into approved new product initiatives.
+
+    As I transitioned to lead the Office of Strategy, Paul was once again eager to contribute, this time tackling complex challenges in strategic positioning, competitive differentiation, and technical due diligence for potential acquisitions. He even played a key role in organizing internal hackathons, all while managing the work funnel for his incubation team. Paul was consistently prepared for our one-on-one meetings, bringing thoughtful insights and a clear sense of priorities for the week. His structured thinking and meticulous note-taking allowed us to cover a lot of ground in a short amount of time, which was invaluable given our limited resources.
+
+    I frequently heard from his colleagues how much they benefited from his cross-functional discussions and his “Mug club” sessions, where people could pitch new ideas and receive feedback on early features. Paul's willingness to facilitate open collaboration helped foster a culture of innovation and continuous improvement within the team.
+
+    Beyond his role in product and strategy, Paul has been highly active in the DevOps community. He has organized DevOps Days events, spoken at numerous industry conferences, authored insightful articles, and built tools to address critical challenges in the space.
+
+    Paul consistently goes above and beyond in everything he does. His strong emotional intelligence allows him to connect with and motivate teams, particularly those that are newly formed. He has a unique ability to catalyze progress and bring out the best in everyone he works with. I have no doubt that Paul will continue to make significant contributions in any role he takes on.
+
 - name: Chris Colosimo
   published: true
   linkedin: ccolosimo
@@ -132,6 +165,7 @@ entries:
   categories:
   - product marketing
   - product strategy
+  - supervisor
   tabs:
   - marketing
   text: |

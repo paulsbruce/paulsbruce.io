@@ -5,9 +5,14 @@
         margin-bottom:1em;
     }
 </style>
-{% assign tab_id=include.tab %}
+{% assign entries = site.data.testimonials.entries | where_exp:"item", "item.published == true" %}
 
-{% assign entries = site.data.testimonials.entries | where_exp:"item", "item.published == true" | where_exp:"item", "item.tabs contains tab_id"  %}
+{% if include.tab and include.tab != '' %}
+    {% assign entries = entries | where_exp:"item", "item.tabs contains include.tab"  %}
+{% endif %}
+{% if include.category and include.category != '' %}
+    {% assign entries = entries | where_exp:"item", "item.categories contains include.category"  %}
+{% endif %}
 
 {% for entry in entries %}
     <div class="testamonial-container">
@@ -16,7 +21,7 @@
         </div>
         <div style="display: flex; flex-direction: column;">
             <h2><a target="_blank" href="https://www.linkedin.com/in/{{entry.linkedin}}">{{entry.name}}</a></h2>
-            <i>{{ entry.text }}</i>
+            <i>{{ entry.text | markdownify }}</i>
         </div>
     </div>
 {% endfor %}

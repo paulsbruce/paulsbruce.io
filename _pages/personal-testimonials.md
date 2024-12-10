@@ -27,7 +27,7 @@ permalink: "/personal-testimonials/"
 <div id="{{tab_id}}" class="tabcontent">
 {% endif %}
 
-{% include testimonials_by_tab.html tab=tab_id %}
+{% include testimonials_by_collection.html tab=tab_id %}
 
 </div>
 
