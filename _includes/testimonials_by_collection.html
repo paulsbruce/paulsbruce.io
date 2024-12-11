@@ -8,6 +8,7 @@
 {% assign entries = site.data.testimonials.entries | where_exp:"item", "item.published == true" %}
 
 {% if include.tab and include.tab != '' %}
+    {% assign tab_id = include.tab %}
     {% assign entries = entries | where_exp:"item", "item.tabs contains include.tab"  %}
 {% endif %}
 {% if include.category and include.category != '' %}

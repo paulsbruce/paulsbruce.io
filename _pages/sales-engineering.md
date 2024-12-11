@@ -64,16 +64,29 @@ The short is, I've never been one to climb corporate ladders or narrowly seek a 
 
 I now know that my balance of successful and happy lives in sales engineering.
 
-- Now: seeking a full-time role
+- **Now: seeking a full-time role in:**
     - Senior Sales Engineer; Enterprise, Federal, Mid-market
-- Post-acquisition, a few years:
-    - 2023 - 2024 (Tricentis): PM in Platform Services, Identity Management (got asked to do something, didn't work out)
-    - 2022 - 2023 (Tricentis): Head of Incubation Engineering (tried something novel, didn't work out)
+- For 3 years (post-acquisition) [more](#){: #pm-years-toggle-link .li-more}
+    - Summer of 2024
+        - Sabbatical, volunteering on local farms
+        - Co-organized DevOpsDays Boston for fifth year in a row
+        - Kickoff of side project, [Growgistics](https://growgistics.io) (agricultural tech inbubator)
+    - 2023 - 2024 (Tricentis): PM in Platform Services, Identity Management
+        - got asked to work on Federated Identity Management and platform services, initiative cancelled due to cost-cutting measures
+    - 2022 - 2023 (Tricentis): Head of Incubation Engineering
+        - tried something novel, non-priority for corporate leadership
+        - multiple patents filed
+        - due-diligence analysis over 40+ potential acquisitions
+        - new product initiatives approved and staged for 2024 initiation
 - **For 5 years**:
     - **2020 - 2022 (Neotys/Tricentis): Head of Customer Engineering (a.k.a. advanced pre/post sales and solutions engineering)**
+        - Team attainment 126%, individual non-sales performance goals 100%
+        - President's Club award
     - **2017 - 2020 (Neotys): Senior Sales Engineer, Performance and Load Testing**
+        - Individual goals and team attainment higher than 115% each year
+        - 3 years of President's Club awards
 - For 2 years:
-    - 2015 - 2016 (SmartBear, Perfecto): Stint in Product Marketing, not my cup of tea
+    - 2015 - 2016 (SmartBear, Perfecto): Stint in Product Marketing, learned that product marketing was not my cup of tea but product evangelism is
 - **For 2.5 years**:
     - **2013 - 2015 (SmartBear): First time Sales Engineer on complex performance products**
 
@@ -87,8 +100,50 @@ I now know that my balance of successful and happy lives in sales engineering.
     <a href="/personal-testimonials/#_executive">More testimonials</a>
 </div>
 
-{% include testimonials_by_collection.html category="sales" %}
+{% include testimonials_by_collection.html category="sales" default_tab="sales" %}
 
 </div>
 
 </div>
+
+<style type="text/css">
+a.li-more {
+  cursor: pointer;
+  color: #ccc;
+  font-size: 0.7em;
+}
+.li-more-hidden {
+  display: none;
+}
+</style>
+
+<script type="text/javascript">
+(function() {
+  var elements = [$("#pm-years-toggle-link")]
+  $(elements).each(function(i,a) {
+    a.removeClass('li-more-hidden')
+    a.click(toggleListMore);
+    a.removeAttr('href')
+    setListMoreVisibility(a,false)
+  })
+
+})();
+
+function toggleListMore() {
+  var a = $(this)
+  var li = a.parent()
+  var ul = li.find('ul')
+  setListMoreVisibility(a,ul.hasClass('li-more-hidden'))
+}
+function setListMoreVisibility(a,isVisible) {
+  var li = a.parent()
+  var ul = li.find('ul')
+  if(isVisible) {
+    a.text('... [hide detail]')
+    ul.removeClass('li-more-hidden')
+  } else {
+    a.text('... [show detail]')
+    ul.addClass('li-more-hidden')
+  }
+}
+</script>

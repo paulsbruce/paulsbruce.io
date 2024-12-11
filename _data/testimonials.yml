@@ -9,18 +9,6 @@ tabs:
   button: "Executive"
 entries:
 
-- name: Thibaud Bussière
-  published: false
-  linkedin: thibaud-bussiere
-  photo: https://media.licdn.com/dms/image/v2/C4E03AQFKGczYBjfu4w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517707353299?e=1739404800&v=beta&t=vgWptRlVBz8QQVmyXIULpVVCbsXNJhqcOf5JD1UzbJw
-  categories:
-  - executive
-  - supervisor
-  tabs:
-  - executive
-  text: |
-    I hired Paul as a Sales Engineer in my growing U.S. team and immediately saw the positive impact, not only in revenue but in sales team development and process improvement. Paul brings an impressive technical and personal level of commitment to teams he's on as well as other groups such as marketing, product, and executive leadership. He was instrumental in elevating our offering in DevOps and continuous delivery teams, writing many early code examples and modernizing our training resources. He also brought our product leaders on-site with some of our biggest customers who were primed to share their internal roadmaps and collaborate on the future of our product because of the trust he helped to develop with them. He even made internal business cases for technology integrations in high demand so that we could make well-timed investment decisions, ultimately leading to the creation of our 'customer engineering' role which is still critical to sales and customer success to this day. It was great to work with him for the years we did!
-
 - name: Grigori Melnik
   published: true
   linkedin: melnik
@@ -41,6 +29,19 @@ entries:
 
     Paul consistently goes above and beyond in everything he does. His strong emotional intelligence allows him to connect with and motivate teams, particularly those that are newly formed. He has a unique ability to catalyze progress and bring out the best in everyone he works with. I have no doubt that Paul will continue to make significant contributions in any role he takes on.
 
+- name: Thibaud Bussière
+  published: true
+  linkedin: thibaud-bussiere
+  photo: https://media.licdn.com/dms/image/v2/C4E03AQFKGczYBjfu4w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517707353299?e=1739404800&v=beta&t=vgWptRlVBz8QQVmyXIULpVVCbsXNJhqcOf5JD1UzbJw
+  categories:
+  - executive
+  - supervisor
+  - sales
+  tabs:
+  - executive
+  text: |
+    I hired Paul as a Sales Engineer in my growing U.S. team and immediately saw the positive impact, not only in revenue but in sales team development and process improvement. Paul brings an impressive technical and personal level of commitment to teams he's on as well as other groups such as marketing, product, and executive leadership. He was instrumental in elevating our offering in DevOps and continuous delivery teams, writing many early code examples and modernizing our training resources. He also brought our product leaders on-site with some of our biggest customers who were primed to share their internal roadmaps and collaborate on the future of our product because of the trust he helped to develop with them. He even made internal business cases for technology integrations in high demand so that we could make well-timed investment decisions, ultimately leading to the creation of our 'customer engineering' role which is still critical to sales and customer success to this day. It was great to work with him for the years we did!
+
 - name: Chris Colosimo
   published: true
   linkedin: ccolosimo
@@ -57,6 +58,8 @@ entries:
   published: true
   linkedin: eric-marhafer-284b8a
   photo: https://media.licdn.com/dms/image/v2/C4E03AQGRz3w57cV01Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1649348892886?e=1738800000&v=beta&t=697yxMkXHkwetyPCTQCfMKc6A70XOe5nK0AnACked70
+  categories:
+  - sales
   tabs:
   - sales
   text: |
@@ -75,6 +78,8 @@ entries:
   published: true
   linkedin: shermaneric
   photo: https://media.licdn.com/dms/image/v2/D4E03AQFl4c6XB9DDxg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728672187265?e=1738800000&v=beta&t=q0E3OuqEamX6GZBiGl-roh7n5sUj_6V5qOZQnDuwnsE
+  categories:
+  - sales
   tabs:
   - executive
   text: |
@@ -84,6 +89,8 @@ entries:
   published: true
   linkedin: kaiamaeve
   photo: https://media.licdn.com/dms/image/v2/D5603AQEqcjHFWsLlbQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711568204995?e=1738800000&v=beta&t=_lzh_RU-65dS8sWTTfazPOkvBq5CdjF-Cv2O_Loprc0
+  categories:
+  - sales
   tabs:
   - sales
   text: |
@@ -94,6 +101,7 @@ entries:
   linkedin: bryancole
   photo: https://media.licdn.com/dms/image/v2/C4E03AQG9vEYB60aaTQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517737587157?e=1738800000&v=beta&t=5YyliTI3YTJcFNi-u-1iwQKYGdzDsDgI4Lql2N8rT_s
   categories:
+  - sales
   - customer engineering  
   tabs:
   - product
@@ -104,6 +112,8 @@ entries:
   published: true
   linkedin: patrickcurran05
   photo: https://media.licdn.com/dms/image/v2/D5603AQGS5c4HB6AotQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680738310824?e=1738800000&v=beta&t=VOV873_5wwQA_gtrfjj7HjmUnBLn-h8_0VzBTw57lbM
+  categories:
+  - sales
   tabs:
   - sales
   text: |
@@ -122,6 +132,8 @@ entries:
   published: true
   linkedin: evan-sylvester
   photo: https://media.licdn.com/dms/image/v2/C4E03AQFz6tzil5IfBg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516299199342?e=1738800000&v=beta&t=7ViVnqvmKVKYsezoNGDscbFUaHS-qLLgTDOAlloQsqQ
+  categories:
+  - sales
   tabs:
   - sales
   text: |
@@ -131,6 +143,8 @@ entries:
   published: true
   linkedin: sdoughty
   photo: https://media.licdn.com/dms/image/v2/C5103AQHCFs-fq2TW7Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516358048672?e=1738800000&v=beta&t=KD--Sf3jtyPwYzs0fOTbLIopQ7NMTpzJRYrLKjgRUs8
+  categories:
+  - sales
   tabs:
   - sales
   text: |
@@ -151,6 +165,8 @@ entries:
   published: true
   linkedin: matthew-fermino-20477811
   photo: https://media.licdn.com/dms/image/v2/C4D03AQE3WxKATjpQOQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1624707509814?e=1738800000&v=beta&t=CyZ2CJBvPjX0bhM5I2l3eJEfIA3HbdTa0RZrcoGTot4
+  categories:
+  - sales
   tabs:
   - sales
   text: |
@@ -200,6 +216,8 @@ entries:
   published: true
   linkedin: michaelgiller
   photo: https://media.licdn.com/dms/image/v2/C4D03AQGRfmlkmw_Pow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1617217582890?e=1738800000&v=beta&t=clw28pPolbetVR5925_mqN1lWi4qxDABUPspd7is9oc
+  categories:
+  - sales
   tabs:
   - sales
   text: |
