@@ -13,7 +13,8 @@ categories:
   - engineering
   - continuous
   - DevOps
-tags: []
+tags:
+  - sales engineering
 author:
   login: pbruce
   display_name: Paul Bruce

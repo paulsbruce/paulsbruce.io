@@ -13,7 +13,8 @@ categories:
   - LLM
   - RAG
   - cloud
-tags: []
+tags:
+  - sales engineering
 author:
   login: pbruce
   display_name: Paul Bruce

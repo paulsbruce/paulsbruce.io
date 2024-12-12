@@ -10,7 +10,8 @@ categories:
   - sales engineering
   - demonstrations
   - career
-tags: []
+tags:
+  - sales engineering
 author:
   login: pbruce
   display_name: Paul Bruce

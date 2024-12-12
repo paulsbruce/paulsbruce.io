@@ -10,6 +10,8 @@ tabs:
     button: "Testimonials"
   - id: summary
     button: "Values"
+  - id: articles
+    button: "Thoughts"
 ---
 
 <div class="summary-sections">
@@ -101,6 +103,19 @@ I now know that my balance of successful and happy lives in sales engineering.
 </div>
 
 {% include testimonials_by_collection.html category="sales" default_tab="sales" %}
+
+</div>
+
+<div id="articles" class="tabcontent">
+
+{% assign posts = site.tags['sales engineering'] %}
+<ul>
+{% for post in posts %}
+    {% if post.url %}
+        <li>{{post.date | date: "%Y"}}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
 
 </div>
 
