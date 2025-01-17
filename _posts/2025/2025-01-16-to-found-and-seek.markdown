@@ -45,7 +45,7 @@ I also worked on a ton of micro-projects at home, nailed my gardening season, an
 
 The short version is that the startup *I WANT TO FOUND* is going to take a longer runway than I have right now and I don't want to use other peoples' money to do this. Unlike singles with no dependents, I have a more important responsibility to them than to my ideal startup.
 
-It's taken time to absorb context from a lot of books, blogs, videos, podcasts, farmers, farm hands, and even Agricultural conference-goers. There's much in terms of traditional agriculture which is already worked out. Same with traditional applications of digital technology in that space. A naive outlook on the AgTech space would conclude that there are only niche categories of marginal improvements to be had there, but somehow I emerge the prior incubation experience still believeing that there are new/novel and profitable ideas not yet had. At the very least there are untapped convolutions of biological and human interactions that can somehow benefit people.
+It's taken time to absorb context from a lot of books, blogs, videos, podcasts, farmers, farm hands, and even Agricultural conference-goers. There's much in terms of traditional agriculture which is already worked out. Same with traditional applications of digital technology in that space. A naive outlook on the AgTech space would conclude that there are only niche categories of marginal improvements to be had there, but somehow I emerge the prior incubation experience still believing that there are new/novel and profitable ideas not yet had. At the very least there are untapped convolutions of biological and human interactions that can somehow benefit people.
 
 [Growgistics](https://growgistics.io) is my startup, but it's on pause until I can establish the bootstrap capital and find an equally passionate co-founder to work it hard with me. By my calculations, this will take at least 3 years of my own further employment in a reasonably well-paying and full-time employment opportunity to develop.
 
@@ -53,7 +53,7 @@ It's taken time to absorb context from a lot of books, blogs, videos, podcasts, 
 
 I restarted conversations with a few really qualified early employer targets in October. Then I co-organized DevOpsDays Boston for the fifth (and final) year in a row. I also knew that hiring in Q4 is fraught, but the time to plant trees is always twenty years ago, so I also began to reach out to direct contacts and fill out applications in mid-November.
 
-Since that time, I've filled out dozens of applications for sales engineering roles I have the background for and could fulfil, talked to employers inside and outside the high tech space inundated with a backlog of candidates, watched as industry friends far more credentialed and active than I have been laid off as well...the labor market is absolutely nuts. I even asked my prior colleagues to weigh in with [testimonials](/sales-engineering/#_testimonials) and everyone was more than happy to do so.
+Since that time, I've filled out dozens of applications for sales engineering roles I have the background for and could fulfill, talked to employers inside and outside the high tech space inundated with a backlog of candidates, watched as industry friends far more credentialed and active than I have been laid off as well...the labor market is absolutely nuts. I even asked my prior colleagues to weigh in with [testimonials](/sales-engineering/#_testimonials) and everyone was more than happy to do so.
 
 What I am focused on is what I do best, helping people understand what they need to in order to adopt new technology and making that an honest and useful spend of effort on both sides. I think of my current high tech employment prospects in terms of three fitness aspects:
 
@@ -65,7 +65,7 @@ What I am focused on is what I do best, helping people understand what they need
 
 # "Why doesn't Paul have a job yet?"
 
-In short, I was fortunate to have economic runway enough to not rush with whom and where I work. I also just started seriously looking only two months ago which was middle of Q4 and end of December is nuts for everyone. Also for those who haven't been on a job hunt recently, you should try it; it's brutal as many will attest to.
+In short, I was fortunate to have enough planned economic runway to not rush with whom and where I work. I also just started seriously looking only two months ago, which was in the middle of Q4, and the end of December is nuts for everyone. Also for those who haven't been on a job hunt recently, you should try it; it's brutal as many will attest to.
 
 I've had some good early conversations, but few of them have struck me as compatible for one reason or another. The ones that send pre-conversation rejections are often due to "we already accepted someone else further down the funnel than you" or because of a lack of specialized skills (i.e. certifications and technologies) either unstated or not directly matching the posting nice-to-haves.
 
@@ -73,14 +73,14 @@ So for people asking "why doesn't Paul have a job?" which has included recruiter
 
 # What I'm Working On in the Mean Time
 
-The past 7 months have not been boring or a waste. I have gotten so many things done that the prior job just didn't provide time or headspace for. In retrospect, I now see that it's important to retain an afternoon a weekend to do 'me time' (or at least digital housekeeping and upkeep) to continuously keep this in balange.
+The past 7 months have not been boring or a waste. I have gotten so many things done that the prior job just didn't provide time or headspace for. In retrospect, I now see that it's important to retain an afternoon a weekend to do 'me time' (or at least digital housekeeping and upkeep) to continuously keep this in balance.
 
 For now, every morning, I get a fresh coffee and kick out a TODO list for the day. It always starts with "have to's" first, then any "get to" projects. My have-tos are prioritized first with professional, then house-related things, then volunteering. It's my low tech personal kanban.
 
 Of the projects I've completed recently or currently working on are:
 
 * (current) Co-chair of 'IEEE P2675.2 Observability'
-  * Working with Ruth Lennon, Mark Underwork and others to develop a normative standard for observability in the context of highly regulated industries
+  * Working with Ruth Lennon, Mark Underwood and others to develop a normative standard for observability in the context of highly regulated industries
   * this is a follow-on to years of significant contributing authorship of [IEEE/ISO/IEC 32675 DevOps - Building reliable and secure systems including application build, package and deployment](https://www.iso.org/standard/83670.html)
   
 * Concluding DevOpsDays Boston
