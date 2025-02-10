@@ -170,3 +170,5 @@ Just kidding, it's a mixture of:
 Nope. I like to know how things work, especially when it comes to personal digital security and privacy. Everything above is also represented in my data backup and recovery strategy. I also like to have multiple levels of use cases for *disaster recovery* that I can exercise on a semi-frequent basis. 
 
 For me, this is like mowing my yard...there's a simple pleasure in curating and maintaining things that I know how they work. Like interviewing, it was nice to see a little bit into how a cool company works and take a solid crack at driving a job offer.
+
+!["Image of a git commit for this article with the GitGuardian Shield command line interface reporting 'no secrets have been found'](/assets/images/2025/2025-02-09-dirty-little-secrets-commit-none-found.png)
