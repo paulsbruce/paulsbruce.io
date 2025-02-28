@@ -12,7 +12,7 @@ entries:
 - name: Grigori Melnik
   published: true
   linkedin: melnik
-  photo: https://media.licdn.com/dms/image/v2/D4E03AQE3IaXlqwfLng/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722312524471?e=1739404800&v=beta&t=-UDHUsBowhXGmQxXZYdB-GlmkQ80EfIK5AAm2MuGlVw
+  photo: /assets/images/testimonials/melnik.jpeg
   categories:
   - executive
   - supervisor
@@ -32,7 +32,7 @@ entries:
 - name: Thibaud Bussière
   published: true
   linkedin: thibaud-bussiere
-  photo: https://media.licdn.com/dms/image/v2/C4E03AQFKGczYBjfu4w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517707353299?e=1739404800&v=beta&t=vgWptRlVBz8QQVmyXIULpVVCbsXNJhqcOf5JD1UzbJw
+  photo: /assets/images/testimonials/thibaud-bussiere.jpeg
   categories:
   - executive
   - supervisor
@@ -49,7 +49,7 @@ entries:
 - name: Chris Colosimo
   published: true
   linkedin: ccolosimo
-  photo: https://images.crunchbase.com/image/upload/c_thumb,h_170,w_170,f_auto,g_face,z_0.7,b_white,q_auto:eco,dpr_2/vf8xjputfasyhdza2lzp
+  photo: /assets/images/testimonials/ccolosimo.webp
   categories:
   - product management
   - informal
@@ -61,7 +61,7 @@ entries:
 - name: Eric Marhafer
   published: true
   linkedin: eric-marhafer-284b8a
-  photo: https://media.licdn.com/dms/image/v2/C4E03AQGRz3w57cV01Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1649348892886?e=1738800000&v=beta&t=697yxMkXHkwetyPCTQCfMKc6A70XOe5nK0AnACked70
+  photo: /assets/images/testimonials/eric-marhafer-284b8a.jpeg
   categories:
   - sales
   tabs:
@@ -72,7 +72,7 @@ entries:
 - name: Kristen Webb
   published: true
   linkedin: kristenmwebb
-  photo: https://media.licdn.com/dms/image/v2/C4E03AQEqGG9KvuZXnw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1651410855387?e=1738800000&v=beta&t=GjaIZW5TCVQOCCDuJchBhOve_N8SFqooIBikbk2qTy0
+  photo: /assets/images/testimonials/kristenmwebb.jpeg
   tabs:
   - marketing
   text: |
@@ -81,7 +81,7 @@ entries:
 - name: Eric Sherman
   published: true
   linkedin: shermaneric
-  photo: https://media.licdn.com/dms/image/v2/D4E03AQFl4c6XB9DDxg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728672187265?e=1738800000&v=beta&t=q0E3OuqEamX6GZBiGl-roh7n5sUj_6V5qOZQnDuwnsE
+  photo: /assets/images/testimonials/shermaneric.jpeg
   categories:
   - sales
   tabs:
@@ -92,7 +92,7 @@ entries:
 - name: Kaia Maeve
   published: true
   linkedin: kaiamaeve
-  photo: https://media.licdn.com/dms/image/v2/D5603AQEqcjHFWsLlbQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711568204995?e=1738800000&v=beta&t=_lzh_RU-65dS8sWTTfazPOkvBq5CdjF-Cv2O_Loprc0
+  photo: /assets/images/testimonials/kaiamaeve.jpeg
   categories:
   - sales
   tabs:
@@ -103,7 +103,7 @@ entries:
 - name: Bryan Cole
   published: true
   linkedin: bryancole
-  photo: https://media.licdn.com/dms/image/v2/C4E03AQG9vEYB60aaTQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517737587157?e=1738800000&v=beta&t=5YyliTI3YTJcFNi-u-1iwQKYGdzDsDgI4Lql2N8rT_s
+  photo: /assets/images/testimonials/bryancole.jpeg
   categories:
   - sales
   - customer engineering  
@@ -115,7 +115,7 @@ entries:
 - name: Patrick Curran
   published: true
   linkedin: patrickcurran05
-  photo: https://media.licdn.com/dms/image/v2/D5603AQGS5c4HB6AotQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680738310824?e=1738800000&v=beta&t=VOV873_5wwQA_gtrfjj7HjmUnBLn-h8_0VzBTw57lbM
+  photo: /assets/images/testimonials/patrickcurran05.jpeg
   categories:
   - sales
   tabs:
@@ -126,7 +126,7 @@ entries:
 - name: Cyrus Manouchehrian 
   published: true
   linkedin: cyrusmanouch
-  photo: https://media.licdn.com/dms/image/v2/D4E03AQH-ihkqy-2HuA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1685474995237?e=1738800000&v=beta&t=HFHGDiOHN2PwQoFuvvaO8lW0-bw_F-6sCA_rUOlbRes
+  photo: /assets/images/testimonials/cyrusmanouch.jpeg
   tabs:
   - product
   text: |
@@ -135,7 +135,7 @@ entries:
 - name: Evan Sylvester
   published: true
   linkedin: evan-sylvester
-  photo: https://media.licdn.com/dms/image/v2/C4E03AQFz6tzil5IfBg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516299199342?e=1738800000&v=beta&t=7ViVnqvmKVKYsezoNGDscbFUaHS-qLLgTDOAlloQsqQ
+  photo: /assets/images/testimonials/evan-sylvester.jpeg
   categories:
   - sales
   tabs:
@@ -146,7 +146,7 @@ entries:
 - name: Scott Doughty
   published: true
   linkedin: sdoughty
-  photo: https://media.licdn.com/dms/image/v2/C5103AQHCFs-fq2TW7Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516358048672?e=1738800000&v=beta&t=KD--Sf3jtyPwYzs0fOTbLIopQ7NMTpzJRYrLKjgRUs8
+  photo: /assets/images/testimonials/sdoughty.jpeg
   categories:
   - sales
   tabs:
@@ -157,7 +157,7 @@ entries:
 - name: Keith Alsheimer
   published: true
   linkedin: keithalsheimer
-  photo: https://media.licdn.com/dms/image/v2/C4E03AQFD77kMMeCQpw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517701495418?e=1738800000&v=beta&t=rVkQl3ChLcJNESElgGUU73BjA99cZ20kabELQ_m6Iik
+  photo: /assets/images/testimonials/keithalsheimer.jpeg
   categories:
   - product marketing
   tabs:
@@ -168,7 +168,7 @@ entries:
 - name: Matthew Fermino
   published: true
   linkedin: matthew-fermino-20477811
-  photo: https://media.licdn.com/dms/image/v2/C4D03AQE3WxKATjpQOQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1624707509814?e=1738800000&v=beta&t=CyZ2CJBvPjX0bhM5I2l3eJEfIA3HbdTa0RZrcoGTot4
+  photo: /assets/images/testimonials/matthew-fermino-20477811.jpeg
   categories:
   - sales
   tabs:
@@ -181,7 +181,7 @@ entries:
 - name: Carlo Cadet
   published: true
   linkedin: carlocadet
-  photo: https://media.licdn.com/dms/image/v2/C5603AQHG-vOP6sOORQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1644155873349?e=1738800000&v=beta&t=79g6GI8NRC3ksrSHFCWS_41cySEDa5-r1OtL4pho-BQ
+  photo: /assets/images/testimonials/carlocadet.jpeg
   categories:
   - product marketing
   - product strategy
@@ -203,7 +203,7 @@ entries:
 - name: Chris Willis
   published: true
   linkedin: cpwillis
-  photo: https://media.licdn.com/dms/image/v2/D4E03AQEze3Rg42S21A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713897543319?e=1738800000&v=beta&t=bGhayuaHIGphJX1j_KtTEDx40LutsuNMgOXpF8cmKgc
+  photo: /assets/images/testimonials/cpwillis.jpeg
   categories:
   - product marketing
   tabs:
@@ -219,7 +219,7 @@ entries:
 - name: Mike Giller
   published: true
   linkedin: michaelgiller
-  photo: https://media.licdn.com/dms/image/v2/C4D03AQGRfmlkmw_Pow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1617217582890?e=1738800000&v=beta&t=clw28pPolbetVR5925_mqN1lWi4qxDABUPspd7is9oc
+  photo: /assets/images/testimonials/michaelgiller.jpeg
   categories:
   - sales
   tabs:
