@@ -17,7 +17,7 @@ theme                  : "minimal-mistakes-jekyll"
 
 # Site Settings
 locale                   : "en-US"
-title: "Paul Bruce, Technologist"
+title: "Paul Bruce"
 title_separator          : "-"
 subtitle                 : "Thoughts on tech, culture, and humanity. My own opinions."
 name: "paulsbruce.io"

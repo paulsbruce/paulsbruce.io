@@ -17,9 +17,10 @@ ul.cloud a[data-weight="{{ category.last.size }}"] { --size: {{ category.last.si
 
 ### Technologist by trade, engineer at heart.
 
-I am a high tech professional who enjoys people and winning. I've worked in many areas of software, but my passion in technical sales. I am currently looking for the right team to work with full-time.
+I am a tech professional who enjoys learning and growing. I enjoy working in technical sales as well as on farms. I am currently looking for the right team to work with full-time.
 
-<a href="/sales-engineering/">I could be your next sales engineer!</a>
+<button><a href="/sales-engineering/">As a Sales Engineer...</a></button>
+<button><a href="/entrepreneur/">As an Entrepreneur...</a></button>
 
 </div>
 

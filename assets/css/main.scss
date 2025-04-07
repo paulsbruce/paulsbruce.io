@@ -364,3 +364,31 @@ ul.cloud a:hover::before {
   width: 100%;
   height: 100%;
 }
+
+.page__inner-toc {
+  float: right;
+  margin-top: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  width: 200px;
+  clear: none;
+}
+
+// .page {
+//   max-width: calc(100% - 250px);
+//   min-height: 80vh
+// }
+
+button {
+  border: 1px solid #ccc;
+  border-radius:0.2em;
+  padding:0.5em;
+  background-color:#ccca;
+}
+button > a:link {
+  text-decoration: none;
+  color: #eee;
+}
+button > a:visited {
+  color: #eee;
+}
