@@ -81,13 +81,13 @@ If you're looking for help with something specific or want to touch base with me
 
 # Intern in Farm Operations
 
-I work on a farm, part time, between tech contracts. This provides me 'field research opportuntities' quite literally...growing/planting/harvesting a wide variety of vegetable produce, learning about the activities of a farm team, digging for potatoes, tending to livestock, researching pest and disease management techniques...and so much more.
+[I work on a farm](https://farming.paulsbruce.io/), part time, between tech contracts. This provides me 'field research opportuntities' quite literally...growing/planting/harvesting a wide variety of vegetable produce, learning about the activities of a farm team, digging for potatoes, tending to livestock, researching pest and disease management techniques...and so much more.
 
 This work also provides necessary 'headspace' from my technical work (on screens) and grows my capability to reflectively think through behaviors of complex systems.
 
 I run my efforts as if it was a PhD self-directed program...with just the right amount of farm team input to make sure I'm on the right track.
 
-Over the 2025 summer, I'll be publishing about my 'field work' frequently. Stay tuned! 
+Over the 2025 summer, I'll be [publishing about my 'field work' frequently](https://farming.paulsbruce.io/). Stay tuned! 
 
 # Blog Posts about Farming
 {% assign posts = site.categories['farming'] %}
